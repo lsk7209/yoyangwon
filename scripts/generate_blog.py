@@ -28,6 +28,18 @@ CATEGORY_LABELS = {
     "tour": "Tour Questions",
 }
 
+GOOGLE_HEAD = """<meta name="google-site-verification" content="gS0jdRdb8n2B7sAqGVPF9UeW4HpIfV2eaf5qHLcDG_Q" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3050601904412736" crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0TB2VKNGR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q0TB2VKNGR');
+</script>"""
+
 
 def parse_dt(value: str) -> datetime:
     value = value.replace("Z", "+00:00")
@@ -124,6 +136,7 @@ def page_head(post: dict, site_url: str) -> str:
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <meta name="google-adsense-account" content="ca-pub-3050601904412736">
+{GOOGLE_HEAD}
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <title>{title}</title>
 <meta name="description" content="{desc}">
@@ -394,6 +407,7 @@ def render_index(posts: list[dict]) -> str:
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <meta name="google-adsense-account" content="ca-pub-3050601904412736">
+{GOOGLE_HEAD}
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <title>Nursing Home Data Blog · CMS Rating & Staffing Guides</title>
 <meta name="description" content="Nursing home data blog with CMS rating guides, staffing explanations, inspection records, abuse flags, payment topics, and care decision resources.">
