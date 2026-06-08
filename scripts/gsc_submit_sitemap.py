@@ -126,11 +126,13 @@ def main() -> int:
         return 5
 
     print(f"is_pending={sm.get('isPending', False)}")
-    print(f"errors={sm.get('errors', 0)}")
-    print(f"warnings={sm.get('warnings', 0)}")
+    errors = int(sm.get("errors", 0) or 0)
+    warnings = int(sm.get("warnings", 0) or 0)
+    print(f"errors={errors}")
+    print(f"warnings={warnings}")
     print(f"last_submitted={sm.get('lastSubmitted', '')}")
     print(f"last_downloaded={sm.get('lastDownloaded', '')}")
-    print("result=success" if sm.get("errors", 0) == 0 and sm.get("warnings", 0) == 0 else "result=submitted_with_issues")
+    print("result=success" if errors == 0 and warnings == 0 else "result=submitted_with_issues")
     return 0
 
 
