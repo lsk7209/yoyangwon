@@ -1,19 +1,19 @@
-# NH-Data
+# Caregos
 
-NH-Data is an independent public-data utility for comparing US nursing homes with CMS ratings, staffing, inspection, and enforcement data.
+Caregos is an independent public-data utility for comparing US nursing homes with CMS ratings, staffing, inspection, and enforcement data.
 
 Important pages:
 
-- https://yoyangwon.com/
-- https://yoyangwon.com/listings.html
-- https://yoyangwon.com/compare.html
-- https://yoyangwon.com/enforcement.html
-- https://yoyangwon.com/methodology.html
-- https://yoyangwon.com/blog/
-- https://yoyangwon.com/blog/five-star-rating/
+- https://caregos.com/
+- https://caregos.com/listings.html
+- https://caregos.com/compare.html
+- https://caregos.com/enforcement.html
+- https://caregos.com/methodology.html
+- https://caregos.com/blog/
+- https://caregos.com/blog/five-star-rating/
 
 Data and trust:
 
 - CMS data source notes appear on data blocks.
 - Enforcement language is neutral and source-based.
-- Correction requests are handled at https://yoyangwon.com/corrections.html.
+- Correction requests are handled at https://caregos.com/corrections.html.

@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 POST_DIR = ROOT / "content" / "posts"
 BLOG_DIR = ROOT / "blog"
-SITE_URL = "https://yoyangwon.com"
+SITE_URL = "https://caregos.com"
 CHECK_PUBLIC_TEXT = [BLOG_DIR, ROOT / "rss.xml", ROOT / "sitemap.xml"]
 
 
@@ -63,7 +63,7 @@ def current_time() -> datetime:
 def load_posts() -> list[dict]:
     posts = []
     for path in sorted(POST_DIR.glob("*.json")):
-        post = json.loads(path.read_text(encoding="utf-8"))
+        post = json.loads(path.read_text(encoding="utf-8-sig"))
         post["_publish_dt"] = parse_dt(post["publish_at"])
         posts.append(post)
     return posts

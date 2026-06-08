@@ -52,7 +52,7 @@ CATEGORY_OPENERS = {
 
 
 BODY_PATTERNS = [
-    ("answer", "What this means in practice", "How to read the public record", "Questions to ask next", "Where NH-Data fits"),
+    ("answer", "What this means in practice", "How to read the public record", "Questions to ask next", "Where Caregos fits"),
     ("checklist", "Use this quick screen", "Signals that raise or lower concern", "A better question for the facility", "Next step"),
     ("decision", "The decision point", "What families often overread", "What families often miss", "How to compare two facilities"),
     ("source", "Start with the source", "Then add local context", "Do not ignore the resident's fit", "Use a second source of evidence"),
@@ -158,7 +158,7 @@ def make_body(post: dict, index: int) -> str:
             "</blockquote>"
         ) if index % 5 == 0 else "",
         f"<h2 id=\"{pattern[4].lower().replace(' ', '-')}\">{esc(pattern[4])}</h2>",
-        f"<p>Use <a href=\"{esc(primary_link)}\">NH-Data's facility tools</a> to compare the signal against real profiles, then keep the <a href=\"{esc(secondary_link)}\">methodology and record context</a> open while you review alternatives.</p>",
+        f"<p>Use <a href=\"{esc(primary_link)}\">Caregos's facility tools</a> to compare the signal against real profiles, then keep the <a href=\"{esc(secondary_link)}\">methodology and record context</a> open while you review alternatives.</p>",
         f"<p>Official source for this article: <a href=\"{esc(source['url'])}\" rel=\"noopener\">{esc(source['label'])}</a>. Source checked for this batch on 2026-06-08.</p>",
         f"<div class=\"card\" style=\"padding:18px;margin-top:18px;background:var(--surface-2);\"><h2 style=\"font-size:1.1rem;margin-bottom:6px;\">Next practical step</h2><p style=\"margin-bottom:12px;\">Use {esc(keyword)} as one filter, then compare at least two facilities before deciding.</p><a class=\"btn btn-primary btn-sm\" href=\"{esc(primary_link)}\">{esc(post['cta'])}</a></div>",
     ]
@@ -168,7 +168,7 @@ def make_body(post: dict, index: int) -> str:
 def main() -> None:
     paths = sorted(POST_DIR.glob("*.json"))
     for index, path in enumerate(paths, start=1):
-        post = json.loads(path.read_text(encoding="utf-8"))
+        post = json.loads(path.read_text(encoding="utf-8-sig"))
         post["body_html"] = make_body(post, index)
         post["quality_score"] = max(int(post.get("quality_score", 0)), 94)
         post["template_variation"] = BODY_PATTERNS[index % len(BODY_PATTERNS)][0]

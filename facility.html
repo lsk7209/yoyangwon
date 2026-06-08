@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,8 +9,8 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <title>Nursing Home CMS Profile · Ratings, Staffing & Inspections</title>
 <meta name="description" content="Nursing home CMS profile with ratings, staffing, local percentile, trend, enforcement timeline, flags, and source-dated methodology.">
-<link rel="canonical" href="https://yoyangwon.com/facility.html">
-<link rel="alternate" type="application/rss+xml" title="NH-Data Blog RSS" href="rss.xml">
+<link rel="canonical" href="https://caregos.com/facility.html">
+<link rel="alternate" type="application/rss+xml" title="Caregos Blog RSS" href="rss.xml">
 <link rel="stylesheet" href="styles/nh-data.css">
 <style>
   .fac-header { background: linear-gradient(180deg, #1b3b44, #16323a); color: #eaf1f2; padding: 32px 0 28px; }
@@ -71,7 +71,7 @@
 <header class="topbar"><div class="wrap">
   <a class="brand" href="index.html">
     <svg class="mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="6" fill="#16323a"/><rect x="6" y="14" width="3.4" height="6" rx="1" fill="#b5623a"/><rect x="11.3" y="9" width="3.4" height="11" rx="1" fill="#e4efef"/><rect x="16.6" y="6" width="3.4" height="14" rx="1" fill="#2c7a7b"/></svg>
-    NH-Data
+    Caregos
   </a>
   <nav class="nav">
     <a href="listings.html">Find facilities</a>
@@ -118,7 +118,7 @@
         <h2>Five-star breakdown</h2>
         <p class="blurb">The overall rating is built from three domains. CMS weights health inspections most heavily.</p>
         <div class="domain-grid" id="facDomains"></div>
-        <div class="source" style="margin-top:14px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/><path d="M6 3.2v3M6 8.2h.01"/></svg> Source: <b>CMS Care Compare · Provider Information</b> · as of <b>2026-04</b></div>
+        <div class="source" style="margin-top:14px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/><path d="M6 3.2v3M6 8.2h.01"/></svg> Source: <b>CMS Care Compare · Provider Information</b> · processing date <b class="cms-date">2026-05-01</b></div>
       </section>
 
       <!-- VIOLATION TIMELINE -->
@@ -127,7 +127,7 @@
         <p class="blurb">Health-inspection and complaint findings in reverse-chronological order. Each entry is a factual record from CMS; severity is CMS’s own classification.</p>
         <div class="tl" id="tl"></div>
         <div class="between" style="margin-top:16px;">
-          <div class="source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/><path d="M6 3.2v3M6 8.2h.01"/></svg> Source: <b>CMS Health Deficiencies dataset</b> · as of <b>2026-04</b></div>
+          <div class="source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/><path d="M6 3.2v3M6 8.2h.01"/></svg> Source: <b>CMS Health Deficiencies dataset</b> · processing date <b class="cms-date">2026-05-01</b></div>
           <a class="caption" href="corrections.html">Believe a record is wrong? Report a correction →</a>
         </div>
       </section>
@@ -148,10 +148,10 @@
         <div class="card">
           <h4>County context</h4>
           <table class="data" style="font-size:.85rem;">
-            <tr><td style="padding:7px 0;border:0;">County median rating</td><td class="num" style="padding:7px 0;border:0;"><b>3.0★</b></td></tr>
-            <tr><td style="padding:7px 0;border:0;">Median RN hours/day</td><td class="num" style="padding:7px 0;border:0;"><b>0.68</b></td></tr>
+            <tr><td style="padding:7px 0;border:0;">County median rating</td><td class="num" id="facCountyMedian" style="padding:7px 0;border:0;"><b>0.0★</b></td></tr>
+            <tr><td style="padding:7px 0;border:0;">Median RN hours/day</td><td class="num" id="facCountyRn" style="padding:7px 0;border:0;"><b>0.00</b></td></tr>
             <tr><td style="padding:7px 0;border:0;">This facility, RN hours</td><td class="num" id="facRailRn" style="padding:7px 0;border:0;"><b>0.52</b></td></tr>
-            <tr><td style="padding:7px 0;border:0;">Facilities in county</td><td class="num" style="padding:7px 0;border:0;"><b>41</b></td></tr>
+            <tr><td style="padding:7px 0;border:0;">Facilities in county</td><td class="num" style="padding:7px 0;border:0;"><b id="facCountyCount">0</b></td></tr>
           </table>
           <a class="btn btn-ghost btn-sm" href="listings.html" style="margin-top:12px;width:100%;justify-content:center;">All Sangamon County facilities</a>
         </div>
@@ -160,7 +160,7 @@
           <h4>Data provenance</h4>
           <div class="stamp-row source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/></svg> Ratings: <b>CMS Care Compare</b></div>
           <div class="stamp-row source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/></svg> Staffing: <b>Payroll-Based Journal</b></div>
-          <div class="stamp-row source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/></svg> Refreshed: <b>2026-04</b> (quarterly)</div>
+          <div class="stamp-row source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/></svg> Processing date: <b class="cms-date">2026-05-01</b></div>
           <a class="caption" href="methodology.html" style="display:inline-block;margin-top:10px;">Full methodology &amp; cadence →</a>
         </div>
 
@@ -172,8 +172,8 @@
 <footer class="foot"><div class="wrap">
   <div class="between" style="align-items:flex-start; flex-wrap:wrap; gap:32px;">
     <div style="max-width:340px;">
-      <div class="brand" style="color:#fff; margin-bottom:10px;">NH-Data</div>
-      <p class="byline">An independent civic-data project. Ratings and enforcement records are published by the Centers for Medicare &amp; Medicaid Services (CMS). Figures shown here are illustrative sample data.</p>
+      <div class="brand" style="color:#fff; margin-bottom:10px;">Caregos</div>
+      <p class="byline">An independent civic-data project. Ratings and enforcement records are published by the Centers for Medicare &amp; Medicaid Services (CMS). Caregos organizes public CMS records with source dates and correction paths.</p>
     </div>
     <div class="row" style="gap:48px; flex-wrap:wrap;">
       <div class="stack" style="gap:8px;"><div class="foothead">Data</div>
@@ -184,7 +184,7 @@
     </div>
   </div>
   <hr style="border:0; border-top:1px solid #2c4d56; margin:28px 0 16px;">
-  <p class="byline" style="margin:0;">Maintained by the NH-Data editorial team · Last data refresh: 2026-04 · <a href="corrections.html">Report a correction</a></p>
+  <p class="byline" style="margin:0;">Maintained by the Caregos editorial team · CMS processing date: 2026-05-01 · <a href="corrections.html">Report a correction</a></p>
 </div></footer>
 
 <script src="styles/data.js"></script>
@@ -194,14 +194,25 @@
   const esc = window.NH.escapeHtml;
   const sevCls = { info:'sev-info', low:'sev-low', mid:'sev-mid', high:'sev-high' };
   const params = new URLSearchParams(location.search);
-  const id = params.get('id') || 'maplewood';
-  const f = (window.FACILITIES.find(x=>x.id===id)) || window.FACILITIES.find(x=>x.id==='maplewood');
+  const id = params.get('id') || '';
+  const f = (window.FACILITIES.find(x=>x.id===id)) || window.FACILITIES[0];
   const defs = (window.DEFS && window.DEFS[f.id]) ? window.DEFS[f.id].slice() : [];
   defs.sort((a,b)=> a.date < b.date ? 1 : -1);
-  const ccn = { maplewood:'145211', riverside:'145087', oakhaven:'145402', cedarridge:'145219', prairievista:'145164', lincolnpark:'145330' }[f.id] || '145000';
+  const ccn = f.ccn || 'unavailable';
+  const sourceDate = DATA_SOURCE?.processingDates?.[0] || 'source date unavailable';
+  const median = values => {
+    const nums = values.filter(Number.isFinite).sort((a,b)=>a-b);
+    if(!nums.length) return 0;
+    const mid = Math.floor(nums.length / 2);
+    return nums.length % 2 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
+  };
+  document.querySelectorAll('.cms-date').forEach(el => { el.textContent = sourceDate; });
+  document.getElementById('facCountyMedian').innerHTML = `<b>${median(FACILITIES.map(item=>item.overall)).toFixed(1)}★</b>`;
+  document.getElementById('facCountyRn').innerHTML = `<b>${median(FACILITIES.map(item=>item.rnHrs)).toFixed(2)}</b>`;
+  document.getElementById('facCountyCount').textContent = FACILITIES.length;
 
   // ---- title + header ----
-  document.title = `${f.name} · NH-Data`;
+  document.title = `${f.name} · Caregos`;
   document.getElementById('facName').textContent = f.name;
   document.getElementById('facAddr').textContent = `${f.address} · CMS #${ccn}`;
   document.getElementById('facTags').innerHTML = [
@@ -245,14 +256,14 @@
         <div class="label"><span>Sangamon County</span><b>Top ${pctTop}%</b></div>
       </div>
       <div class="caption">Ranks ${medianRank} the county median of nursing homes on overall rating.</div>
-      <details class="method"><summary>How is this calculated?</summary><p>Overall star rating ranked against all 41 CMS-certified nursing homes in the same county. “Top ${pctTop}%” means ${f.pctile}% of county facilities score at or below this one.</p></details>
+      <details class="method"><summary>How is this calculated?</summary><p>Overall star rating ranked against all ${FACILITIES.length} CMS-certified nursing homes in the same county. "Top ${pctTop}%" means ${f.pctile}% of county facilities score at or below this one.</p></details>
     </div>
     <div class="card sigcard">
       <div class="top"><span class="lab">18-month trend</span>
         <span class="trend ${dir}" data-dir="${dir}"><span class="arr"></span>${dirLab}</span></div>
       <div class="spark" data-points="${f.trend.join(',')}" data-w="150" data-h="42"></div>
       <div class="caption">${esc(f.trendNote)}.</div>
-      <details class="method"><summary>How is this calculated?</summary><p>Plots the official overall star rating for each of the last six published quarters. A visual summary of CMS history — not a separate NH-Data score.</p></details>
+      <details class="method"><summary>How is this calculated?</summary><p>Plots the official overall star rating for each of the last six published quarters. A visual summary of CMS history — not a separate Caregos score.</p></details>
     </div>
     <div class="card sigcard">
       <div class="top"><span class="lab">Deficiency severity</span>
@@ -317,6 +328,7 @@
 </script>
 </body>
 </html>
+
 
 
 

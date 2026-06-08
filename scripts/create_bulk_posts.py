@@ -211,7 +211,7 @@ def make_body(topic: tuple[str, str, str, str, str, str, str, str], index: int) 
         f"<h2>{headings[3]}</h2>",
         p(f"Open a related <a href=\"{internal_a}\">facility or local comparison page</a>, then keep the <a href=\"{internal_b}\">methodology and source notes</a> nearby while you read."),
         p(f"Official source for this article: <a href=\"{source['url']}\" rel=\"noopener\">{source['label']}</a>. Source checked for this batch on 2026-06-08."),
-        f"<div class=\"card\" style=\"padding:18px;margin-top:18px;background:var(--surface-2);\"><h2 style=\"font-size:1.1rem;margin-bottom:6px;\">Use this next</h2><p style=\"margin-bottom:12px;\">Compare the signal against real facility profiles before making a placement decision.</p><a class=\"btn btn-primary btn-sm\" href=\"{internal_a}\">Open NH-Data comparison tools</a></div>",
+        f"<div class=\"card\" style=\"padding:18px;margin-top:18px;background:var(--surface-2);\"><h2 style=\"font-size:1.1rem;margin-bottom:6px;\">Use this next</h2><p style=\"margin-bottom:12px;\">Compare the signal against real facility profiles before making a placement decision.</p><a class=\"btn btn-primary btn-sm\" href=\"{internal_a}\">Open Caregos comparison tools</a></div>",
     ]
     if index % 4 == 0:
         sections.insert(2, "<nav class=\"card toc\" aria-label=\"Article table of contents\"><strong>On this page</strong><ol><li><a href=\"#main-answer\">Main answer</a></li><li><a href=\"#checks\">Checks</a></li><li><a href=\"#source\">Source</a></li></ol></nav>")
@@ -240,18 +240,18 @@ def build() -> list[dict[str, object]]:
                 "intent": intent,
                 "publish_at": publish_at.isoformat(),
                 "timezone": "Asia/Seoul",
-                "author": ["Dana Koenig", "Andre Trevino", "NH-Data Editorial Team"][idx % 3],
+                "author": ["Dana Koenig", "Andre Trevino", "Caregos Editorial Team"][idx % 3],
                 "read_minutes": 5 + (idx % 5),
                 "meta_title": meta_title,
                 "meta_description": meta_description[:155],
-                "canonical": f"https://yoyangwon.com/blog/{slugify(slug)}/",
+                "canonical": f"https://caregos.com/blog/{slugify(slug)}/",
                 "excerpt": answer,
                 "body_html": make_body(topic, idx),
                 "internal_links": ["/listings.html", "/facility.html", "/compare.html", "/enforcement.html", "/methodology.html"][
                     idx % 3 : idx % 3 + 2
                 ],
                 "external_source": source,
-                "cta": "Open NH-Data comparison tools",
+                "cta": "Open Caregos comparison tools",
                 "quality_score": 92 + (idx % 7),
                 "codex_only_generation_confirmation": "codex-only",
                 "schema_type": "Article",
@@ -273,7 +273,7 @@ def main() -> None:
         )
     summary = dedent(
         f"""\
-        # NH-Data 100-Post Schedule
+        # Caregos 100-Post Schedule
 
         Generated directly by Codex in this workspace. No external API or external LLM generated the article prose.
 

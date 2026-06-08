@@ -1,30 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>NH-Data Blog</title>
-    <link>https://yoyangwon.com/blog/</link>
-    <description>Nursing home CMS rating, staffing, inspection, payment, and enforcement guides from NH-Data.</description>
+    <title>Caregos Blog</title>
+    <link>https://caregos.com/blog/</link>
+    <description>Nursing home CMS rating, staffing, inspection, payment, and enforcement guides from Caregos.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2026 10:34:50 +0000</lastBuildDate>
-    <atom:link href="https://yoyangwon.com/rss.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Jun 2026 20:27:13 +0900</lastBuildDate>
+    <atom:link href="https://caregos.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Five-Star Nursing Home Risks Checklist for Inspection History and Safer Nursing Home Choices</title>
+      <link>https://caregos.com/blog/five-star-home-still-risky/</link>
+      <guid isPermaLink="true">https://caregos.com/blog/five-star-home-still-risky/</guid>
+      <pubDate>Mon, 08 Jun 2026 20:00:00 +0900</pubDate>
+      <description>A five-star rating can narrow the list, but it does not replace reviewing staffing, complaint history, and whether the facility fits the resident&#x27;s actual needs.</description>
+    </item>
     <item>
       <title>One-Star Nursing Home Questions vs. Facility Tour: What Families Should Compare First</title>
-      <link>https://yoyangwon.com/blog/one-star-nursing-home-questions/</link>
-      <guid isPermaLink="true">https://yoyangwon.com/blog/one-star-nursing-home-questions/</guid>
+      <link>https://caregos.com/blog/one-star-nursing-home-questions/</link>
+      <guid isPermaLink="true">https://caregos.com/blog/one-star-nursing-home-questions/</guid>
       <pubDate>Mon, 08 Jun 2026 15:00:00 +0900</pubDate>
       <description>A one-star rating is a serious signal, not a full explanation. Ask what drove the rating, whether the findings are recent, and what has changed since the survey date.</description>
     </item>
     <item>
       <title>Before You Trust Staffing, Read This Overall Rating vs Domain Scores Guide</title>
-      <link>https://yoyangwon.com/blog/overall-rating-vs-domain-scores/</link>
-      <guid isPermaLink="true">https://yoyangwon.com/blog/overall-rating-vs-domain-scores/</guid>
+      <link>https://caregos.com/blog/overall-rating-vs-domain-scores/</link>
+      <guid isPermaLink="true">https://caregos.com/blog/overall-rating-vs-domain-scores/</guid>
       <pubDate>Mon, 08 Jun 2026 10:00:00 +0900</pubDate>
       <description>Start with the overall rating for orientation, then break it apart into inspections, staffing, and quality measures before making any comparison.</description>
     </item>
     <item>
       <title>Health Inspection Star and Inspection Domain: How to Read the Nursing Home Decision</title>
-      <link>https://yoyangwon.com/blog/inspection-star-weight/</link>
-      <guid isPermaLink="true">https://yoyangwon.com/blog/inspection-star-weight/</guid>
+      <link>https://caregos.com/blog/inspection-star-weight/</link>
+      <guid isPermaLink="true">https://caregos.com/blog/inspection-star-weight/</guid>
       <pubDate>Mon, 08 Jun 2026 05:00:00 +0900</pubDate>
       <description>CMS weights health inspections heavily because surveyors observe care conditions directly. The overall star is useful, but the inspection star is often the better first screen when you need a safety-focused shortlist.</description>
     </item>

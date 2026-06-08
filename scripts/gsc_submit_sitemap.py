@@ -52,7 +52,7 @@ def get_credentials() -> Credentials:
 
 
 def fetch_status(url: str) -> tuple[int, str]:
-    req = urllib.request.Request(url, headers={"User-Agent": "NH-Data sitemap verifier"})
+    req = urllib.request.Request(url, headers={"User-Agent": "Caregos sitemap verifier"})
     with urllib.request.urlopen(req, timeout=20) as res:
         body = res.read(512).decode("utf-8", errors="replace")
         return res.status, body

@@ -1,125 +1,986 @@
-/* Sample data — FICTIONAL facilities for demonstration only.
-   Mirrors the shape of CMS Care Compare / Provider Info datasets. */
-window.FACILITIES = [
-  {
-    id: 'maplewood', name: 'Maplewood Health & Rehabilitation',
-    city: 'Springfield, IL', address: '1820 W Monroe St, Springfield, IL 62704',
-    ownership: 'For-profit', beds: 142, occupancy: 88,
-    overall: 2, health: 2, staffing: 3, qm: 3,
-    pctile: 34, trend: [4,4,3,3,2,2], trendNote: '4★ → 2★ over 18 mo',
-    rnHrs: 0.52, totalHrs: 3.41, turnover: 58,
-    deficiencies: 14, sevHigh: 2, fines: 21400, sff: false, abuse: true,
-    distance: 2.1
-  },
-  {
-    id: 'riverside', name: 'Riverside Care Center',
-    city: 'Springfield, IL', address: '405 N Grand Ave E, Springfield, IL 62702',
-    ownership: 'Non-profit', beds: 96, occupancy: 91,
-    overall: 4, health: 4, staffing: 4, qm: 4,
-    pctile: 78, trend: [3,3,4,4,4,4], trendNote: 'Stable at 4★, 24 mo',
-    rnHrs: 0.91, totalHrs: 4.12, turnover: 33,
-    deficiencies: 4, sevHigh: 0, fines: 0, sff: false, abuse: false,
-    distance: 3.4
-  },
-  {
-    id: 'oakhaven', name: 'Oakhaven Skilled Nursing',
-    city: 'Springfield, IL', address: '2700 Lawrence Ave, Springfield, IL 62703',
-    ownership: 'For-profit', beds: 188, occupancy: 79,
-    overall: 1, health: 1, staffing: 2, qm: 2,
-    pctile: 8, trend: [2,2,1,1,1,1], trendNote: 'On SFF watch list',
-    rnHrs: 0.38, totalHrs: 3.02, turnover: 71,
-    deficiencies: 22, sevHigh: 4, fines: 86250, sff: true, abuse: true,
-    distance: 4.0
-  },
-  {
-    id: 'cedarridge', name: 'Cedar Ridge Nursing & Rehab',
-    city: 'Decatur, IL', address: '560 W Ash Ave, Decatur, IL 62526',
-    ownership: 'For-profit', beds: 120, occupancy: 84,
-    overall: 3, health: 3, staffing: 3, qm: 4,
-    pctile: 52, trend: [3,3,3,3,3,3], trendNote: 'Stable at 3★',
-    rnHrs: 0.61, totalHrs: 3.68, turnover: 47,
-    deficiencies: 8, sevHigh: 1, fines: 9800, sff: false, abuse: false,
-    distance: 38.6
-  },
-  {
-    id: 'prairievista', name: 'Prairie Vista Senior Care',
-    city: 'Springfield, IL', address: '3300 Robbins Rd, Springfield, IL 62704',
-    ownership: 'Non-profit', beds: 74, occupancy: 94,
-    overall: 5, health: 5, staffing: 5, qm: 4,
-    pctile: 92, trend: [4,4,5,5,5,5], trendNote: '4★ → 5★ over 18 mo',
-    rnHrs: 1.14, totalHrs: 4.55, turnover: 24,
-    deficiencies: 2, sevHigh: 0, fines: 0, sff: false, abuse: false,
-    distance: 5.2
-  },
-  {
-    id: 'lincolnpark', name: 'Lincoln Park Health Center',
-    city: 'Springfield, IL', address: '950 N 5th St, Springfield, IL 62702',
-    ownership: 'Government', beds: 110, occupancy: 86,
-    overall: 3, health: 2, staffing: 4, qm: 3,
-    pctile: 45, trend: [3,3,2,2,3,3], trendNote: 'Recovered to 3★',
-    rnHrs: 0.74, totalHrs: 3.88, turnover: 41,
-    deficiencies: 9, sevHigh: 1, fines: 4200, sff: false, abuse: false,
-    distance: 1.6
-  }
-];
-
-/* Deficiency timeline sample (Maplewood) — neutral, factual records */
-window.DEFICIENCIES = [
-  { date: '2025-11-14', ftag: 'F-689', scope: 'Pattern', sev: 'high', harm: 'Actual harm',
-    text: 'Failed to ensure residents free from accident hazards; one resident sustained a fall-related fracture.', survey: 'Health inspection' },
-  { date: '2025-11-14', ftag: 'F-684', scope: 'Isolated', sev: 'mid', harm: 'Actual harm',
-    text: 'Quality of care: failed to provide treatment consistent with professional standards for two residents.', survey: 'Health inspection' },
-  { date: '2025-06-02', ftag: 'F-812', scope: 'Widespread', sev: 'low', harm: 'Potential for harm',
-    text: 'Food procurement and sanitary storage deficiencies identified in main kitchen.', survey: 'Health inspection' },
-  { date: '2025-06-02', ftag: 'F-880', scope: 'Pattern', sev: 'mid', harm: 'Actual harm',
-    text: 'Infection prevention and control program not fully implemented per facility policy.', survey: 'Health inspection' },
-  { date: '2024-12-09', ftag: 'F-600', scope: 'Isolated', sev: 'high', harm: 'Immediate jeopardy',
-    text: 'Failed to protect a resident from abuse; allegation substantiated following investigation.', survey: 'Complaint investigation' },
-  { date: '2024-12-09', ftag: 'F-609', scope: 'Isolated', sev: 'mid', harm: 'Actual harm',
-    text: 'Failed to report and investigate an allegation of abuse within required timeframe.', survey: 'Complaint investigation' },
-  { date: '2024-03-21', ftag: 'F-758', scope: 'Pattern', sev: 'low', harm: 'Potential for harm',
-    text: 'Free from unnecessary psychotropic medication: review documentation incomplete for three residents.', survey: 'Health inspection' }
-];
-
-/* Per-facility deficiency records, keyed by facility id. Neutral, factual. */
-window.DEFS = {
-  maplewood: window.DEFICIENCIES,
-  riverside: [
-    { date: '2025-09-08', ftag: 'F-636', scope: 'Isolated', sev: 'low', harm: 'Potential for harm',
-      text: 'Comprehensive assessment not completed within required timeframe for one newly admitted resident.', survey: 'Health inspection' },
-    { date: '2024-08-19', ftag: 'F-812', scope: 'Isolated', sev: 'low', harm: 'Potential for harm',
-      text: 'Minor food-storage labeling deficiency identified and corrected on site during the standard survey.', survey: 'Health inspection' }
-  ],
-  oakhaven: [
-    { date: '2026-02-18', ftag: 'F-600', scope: 'Isolated', sev: 'high', harm: 'Immediate jeopardy',
-      text: 'Failed to protect residents from abuse; allegation substantiated. Immediate jeopardy abated after a plan of correction was accepted.', survey: 'Complaint investigation' },
-    { date: '2025-09-30', ftag: 'F-690', scope: 'Pattern', sev: 'mid', harm: 'Actual harm',
-      text: 'Bowel/bladder incontinence care not provided consistent with assessed needs for several residents.', survey: 'Health inspection' },
-    { date: '2025-09-30', ftag: 'F-725', scope: 'Widespread', sev: 'mid', harm: 'Actual harm',
-      text: 'Sufficient nursing staff not provided to meet residents’ assessed needs across multiple units.', survey: 'Health inspection' },
-    { date: '2025-04-11', ftag: 'F-689', scope: 'Pattern', sev: 'high', harm: 'Immediate jeopardy',
-      text: 'Failed to ensure residents free from accident hazards; an elopement occurred from an unsecured exit.', survey: 'Complaint investigation' },
-    { date: '2024-10-22', ftag: 'F-686', scope: 'Pattern', sev: 'mid', harm: 'Actual harm',
-      text: 'Pressure-injury prevention and treatment not consistent with professional standards for two residents.', survey: 'Health inspection' }
-  ],
-  cedarridge: [
-    { date: '2025-07-05', ftag: 'F-812', scope: 'Pattern', sev: 'low', harm: 'Potential for harm',
-      text: 'Food procurement and sanitary storage deficiencies identified in the main kitchen.', survey: 'Health inspection' },
-    { date: '2025-07-05', ftag: 'F-684', scope: 'Isolated', sev: 'mid', harm: 'Actual harm',
-      text: 'Quality of care: care plan not followed for one resident, resulting in a delayed treatment.', survey: 'Health inspection' },
-    { date: '2024-06-14', ftag: 'F-758', scope: 'Isolated', sev: 'low', harm: 'Potential for harm',
-      text: 'Psychotropic medication review documentation incomplete for two residents.', survey: 'Health inspection' }
-  ],
-  prairievista: [
-    { date: '2025-05-20', ftag: 'F-761', scope: 'Isolated', sev: 'info', harm: 'No actual harm',
-      text: 'Medication labeling and storage finding with no actual harm; corrected during the survey.', survey: 'Health inspection' }
-  ],
-  lincolnpark: [
-    { date: '2025-08-12', ftag: 'F-880', scope: 'Widespread', sev: 'mid', harm: 'Actual harm',
-      text: 'Infection prevention and control program not fully implemented per facility policy.', survey: 'Health inspection' },
-    { date: '2024-11-03', ftag: 'F-657', scope: 'Pattern', sev: 'low', harm: 'Potential for harm',
-      text: 'Care plans not reviewed and revised by the interdisciplinary team within required intervals.', survey: 'Health inspection' },
-    { date: '2024-11-03', ftag: 'F-550', scope: 'Isolated', sev: 'low', harm: 'Potential for harm',
-      text: 'Resident dignity finding regarding shared-room privacy; addressed in plan of correction.', survey: 'Health inspection' }
+/* Generated from CMS Provider Data Catalog. Do not edit by hand.
+   Dataset: Provider Information (4pq5-n9py), Health Deficiencies (r5ix-sfxw). */
+window.DATA_SOURCE = {
+  "source": "CMS Provider Data Catalog",
+  "providerDataset": "4pq5-n9py",
+  "deficiencyDataset": "r5ix-sfxw",
+  "state": "IL",
+  "county": "Sangamon",
+  "facilityCount": 8,
+  "processingDates": [
+    "2026-05-01"
   ]
 };
+window.FACILITIES = [
+  {
+    "id": "arcadia-care-auburn-145136",
+    "ccn": "145136",
+    "name": "Arcadia Care Auburn",
+    "city": "Auburn, IL",
+    "address": "304 Maple Avenue, Auburn, IL 62615",
+    "ownership": "For profit - Corporation",
+    "beds": 70,
+    "occupancy": 79,
+    "overall": 1,
+    "health": 2,
+    "staffing": 1,
+    "qm": 2,
+    "pctile": 50,
+    "trend": [
+      1
+    ],
+    "trendNote": "CMS current release",
+    "rnHrs": 0.23,
+    "totalHrs": 2.61,
+    "turnover": 58,
+    "deficiencies": 10,
+    "sevHigh": 1,
+    "fines": 306199,
+    "sff": false,
+    "sffStatus": "",
+    "abuse": true,
+    "distance": 13.8
+  },
+  {
+    "id": "villa-health-care-east-145721",
+    "ccn": "145721",
+    "name": "Villa Health Care East",
+    "city": "Sherman, IL",
+    "address": "100 Marian Parkway, Sherman, IL 62684",
+    "ownership": "Non profit - Corporation",
+    "beds": 109,
+    "occupancy": 86,
+    "overall": 2,
+    "health": 3,
+    "staffing": 3,
+    "qm": 1,
+    "pctile": 75,
+    "trend": [
+      2
+    ],
+    "trendNote": "CMS current release",
+    "rnHrs": 0.59,
+    "totalHrs": 4.66,
+    "turnover": 63,
+    "deficiencies": 10,
+    "sevHigh": 3,
+    "fines": 15935,
+    "sff": false,
+    "sffStatus": "",
+    "abuse": false,
+    "distance": 8.2
+  },
+  {
+    "id": "arc-at-sangamon-valley-146026",
+    "ccn": "146026",
+    "name": "Arc at Sangamon Valley",
+    "city": "Springfield, IL",
+    "address": "3400 West Washington, Springfield, IL 62711",
+    "ownership": "Non profit - Corporation",
+    "beds": 171,
+    "occupancy": 69,
+    "overall": 1,
+    "health": 1,
+    "staffing": 1,
+    "qm": 3,
+    "pctile": 50,
+    "trend": [
+      1
+    ],
+    "trendNote": "CMS current release",
+    "rnHrs": 0.19,
+    "totalHrs": 2.98,
+    "turnover": 71,
+    "deficiencies": 10,
+    "sevHigh": 1,
+    "fines": 309361,
+    "sff": true,
+    "sffStatus": "SFF Candidate",
+    "abuse": false,
+    "distance": 3.8
+  },
+  {
+    "id": "arcadia-care-on-the-hill-145160",
+    "ccn": "145160",
+    "name": "Arcadia Care on the Hill",
+    "city": "Springfield, IL",
+    "address": "555 West Carpenter, Springfield, IL 62702",
+    "ownership": "For profit - Corporation",
+    "beds": 251,
+    "occupancy": 51,
+    "overall": 1,
+    "health": 1,
+    "staffing": 1,
+    "qm": 3,
+    "pctile": 50,
+    "trend": [
+      1
+    ],
+    "trendNote": "CMS current release",
+    "rnHrs": 0.15,
+    "totalHrs": 2.61,
+    "turnover": 33,
+    "deficiencies": 10,
+    "sevHigh": 3,
+    "fines": 57030,
+    "sff": false,
+    "sffStatus": "",
+    "abuse": false,
+    "distance": 1.9
+  },
+  {
+    "id": "avenues-at-springfield-14E847",
+    "ccn": "14E847",
+    "name": "Avenues at Springfield",
+    "city": "Springfield, IL",
+    "address": "525 So Martin Luther King Dr, Springfield, IL 62703",
+    "ownership": "For profit - Limited Liability company",
+    "beds": 65,
+    "occupancy": 96,
+    "overall": 2,
+    "health": 3,
+    "staffing": 1,
+    "qm": 4,
+    "pctile": 75,
+    "trend": [
+      2
+    ],
+    "trendNote": "CMS current release",
+    "rnHrs": 0.22,
+    "totalHrs": 1.59,
+    "turnover": 61,
+    "deficiencies": 10,
+    "sevHigh": 1,
+    "fines": 0,
+    "sff": false,
+    "sffStatus": "",
+    "abuse": false,
+    "distance": 1.2
+  },
+  {
+    "id": "concordia-village-care-center-146154",
+    "ccn": "146154",
+    "name": "Concordia Village Care Center",
+    "city": "Springfield, IL",
+    "address": "4101 West Iles Avenue, Springfield, IL 62711",
+    "ownership": "Non profit - Church related",
+    "beds": 62,
+    "occupancy": 79,
+    "overall": 5,
+    "health": 4,
+    "staffing": 5,
+    "qm": 2,
+    "pctile": 100,
+    "trend": [
+      5
+    ],
+    "trendNote": "CMS current release",
+    "rnHrs": 1.26,
+    "totalHrs": 4.91,
+    "turnover": 48,
+    "deficiencies": 10,
+    "sevHigh": 2,
+    "fines": 8678,
+    "sff": false,
+    "sffStatus": "",
+    "abuse": false,
+    "distance": 4.4
+  },
+  {
+    "id": "regency-care-146139",
+    "ccn": "146139",
+    "name": "Regency Care",
+    "city": "Springfield, IL",
+    "address": "2120 West Washington, Springfield, IL 62702",
+    "ownership": "For profit - Limited Liability company",
+    "beds": 99,
+    "occupancy": 93,
+    "overall": 1,
+    "health": 2,
+    "staffing": 2,
+    "qm": 1,
+    "pctile": 50,
+    "trend": [
+      1
+    ],
+    "trendNote": "CMS current release",
+    "rnHrs": 0.68,
+    "totalHrs": 2.83,
+    "turnover": 57,
+    "deficiencies": 10,
+    "sevHigh": 2,
+    "fines": 173197,
+    "sff": false,
+    "sffStatus": "",
+    "abuse": false,
+    "distance": 2.5
+  },
+  {
+    "id": "springfield-suites-rehab-and-nursing-146160",
+    "ccn": "146160",
+    "name": "Springfield Suites Rehab and Nursing",
+    "city": "Springfield, IL",
+    "address": "3089 Old Jacksonville Road, Springfield, IL 62704",
+    "ownership": "For profit - Limited Liability company",
+    "beds": 75,
+    "occupancy": 88,
+    "overall": 3,
+    "health": 3,
+    "staffing": 2,
+    "qm": 4,
+    "pctile": 88,
+    "trend": [
+      3
+    ],
+    "trendNote": "CMS current release",
+    "rnHrs": 0.79,
+    "totalHrs": 4.97,
+    "turnover": 63,
+    "deficiencies": 10,
+    "sevHigh": 2,
+    "fines": 0,
+    "sff": false,
+    "sffStatus": "",
+    "abuse": false,
+    "distance": 3.4
+  }
+];
+window.DEFS = {
+  "arcadia-care-auburn-145136": [
+    {
+      "date": "2025-11-19",
+      "ftag": "F-557",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Honor the resident's right to be treated with respect and dignity and to retain and use personal possessions.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-08-27",
+      "ftag": "F-584",
+      "scope": "Pattern",
+      "sev": "high",
+      "harm": "Immediate jeopardy",
+      "text": "Honor the resident's right to a safe, clean, comfortable and homelike environment, including but not limited to receiving treatment and supports for daily living safely.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-05-28",
+      "ftag": "F-761",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure drugs and biologicals used in the facility are labeled in accordance with currently accepted professional principles; and all drugs and biologicals must be stored in locked compartments, separately locked, compartments for controlled drugs.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-05-09",
+      "ftag": "F-921",
+      "scope": "Widespread",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Make sure that the nursing home area is safe, easy to use, clean and comfortable for residents, staff and the public.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-04-10",
+      "ftag": "F-584",
+      "scope": "Pattern",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Honor the resident's right to a safe, clean, comfortable and homelike environment, including but not limited to receiving treatment and supports for daily living safely.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-04-10",
+      "ftag": "F-921",
+      "scope": "Pattern",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Make sure that the nursing home area is safe, easy to use, clean and comfortable for residents, staff and the public.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-02-11",
+      "ftag": "F-600",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Protect each resident from all types of abuse such as physical, mental, sexual abuse, physical punishment, and neglect by anybody.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-02-11",
+      "ftag": "F-684",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide appropriate treatment and care according to orders, resident\u2019s preferences and goals.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-02-11",
+      "ftag": "F-881",
+      "scope": "Pattern",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Implement a program that monitors antibiotic use.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-11-08",
+      "ftag": "F-760",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure that residents are free from significant medication errors.",
+      "survey": "Health"
+    }
+  ],
+  "villa-health-care-east-145721": [
+    {
+      "date": "2026-01-29",
+      "ftag": "F-805",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure each resident receives and the facility provides food prepared in a form designed to meet individual needs.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-10-15",
+      "ftag": "F-657",
+      "scope": "Pattern",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Develop the complete care plan within 7 days of the comprehensive assessment; and prepared, reviewed, and revised by a team of health professionals.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-10-15",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Actual harm",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-10-15",
+      "ftag": "F-725",
+      "scope": "Widespread",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide enough nursing staff every day to meet the needs of every resident; and have a licensed nurse in charge on each shift.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-08-21",
+      "ftag": "F-550",
+      "scope": "Pattern",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Honor the resident's right to a dignified existence, self-determination, communication, and to exercise his or her rights.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-07-17",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Actual harm",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-01-28",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Actual harm",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-08-13",
+      "ftag": "F-760",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure that residents are free from significant medication errors.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-08-13",
+      "ftag": "F-761",
+      "scope": "Pattern",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure drugs and biologicals used in the facility are labeled in accordance with currently accepted professional principles; and all drugs and biologicals must be stored in locked compartments, separately locked, compartments for controlled drugs.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-08-13",
+      "ftag": "F-880",
+      "scope": "Pattern",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide and implement an infection prevention and control program.",
+      "survey": "Health"
+    }
+  ],
+  "arc-at-sangamon-valley-146026": [
+    {
+      "date": "2026-02-11",
+      "ftag": "F-684",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide appropriate treatment and care according to orders, resident\u2019s preferences and goals.",
+      "survey": "Health"
+    },
+    {
+      "date": "2026-02-11",
+      "ftag": "F-725",
+      "scope": "Widespread",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide enough nursing staff every day to meet the needs of every resident; and have a licensed nurse in charge on each shift.",
+      "survey": "Health"
+    },
+    {
+      "date": "2026-02-11",
+      "ftag": "F-908",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Keep all essential equipment working safely.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-10-16",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Actual harm",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-08-01",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-08-01",
+      "ftag": "F-697",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide safe, appropriate pain management for a resident who requires such services.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-08-01",
+      "ftag": "F-755",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide pharmaceutical services to meet the needs of each resident and employ or obtain the services of a licensed pharmacist.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-07-23",
+      "ftag": "F-580",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Immediately tell the resident, the resident's doctor, and a family member of situations (injury/decline/room, etc.)  that affect the resident.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-07-23",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-07-01",
+      "ftag": "F-584",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Honor the resident's right to a safe, clean, comfortable and homelike environment, including but not limited to receiving treatment and supports for daily living safely.",
+      "survey": "Health"
+    }
+  ],
+  "arcadia-care-on-the-hill-145160": [
+    {
+      "date": "2025-11-26",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-10-17",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Actual harm",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-09-17",
+      "ftag": "F-684",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide appropriate treatment and care according to orders, resident\u2019s preferences and goals.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-09-17",
+      "ftag": "F-686",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide appropriate pressure ulcer care and prevent new ulcers from developing.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-09-17",
+      "ftag": "F-693",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure that feeding tubes are  not used unless there is a medical reason and the resident agrees; and provide appropriate care for a resident with a feeding tube.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-09-17",
+      "ftag": "F-761",
+      "scope": "Widespread",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure drugs and biologicals used in the facility are labeled in accordance with currently accepted professional principles; and all drugs and biologicals must be stored in locked compartments, separately locked, compartments for controlled drugs.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-09-17",
+      "ftag": "F-812",
+      "scope": "Widespread",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-09-17",
+      "ftag": "F-880",
+      "scope": "Pattern",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide and implement an infection prevention and control program.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-09-17",
+      "ftag": "F-658",
+      "scope": "Widespread",
+      "sev": "high",
+      "harm": "Immediate jeopardy",
+      "text": "Ensure services provided by the nursing facility meet professional standards of quality.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-09-17",
+      "ftag": "F-760",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Immediate jeopardy",
+      "text": "Ensure that residents are free from significant medication errors.",
+      "survey": "Health"
+    }
+  ],
+  "avenues-at-springfield-14E847": [
+    {
+      "date": "2025-04-08",
+      "ftag": "F-584",
+      "scope": "Pattern",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Honor the resident's right to a safe, clean, comfortable and homelike environment, including but not limited to receiving treatment and supports for daily living safely.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-04-08",
+      "ftag": "F-812",
+      "scope": "Widespread",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-01-15",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Immediate jeopardy",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-08-01",
+      "ftag": "F-693",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure that feeding tubes are  not used unless there is a medical reason and the resident agrees; and provide appropriate care for a resident with a feeding tube.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-08-01",
+      "ftag": "F-727",
+      "scope": "Widespread",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Have a registered nurse on duty 8 hours a day; and  select a registered nurse to be the director of nurses on a full time basis.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-08-01",
+      "ftag": "F-812",
+      "scope": "Widespread",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-08-01",
+      "ftag": "F-912",
+      "scope": "Isolated",
+      "sev": "low",
+      "harm": "No actual harm",
+      "text": "Provide rooms that are at least 80 square feet per resident in multiple rooms and 100 square feet for single resident rooms.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-04-24",
+      "ftag": "F-725",
+      "scope": "Widespread",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide enough nursing staff every day to meet the needs of every resident; and have a licensed nurse in charge on each shift.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-04-24",
+      "ftag": "F-727",
+      "scope": "Widespread",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Have a registered nurse on duty 8 hours a day; and  select a registered nurse to be the director of nurses on a full time basis.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-01-31",
+      "ftag": "F-610",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Respond appropriately to all alleged violations.",
+      "survey": "Health"
+    }
+  ],
+  "concordia-village-care-center-146154": [
+    {
+      "date": "2026-01-08",
+      "ftag": "F-600",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Protect each resident from all types of abuse such as physical, mental, sexual abuse, physical punishment, and neglect by anybody.",
+      "survey": "Health"
+    },
+    {
+      "date": "2026-01-08",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    },
+    {
+      "date": "2026-01-08",
+      "ftag": "F-760",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure that residents are free from significant medication errors.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-08-22",
+      "ftag": "F-761",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure drugs and biologicals used in the facility are labeled in accordance with currently accepted professional principles; and all drugs and biologicals must be stored in locked compartments, separately locked, compartments for controlled drugs.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-08-22",
+      "ftag": "F-812",
+      "scope": "Widespread",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-08-22",
+      "ftag": "F-880",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide and implement an infection prevention and control program.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-06-26",
+      "ftag": "F-684",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Actual harm",
+      "text": "Provide appropriate treatment and care according to orders, resident\u2019s preferences and goals.",
+      "survey": "Health"
+    },
+    {
+      "date": "2023-09-21",
+      "ftag": "F-690",
+      "scope": "Pattern",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide appropriate care for residents who are continent or incontinent of bowel/bladder, appropriate catheter care,  and appropriate care  to prevent urinary tract infections.",
+      "survey": "Health"
+    },
+    {
+      "date": "2023-09-21",
+      "ftag": "F-760",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Actual harm",
+      "text": "Ensure that residents are free from significant medication errors.",
+      "survey": "Health"
+    },
+    {
+      "date": "2023-09-21",
+      "ftag": "F-761",
+      "scope": "Widespread",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure drugs and biologicals used in the facility are labeled in accordance with currently accepted professional principles; and all drugs and biologicals must be stored in locked compartments, separately locked, compartments for controlled drugs.",
+      "survey": "Health"
+    }
+  ],
+  "regency-care-146139": [
+    {
+      "date": "2026-02-17",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Actual harm",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-03-13",
+      "ftag": "F-550",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Actual harm",
+      "text": "Honor the resident's right to a dignified existence, self-determination, communication, and to exercise his or her rights.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-03-13",
+      "ftag": "F-623",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide timely notification to the resident, and if applicable to the resident representative and ombudsman, before transfer or discharge, including appeal rights.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-03-13",
+      "ftag": "F-625",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Notify the resident or the resident\u2019s representative in writing how long the nursing home will hold the resident\u2019s bed in cases of transfer to a hospital or therapeutic leave.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-03-13",
+      "ftag": "F-655",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Create and put into place a plan for meeting the resident's most immediate needs within 48 hours of being admitted",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-03-13",
+      "ftag": "F-657",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Develop the complete care plan within 7 days of the comprehensive assessment; and prepared, reviewed, and revised by a team of health professionals.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-03-13",
+      "ftag": "F-677",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide care and assistance to perform activities of daily living for any resident who is unable.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-03-13",
+      "ftag": "F-684",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide appropriate treatment and care according to orders, resident\u2019s preferences and goals.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-03-13",
+      "ftag": "F-686",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide appropriate pressure ulcer care and prevent new ulcers from developing.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-03-13",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    }
+  ],
+  "springfield-suites-rehab-and-nursing-146160": [
+    {
+      "date": "2025-12-03",
+      "ftag": "F-693",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure that feeding tubes are  not used unless there is a medical reason and the resident agrees; and provide appropriate care for a resident with a feeding tube.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-12-03",
+      "ftag": "F-761",
+      "scope": "Pattern",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure drugs and biologicals used in the facility are labeled in accordance with currently accepted professional principles; and all drugs and biologicals must be stored in locked compartments, separately locked, compartments for controlled drugs.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-12-03",
+      "ftag": "F-880",
+      "scope": "Pattern",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide and implement an infection prevention and control program.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-11-19",
+      "ftag": "F-804",
+      "scope": "Widespread",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure food and drink is palatable, attractive, and at a safe and appetizing temperature.",
+      "survey": "Health"
+    },
+    {
+      "date": "2025-03-25",
+      "ftag": "F-697",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Actual harm",
+      "text": "Provide safe, appropriate pain management for a resident who requires such services.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-12-06",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-11-25",
+      "ftag": "F-550",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Actual harm",
+      "text": "Honor the resident's right to a dignified existence, self-determination, communication, and to exercise his or her rights.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-11-25",
+      "ftag": "F-656",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Develop and implement a complete care plan that meets all the resident's needs, with timetables and actions that can be measured.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-11-25",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    },
+    {
+      "date": "2024-11-25",
+      "ftag": "F-690",
+      "scope": "Pattern",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide appropriate care for residents who are continent or incontinent of bowel/bladder, appropriate catheter care,  and appropriate care  to prevent urinary tract infections.",
+      "survey": "Health"
+    }
+  ]
+};
+window.DEFICIENCIES = window.DEFS[window.FACILITIES[0]?.id] || [];

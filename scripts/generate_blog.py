@@ -1,4 +1,4 @@
-﻿import argparse
+import argparse
 import email.utils
 import html
 import json
@@ -45,7 +45,7 @@ def now_from_env(value: str | None) -> datetime:
 def read_posts() -> list[dict]:
     posts = []
     for path in sorted(POST_DIR.glob("*.json")):
-        post = json.loads(path.read_text(encoding="utf-8"))
+        post = json.loads(path.read_text(encoding="utf-8-sig"))
         post["_path"] = str(path)
         post["_publish_dt"] = parse_dt(post["publish_at"])
         posts.append(post)
@@ -98,8 +98,8 @@ def page_head(post: dict, site_url: str) -> str:
             "description": post["excerpt"],
             "datePublished": post["publish_at"],
             "dateModified": post["publish_at"],
-            "author": {"@type": "Organization", "name": "NH-Data Editorial Team"},
-            "publisher": {"@type": "Organization", "name": "NH-Data", "url": site_url.rstrip("/") + "/"},
+            "author": {"@type": "Organization", "name": "Caregos Editorial Team"},
+            "publisher": {"@type": "Organization", "name": "Caregos", "url": site_url.rstrip("/") + "/"},
             "mainEntityOfPage": canonical,
             "isBasedOn": post["external_source"]["url"],
             "articleSection": category_name,
@@ -128,7 +128,7 @@ def page_head(post: dict, site_url: str) -> str:
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{canonical}">
-<link rel="alternate" type="application/rss+xml" title="NH-Data Blog RSS" href="../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="Caregos Blog RSS" href="../../rss.xml">
 <link rel="stylesheet" href="../../styles/nh-data.css">
 <script type="application/ld+json">{json.dumps(json_ld, ensure_ascii=False)}</script>"""
 
@@ -138,7 +138,7 @@ def nav(active_blog: bool = True) -> str:
     return f"""<header class="topbar"><div class="wrap">
   <a class="brand" href="/">
     <svg class="mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="6" fill="#16323a"/><rect x="6" y="14" width="3.4" height="6" rx="1" fill="#b5623a"/><rect x="11.3" y="9" width="3.4" height="11" rx="1" fill="#e4efef"/><rect x="16.6" y="6" width="3.4" height="14" rx="1" fill="#2c7a7b"/></svg>
-    NH-Data
+    Caregos
   </a>
   <nav class="nav">
     <a href="/listings.html">Find facilities</a>
@@ -231,7 +231,7 @@ def footer() -> str:
     return normalize_html_output("""<footer class="foot"><div class="wrap">
   <div class="between" style="align-items:flex-start; flex-wrap:wrap; gap:32px;">
     <div style="max-width:340px;">
-      <div class="brand" style="color:#fff; margin-bottom:10px;">NH-Data</div>
+      <div class="brand" style="color:#fff; margin-bottom:10px;">Caregos</div>
       <p class="byline">An independent civic-data project. Ratings and enforcement records are published by CMS. Blog articles are editorial guides and do not replace medical, legal, or payment advice.</p>
     </div>
     <div class="row" style="gap:48px; flex-wrap:wrap;">
@@ -244,7 +244,7 @@ def footer() -> str:
     </div>
   </div>
   <hr style="border:0; border-top:1px solid #2c4d56; margin:28px 0 16px;">
-  <p class="byline" style="margin:0;">Maintained by the NH-Data editorial team · <a href="/corrections.html">Report a correction</a></p>
+  <p class="byline" style="margin:0;">Maintained by the Caregos editorial team · <a href="/corrections.html">Report a correction</a></p>
 </div></footer>""")
 
 
@@ -375,12 +375,12 @@ def render_index(posts: list[dict]) -> str:
     item_list = {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "NH-Data Nursing Home Guides",
+        "name": "Caregos Nursing Home Guides",
         "itemListElement": [
             {
                 "@type": "ListItem",
                 "position": index + 1,
-                "url": f"https://yoyangwon.com/blog/{post['slug']}/",
+                "url": f"https://caregos.com/blog/{post['slug']}/",
                 "name": post["title"],
             }
             for index, post in enumerate(posts)
@@ -397,8 +397,8 @@ def render_index(posts: list[dict]) -> str:
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <title>Nursing Home Data Blog · CMS Rating & Staffing Guides</title>
 <meta name="description" content="Nursing home data blog with CMS rating guides, staffing explanations, inspection records, abuse flags, payment topics, and care decision resources.">
-<link rel="canonical" href="https://yoyangwon.com/blog/">
-<link rel="alternate" type="application/rss+xml" title="NH-Data Blog RSS" href="../rss.xml">
+<link rel="canonical" href="https://caregos.com/blog/">
+<link rel="alternate" type="application/rss+xml" title="Caregos Blog RSS" href="../rss.xml">
 <link rel="stylesheet" href="../styles/nh-data.css">
 <script type="application/ld+json">{json.dumps(item_list, ensure_ascii=False)}</script>
 <style>
@@ -440,7 +440,7 @@ def render_index(posts: list[dict]) -> str:
       <span class="cat">Ratings</span>
       <h2><a href="/blog/five-star-rating/">How to read a CMS five-star rating (and what it hides)</a></h2>
       <p>The overall star is an average of three very different things. Understand the domains before you compare.</p>
-      <div class="meta"><span>NH-Data Editorial Team</span><span class="dot"></span><span>8 min read</span></div>
+      <div class="meta"><span>Caregos Editorial Team</span><span class="dot"></span><span>8 min read</span></div>
     </article>
     {all_cards}
   </div>
@@ -469,9 +469,9 @@ def render_rss(posts: list[dict], site_url: str, now: datetime) -> str:
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>NH-Data Blog</title>
+    <title>Caregos Blog</title>
     <link>{site_url.rstrip('/')}/blog/</link>
-    <description>Nursing home CMS rating, staffing, inspection, payment, and enforcement guides from NH-Data.</description>
+    <description>Nursing home CMS rating, staffing, inspection, payment, and enforcement guides from Caregos.</description>
     <language>en-us</language>
     <lastBuildDate>{last}</lastBuildDate>
     <atom:link href="{site_url.rstrip('/')}/rss.xml" rel="self" type="application/rss+xml" />
@@ -482,8 +482,8 @@ def render_rss(posts: list[dict], site_url: str, now: datetime) -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Generate scheduled blog pages for NH-Data.")
-    parser.add_argument("--site-url", default="https://yoyangwon.com/")
+    parser = argparse.ArgumentParser(description="Generate scheduled blog pages for Caregos.")
+    parser.add_argument("--site-url", default="https://caregos.com/")
     parser.add_argument("--now", default=None)
     args = parser.parse_args()
     now = now_from_env(args.now)

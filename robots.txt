@@ -1,9 +1,9 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 
 # Design-system documentation is for implementation review, not search results.
 Disallow: /design-system.html
 
-Sitemap: https://yoyangwon.com/sitemap.xml
-LLM-Policy: https://yoyangwon.com/llms.txt
+Sitemap: https://caregos.com/sitemap.xml
+LLM-Policy: https://caregos.com/llms.txt
 

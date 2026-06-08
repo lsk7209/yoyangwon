@@ -1,4 +1,4 @@
-/* NH-Data shared widget enhancer + sample data.
+/* Caregos shared widget enhancer.
    Hand-written content stays in HTML; this only fills in tedious
    repetitive visuals (rating pips, sparklines, percentile fills). */
 (function () {
@@ -91,3 +91,4 @@
     });
   }
 })();
+

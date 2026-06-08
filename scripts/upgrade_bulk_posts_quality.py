@@ -361,8 +361,8 @@ def body_for(post: dict, index: int) -> str:
         f"<h2>What families often misunderstand about {esc(exp_c)}</h2>",
         f"<p>The common mistake is treating a public data point as a live bedside report. Public records are published on a schedule, and they may describe a past survey date. That does not make them unimportant. It means the reader should check dates, repetition, and whether later records show improvement.</p>",
         f"<p>Another mistake is ignoring resident fit. {esc(main)} may matter differently for short-term rehab, long-term care, dementia support, high fall risk, or a Medicaid-pending admission. The same record can carry different weight depending on the resident's needs.</p>",
-        f"<h2>Use NH-Data to compare {esc(main)} with source context</h2>",
-        f"<p>Start with <a href=\"{esc(primary_link)}\">NH-Data's facility tools</a>, then keep the <a href=\"{esc(secondary_link)}\">methodology and record context</a> open while you compare. This keeps the article connected to data instead of turning it into generic advice.</p>",
+        f"<h2>Use Caregos to compare {esc(main)} with source context</h2>",
+        f"<p>Start with <a href=\"{esc(primary_link)}\">Caregos's facility tools</a>, then keep the <a href=\"{esc(secondary_link)}\">methodology and record context</a> open while you compare. This keeps the article connected to data instead of turning it into generic advice.</p>",
         f"<p>Official source for this article: <a href=\"{esc(source['url'])}\" rel=\"noopener\">{esc(source['label'])}</a>. Source checked for this batch on 2026-06-08.</p>",
         trust_block,
     ]
@@ -432,7 +432,7 @@ def main() -> None:
     paths = sorted(POST_DIR.glob("*.json"))
     posts = []
     for index, path in enumerate(paths):
-        post = json.loads(path.read_text(encoding="utf-8"))
+        post = json.loads(path.read_text(encoding="utf-8-sig"))
         post["title"] = title_for(post, index)
         post["subtitle"] = subtitle_for(post, index)
         post["meta_title"] = post["title"] if len(post["title"]) <= 58 else post["title"][:55].rstrip() + "..."

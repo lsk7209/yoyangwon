@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,8 +9,8 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <title>Compare Nursing Homes Side by Side · CMS Ratings & Staffing</title>
 <meta name="description" content="Compare nursing homes side by side using CMS ratings, staffing hours, deficiencies, fines, abuse flags, and source-dated facility records.">
-<link rel="canonical" href="https://yoyangwon.com/compare.html">
-<link rel="alternate" type="application/rss+xml" title="NH-Data Blog RSS" href="rss.xml">
+<link rel="canonical" href="https://caregos.com/compare.html">
+<link rel="alternate" type="application/rss+xml" title="Caregos Blog RSS" href="rss.xml">
 <link rel="stylesheet" href="styles/nh-data.css">
 <style>
   /* ---- compare-specific ---- */
@@ -72,7 +72,7 @@
 <header class="topbar"><div class="wrap">
   <a class="brand" href="index.html">
     <svg class="mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="6" fill="#16323a"/><rect x="6" y="14" width="3.4" height="6" rx="1" fill="#b5623a"/><rect x="11.3" y="9" width="3.4" height="11" rx="1" fill="#e4efef"/><rect x="16.6" y="6" width="3.4" height="14" rx="1" fill="#2c7a7b"/></svg>
-    NH-Data
+    Caregos
   </a>
   <nav class="nav">
     <a href="listings.html">Find facilities</a>
@@ -91,7 +91,7 @@
     <div class="legend">
       <span><span class="sw" style="background:var(--teal-tint)"></span>Best in this comparison</span>
       <span><span class="sw" style="background:#faf1ec"></span>Weakest in this comparison</span>
-      <span class="source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/><path d="M6 3.2v3M6 8.2h.01"/></svg> Source: <b>CMS Care Compare</b> · as of <b>2026-04</b></span>
+      <span class="source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/><path d="M6 3.2v3M6 8.2h.01"/></svg> Source: <b>CMS Care Compare</b> · processing date <b class="cms-date">2026-05-01</b></span>
     </div>
   </div>
 
@@ -124,8 +124,8 @@
 <footer class="foot"><div class="wrap">
   <div class="between" style="align-items:flex-start; flex-wrap:wrap; gap:32px;">
     <div style="max-width:340px;">
-      <div class="brand" style="color:#fff; margin-bottom:10px;">NH-Data</div>
-      <p class="byline">An independent civic-data project. Facility ratings and enforcement records are published by the Centers for Medicare &amp; Medicaid Services (CMS). Figures shown here are illustrative sample data.</p>
+      <div class="brand" style="color:#fff; margin-bottom:10px;">Caregos</div>
+      <p class="byline">An independent civic-data project. Facility ratings and enforcement records are published by the Centers for Medicare &amp; Medicaid Services (CMS). Caregos organizes public CMS records with source dates and correction paths.</p>
     </div>
     <div class="row" style="gap:48px; flex-wrap:wrap;">
       <div class="stack" style="gap:8px;"><div class="foothead">Data</div>
@@ -136,7 +136,7 @@
     </div>
   </div>
   <hr style="border:0; border-top:1px solid #2c4d56; margin:28px 0 16px;">
-  <p class="byline" style="margin:0;">Maintained by the NH-Data editorial team · Last data refresh: 2026-04 · <a href="corrections.html">Report a correction</a></p>
+  <p class="byline" style="margin:0;">Maintained by the Caregos editorial team · CMS processing date: 2026-05-01 · <a href="corrections.html">Report a correction</a></p>
 </div></footer>
 
 <script src="styles/data.js"></script>
@@ -145,7 +145,10 @@
 (function(){
   const esc = window.NH.escapeHtml;
   const byId = id => FACILITIES.find(f => f.id === id);
-  let selected = ['riverside','maplewood','prairievista'];
+  const defaultIds = FACILITIES.slice().sort((a,b)=> b.overall - a.overall || a.distance - b.distance).slice(0,3).map(f=>f.id);
+  let selected = defaultIds.slice();
+  const sourceDate = DATA_SOURCE?.processingDates?.[0] || 'source date unavailable';
+  document.querySelectorAll('.cms-date').forEach(el => { el.textContent = sourceDate; });
   // 1) compare tray from listings takes priority
   let tray = [];
   try { tray = JSON.parse(localStorage.getItem('nh_compare')||'[]').filter(id=>byId(id)); } catch(e){}
@@ -153,9 +156,9 @@
   if(tray.length >= 2){
     selected = tray.slice(0,3);
   } else if(seedId && byId(seedId)){
-    selected = [seedId, ...['riverside','maplewood','prairievista','cedarridge'].filter(x=>x!==seedId)].slice(0,3);
+    selected = [seedId, ...defaultIds.filter(x=>x!==seedId)].slice(0,3);
   } else if(tray.length === 1){
-    selected = [tray[0], ...['riverside','maplewood','prairievista'].filter(x=>x!==tray[0])].slice(0,3);
+    selected = [tray[0], ...defaultIds.filter(x=>x!==tray[0])].slice(0,3);
   }
 
   // metric rows: dir = +1 higher better, -1 lower better, 0 no winner
@@ -312,6 +315,7 @@
 </script>
 </body>
 </html>
+
 
 
 

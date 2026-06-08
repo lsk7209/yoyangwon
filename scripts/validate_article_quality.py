@@ -35,7 +35,7 @@ def color_count(body: str) -> int:
 
 
 def main() -> None:
-    posts = [json.loads(path.read_text(encoding="utf-8")) for path in sorted(POST_DIR.glob("*.json"))]
+    posts = [json.loads(path.read_text(encoding="utf-8-sig")) for path in sorted(POST_DIR.glob("*.json"))]
     errors = []
     if len(posts) != 100:
         errors.append(f"expected 100 posts, found {len(posts)}")

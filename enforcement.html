@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,8 +9,8 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <title>Nursing Home Enforcement Records · CMS Citations & Fines</title>
 <meta name="description" content="Nursing home enforcement records with CMS inspection findings, severity labels, fines, abuse flags, and Special Focus Facility status.">
-<link rel="canonical" href="https://yoyangwon.com/enforcement.html">
-<link rel="alternate" type="application/rss+xml" title="NH-Data Blog RSS" href="rss.xml">
+<link rel="canonical" href="https://caregos.com/enforcement.html">
+<link rel="alternate" type="application/rss+xml" title="Caregos Blog RSS" href="rss.xml">
 <link rel="stylesheet" href="styles/nh-data.css">
 <style>
   .enf-head { padding: 36px 0 22px; }
@@ -47,7 +47,7 @@
 <header class="topbar"><div class="wrap">
   <a class="brand" href="index.html">
     <svg class="mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="6" fill="#16323a"/><rect x="6" y="14" width="3.4" height="6" rx="1" fill="#b5623a"/><rect x="11.3" y="9" width="3.4" height="11" rx="1" fill="#e4efef"/><rect x="16.6" y="6" width="3.4" height="14" rx="1" fill="#2c7a7b"/></svg>
-    NH-Data
+    Caregos
   </a>
   <nav class="nav">
     <a href="listings.html">Find facilities</a>
@@ -70,10 +70,10 @@
   </div>
 
   <div class="statstrip">
-    <div class="stat"><div class="n">41</div><div class="l">Certified facilities in county</div><div class="src">CMS · 2026-04</div></div>
-    <div class="stat"><div class="n">163</div><div class="l">Deficiencies, last 12 months</div><div class="src">CMS · 2026-04</div></div>
-    <div class="stat"><div class="n">7</div><div class="l">Actual-harm or worse findings</div><div class="src">CMS · 2026-04</div></div>
-    <div class="stat"><div class="n">$148K</div><div class="l">Federal fines, trailing 3 yrs</div><div class="src">CMS · 2026-04</div></div>
+    <div class="stat"><div class="n" id="statFacilities">0</div><div class="l">Certified facilities in county</div><div class="src">CMS · <span class="cms-date">2026-05-01</span></div></div>
+    <div class="stat"><div class="n" id="statDeficiencies">0</div><div class="l">Recent deficiencies shown</div><div class="src">CMS · <span class="cms-date">2026-05-01</span></div></div>
+    <div class="stat"><div class="n" id="statSevere">0</div><div class="l">Actual-harm or worse findings</div><div class="src">CMS · <span class="cms-date">2026-05-01</span></div></div>
+    <div class="stat"><div class="n" id="statFines">$0</div><div class="l">Federal fines in provider file</div><div class="src">CMS · <span class="cms-date">2026-05-01</span></div></div>
   </div>
 
   <div class="enf-layout">
@@ -81,10 +81,10 @@
       <div class="facet">
         <h2 style="font-size:1rem;">Severity</h2>
         <div class="chips" data-group="sev" data-single style="flex-direction:column;align-items:stretch;">
-          <button class="chip on" data-v="" style="justify-content:space-between;">All findings <span class="caption">163</span></button>
-          <button class="chip" data-v="high" style="justify-content:space-between;"><span><span class="dot" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--sev-high);margin-right:6px;vertical-align:0;"></span>Immediate jeopardy</span> <span class="caption">3</span></button>
-          <button class="chip" data-v="mid" style="justify-content:space-between;"><span><span class="dot" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--sev-mid);margin-right:6px;"></span>Actual harm</span> <span class="caption">4</span></button>
-          <button class="chip" data-v="low" style="justify-content:space-between;"><span><span class="dot" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--sev-low);margin-right:6px;"></span>Potential for harm</span> <span class="caption">98</span></button>
+          <button class="chip on" data-v="" style="justify-content:space-between;">All findings <span class="caption" data-count="all">0</span></button>
+          <button class="chip" data-v="high" style="justify-content:space-between;"><span><span class="dot" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--sev-high);margin-right:6px;vertical-align:0;"></span>Actual harm or worse</span> <span class="caption" data-count="high">0</span></button>
+          <button class="chip" data-v="mid" style="justify-content:space-between;"><span><span class="dot" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--sev-mid);margin-right:6px;"></span>Potential for harm</span> <span class="caption" data-count="mid">0</span></button>
+          <button class="chip" data-v="low" style="justify-content:space-between;"><span><span class="dot" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--sev-low);margin-right:6px;"></span>Lower severity</span> <span class="caption" data-count="low">0</span></button>
         </div>
       </div>
       <div class="facet">
@@ -101,7 +101,7 @@
         <h2 style="font-size:1rem;">Survey type</h2>
         <div class="chips" data-group="survey" data-single>
           <button class="chip on" data-v="">All</button>
-          <button class="chip" data-v="Health inspection">Health inspection</button>
+          <button class="chip" data-v="Health">Health inspection</button>
           <button class="chip" data-v="Complaint investigation">Complaint</button>
         </div>
       </div>
@@ -111,7 +111,7 @@
     <div>
       <div class="between" style="margin-bottom:16px;">
         <p class="caption" style="margin:0;" id="enfcount">Showing <b>5 facilities</b> · 6 findings, sorted by severity</p>
-        <span class="source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/><path d="M6 3.2v3M6 8.2h.01"/></svg> Source: <b>CMS</b> · as of <b>2026-04</b></span>
+        <span class="source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/><path d="M6 3.2v3M6 8.2h.01"/></svg> Source: <b>CMS Health Deficiencies dataset</b> · processing date <b class="cms-date">2026-05-01</b></span>
       </div>
       <div id="feed"></div>
 
@@ -122,8 +122,8 @@
 <footer class="foot"><div class="wrap">
   <div class="between" style="align-items:flex-start; flex-wrap:wrap; gap:32px;">
     <div style="max-width:340px;">
-      <div class="brand" style="color:#fff; margin-bottom:10px;">NH-Data</div>
-      <p class="byline">An independent civic-data project. Enforcement records are published by CMS. Figures shown here are illustrative sample data. We do not characterize facilities beyond the official record.</p>
+      <div class="brand" style="color:#fff; margin-bottom:10px;">Caregos</div>
+      <p class="byline">An independent civic-data project. Enforcement records are published by CMS. Caregos organizes public CMS records with source dates and correction paths. We do not characterize facilities beyond the official record.</p>
     </div>
     <div class="row" style="gap:48px; flex-wrap:wrap;">
       <div class="stack" style="gap:8px;"><div class="foothead">Data</div>
@@ -134,7 +134,7 @@
     </div>
   </div>
   <hr style="border:0; border-top:1px solid #2c4d56; margin:28px 0 16px;">
-  <p class="byline" style="margin:0;">Maintained by the NH-Data editorial team · Last data refresh: 2026-04 · <a href="corrections.html">Report a correction</a></p>
+  <p class="byline" style="margin:0;">Maintained by the Caregos editorial team · CMS processing date: 2026-05-01 · <a href="corrections.html">Report a correction</a></p>
 </div></footer>
 
 <script src="styles/data.js"></script>
@@ -144,25 +144,40 @@
   const esc = window.NH.escapeHtml;
   const sevCls = { info:'sev-info', low:'sev-low', mid:'sev-mid', high:'sev-high' };
   const sevRank = { high:3, mid:2, low:1, info:0 };
-  // build a county feed: each facility's most severe recent finding
-  const RECORDS = [
-    { fid:'oakhaven', date:'2026-02-18', ftag:'F-600', harm:'Immediate jeopardy', sev:'high', cat:'abuse', scope:'Isolated', survey:'Complaint investigation', fine:42000,
-      text:'Failed to protect residents from abuse; allegation substantiated. Immediate jeopardy abated after a facility plan of correction was accepted.' },
-    { fid:'maplewood', date:'2024-12-09', ftag:'F-600', harm:'Immediate jeopardy', sev:'high', cat:'abuse', scope:'Isolated', survey:'Complaint investigation', fine:18900,
-      text:'Failed to protect a resident from abuse; allegation substantiated following investigation.' },
-    { fid:'maplewood', date:'2025-11-14', ftag:'F-689', harm:'Actual harm', sev:'mid', cat:'quality', scope:'Pattern', survey:'Health inspection', fine:2500,
-      text:'Failed to ensure residents free from accident hazards; one resident sustained a fall-related fracture.' },
-    { fid:'oakhaven', date:'2025-09-30', ftag:'F-690', harm:'Actual harm', sev:'mid', cat:'quality', scope:'Pattern', survey:'Health inspection', fine:11200,
-      text:'Bowel/bladder incontinence care not provided consistent with assessed needs for several residents.' },
-    { fid:'lincolnpark', date:'2025-08-12', ftag:'F-880', harm:'Potential for harm', sev:'low', cat:'infection', scope:'Widespread', survey:'Health inspection', fine:0,
-      text:'Infection prevention and control program not fully implemented per facility policy.' },
-    { fid:'cedarridge', date:'2025-07-05', ftag:'F-812', harm:'Potential for harm', sev:'low', cat:'environment', scope:'Pattern', survey:'Health inspection', fine:0,
-      text:'Food procurement and sanitary storage deficiencies identified in the main kitchen.' }
-  ];
   const byId = id => FACILITIES.find(f=>f.id===id);
+  const sourceDate = DATA_SOURCE?.processingDates?.[0] || 'source date unavailable';
+  document.querySelectorAll('.cms-date').forEach(el => { el.textContent = sourceDate; });
+  const categoryFor = text => {
+    const value = String(text || '').toLowerCase();
+    if(value.includes('abuse') || value.includes('neglect')) return 'abuse';
+    if(value.includes('infection') || value.includes('control')) return 'infection';
+    if(value.includes('food') || value.includes('kitchen') || value.includes('sanit') || value.includes('hazard')) return 'environment';
+    return 'quality';
+  };
+  const RECORDS = FACILITIES.flatMap(f => (DEFS[f.id] || []).map(d => ({
+    fid: f.id,
+    date: d.date || '',
+    ftag: d.ftag || 'F-000',
+    harm: d.harm || 'Finding',
+    sev: d.sev || 'info',
+    cat: categoryFor(d.text),
+    scope: d.scope || 'Unspecified',
+    survey: d.survey || 'Health inspection',
+    fine: 0,
+    text: d.text || 'CMS deficiency record'
+  }))).sort((a,b)=> (b.date || '').localeCompare(a.date || ''));
   const feed = document.getElementById('feed');
   const countEl = document.getElementById('enfcount');
   const state = { sev:'', cat:'', survey:'' };
+  const fineTotal = FACILITIES.reduce((sum,f)=>sum + (Number(f.fines) || 0), 0);
+  document.getElementById('statFacilities').textContent = FACILITIES.length;
+  document.getElementById('statDeficiencies').textContent = RECORDS.length;
+  document.getElementById('statSevere').textContent = RECORDS.filter(r=>r.sev === 'high').length;
+  document.getElementById('statFines').textContent = '$' + fineTotal.toLocaleString();
+  ['all','high','mid','low'].forEach(key => {
+    const el = document.querySelector(`[data-count="${key}"]`);
+    if(el) el.textContent = key === 'all' ? RECORDS.length : RECORDS.filter(r=>r.sev === key).length;
+  });
 
   function recordHTML(r){
     const dt = new Date(r.date+'T00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
@@ -237,6 +252,7 @@
 </script>
 </body>
 </html>
+
 
 
 

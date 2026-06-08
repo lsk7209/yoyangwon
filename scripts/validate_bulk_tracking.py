@@ -82,7 +82,7 @@ def validate(rows: list[dict[str, str]], threshold: float, publish_ready: bool) 
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Validate NH-Data bulk blog tracking CSV.")
+    parser = argparse.ArgumentParser(description="Validate Caregos bulk blog tracking CSV.")
     parser.add_argument("path", type=Path)
     parser.add_argument("--threshold", type=float, default=90.0)
     parser.add_argument("--publish-ready", action="store_true")

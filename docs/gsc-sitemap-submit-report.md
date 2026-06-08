@@ -15,17 +15,17 @@ Evidence:
 
 ## Target Checked
 
-- `https://yoyangwon.com/`
-- `https://www.yoyangwon.com/`
-- `sc-domain:yoyangwon.com`
+- `https://caregos.com/`
+- `https://www.caregos.com/`
+- `sc-domain:caregos.com`
 
 ## Live Sitemap Check
 
-`https://yoyangwon.com/sitemap.xml` returns HTTP 200 and XML, but the live sitemap currently contains only:
+`https://caregos.com/sitemap.xml` returns HTTP 200 and XML, but the live sitemap currently contains only:
 
-- `https://yoyangwon.com/lander`
+- `https://caregos.com/lander`
 
-The local implementation sitemap contains 11 URLs for the static NH-Data site, but this local sitemap is not yet live at the production domain.
+The local implementation sitemap contains 11 URLs for the static Caregos site, but this local sitemap is not yet live at the production domain.
 
 ## GSC API Result
 
@@ -35,9 +35,9 @@ Search Console API can add the properties, but all three are currently:
 
 Sitemap submission returns 403:
 
-- insufficient permission for `https://yoyangwon.com/`
-- insufficient permission for `https://www.yoyangwon.com/`
-- insufficient permission for `sc-domain:yoyangwon.com`
+- insufficient permission for `https://caregos.com/`
+- insufficient permission for `https://www.caregos.com/`
+- insufficient permission for `sc-domain:caregos.com`
 
 ## Site Verification API Result
 
@@ -51,7 +51,7 @@ Added:
 - `robots.txt` with sitemap reference
 - `scripts/generate_sitemap.py`
 - `scripts/gsc_submit_sitemap.py`
-- Absolute production canonicals using `https://yoyangwon.com/`
+- Absolute production canonicals using `https://caregos.com/`
 - `design-system.html` and `/plan/` excluded from search results; `/plan/` is also excluded from generated sitemap.
 - Public pages include absolute canonicals, RSS alternates, one H1 per page, ordered heading levels, and required image alt text.
 - `rss.xml`, `ads.txt`, and `llms.txt` are present in the site root.
@@ -59,8 +59,8 @@ Added:
 Command to run after live deployment and GSC verification:
 
 ```powershell
-python scripts\generate_sitemap.py --site-url https://yoyangwon.com/
-python scripts\gsc_submit_sitemap.py --site-url https://yoyangwon.com/ --sitemap sitemap.xml
+python scripts\generate_sitemap.py --site-url https://caregos.com/
+python scripts\gsc_submit_sitemap.py --site-url https://caregos.com/ --sitemap sitemap.xml
 ```
 
 ## Blocker

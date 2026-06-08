@@ -2,7 +2,7 @@
 
 > 상태: 기획 합의 완료 → Claude Code 실행 대기
 > 작성 기준일: 2026-06-07
-> 코드명: **NH-Data** (영문 브랜드/도메인 미확정 — §10 참조)
+> 코드명: **Caregos** (영문 브랜드/도메인 미확정 — §10 참조)
 > 데이터: CMS Provider Data Catalog (Public Domain, 미국 정부 저작물)
 
 ---

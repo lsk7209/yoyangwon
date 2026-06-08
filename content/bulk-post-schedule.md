@@ -1,4 +1,4 @@
-# NH-Data 100-Post Schedule
+# Caregos 100-Post Schedule
 
 Generated directly by Codex in this workspace. No external API or external LLM generated the article prose.
 

@@ -57,7 +57,7 @@ def build_xml(site_url: str) -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Generate sitemap.xml for NH-Data.")
+    parser = argparse.ArgumentParser(description="Generate sitemap.xml for Caregos.")
     parser.add_argument("--site-url", required=True, help="Production site URL, e.g. https://example.com/")
     parser.add_argument("--out", default=str(ROOT / "sitemap.xml"))
     args = parser.parse_args()
