@@ -18,11 +18,18 @@ TOKEN_FILE = r"D:\env\gsc_token.json"
 SCOPES = ["https://www.googleapis.com/auth/webmasters"]
 
 
+def load_json_source(env_name: str, fallback_path: str) -> tuple[dict, bool]:
+    value = os.environ.get(env_name)
+    if value:
+        return json.loads(value), False
+    with open(fallback_path, encoding="utf-8") as f:
+        return json.load(f), True
+
+
 def get_credentials() -> Credentials:
-    with open(TOKEN_FILE, encoding="utf-8") as f:
-        token_data = json.load(f)
-    with open(CLIENT_SECRETS, encoding="utf-8") as f:
-        client = json.load(f)["installed"]
+    token_data, can_persist_token = load_json_source("GSC_TOKEN_JSON", TOKEN_FILE)
+    client_data, _ = load_json_source("ADSENSE_OAUTH_CLIENT_JSON", CLIENT_SECRETS)
+    client = client_data.get("installed") or client_data.get("web")
     token_data.setdefault("client_id", client["client_id"])
     token_data.setdefault("client_secret", client["client_secret"])
     token_data.setdefault("token_uri", "https://oauth2.googleapis.com/token")
@@ -46,8 +53,9 @@ def get_credentials() -> Credentials:
         creds.refresh(Request())
         merged = json.loads(creds.to_json())
         merged["access_token"] = merged.get("token", "")
-        with open(TOKEN_FILE, "w", encoding="utf-8") as f:
-            json.dump(merged, f, indent=2)
+        if can_persist_token:
+            with open(TOKEN_FILE, "w", encoding="utf-8") as f:
+                json.dump(merged, f, indent=2)
     return creds
 
 
