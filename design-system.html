@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="google-adsense-account" content="ca-pub-3050601904412736">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Civic Clarity — Design System · NH-Data</title>
+<meta name="description" content="NH-Data Civic Clarity design system reference for nursing home data pages, cards, tables, typography, and responsive components.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://yoyangwon.com/design-system.html">
+<link rel="alternate" type="application/rss+xml" title="NH-Data Blog RSS" href="rss.xml">
+<link rel="stylesheet" href="styles/nh-data.css">
+<link rel="alternate" type="application/rss+xml" title="NH-Data Blog RSS" href="rss.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Lora:wght@400;500;600&display=swap">
+<style>
+  .ds-hero { padding: 48px 0 8px; }
+  .ds-section { padding: 36px 0; border-top: 1px solid var(--line); }
+  .ds-section > h2 { font-size: 1.5rem; margin-bottom: 4px; }
+  .ds-section > .blurb { color: var(--text-2); margin-bottom: 22px; max-width: 64ch; }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap: 12px; }
+  .sw { border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; }
+  .sw .chip { height: 64px; }
+  .sw .meta { padding: 8px 10px; font-size: .76rem; }
+  .sw .meta .n { font-weight: 700; color: var(--ink); }
+  .sw .meta .h { color: var(--text-3); font-variant-numeric: tabular-nums; }
+  .scale-row { display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .scale-row .tag { font-size: .76rem; color: var(--text-3); }
+  .comp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap: 16px; }
+  .comp { padding: 20px; }
+  .comp h4 { margin-bottom: 14px; }
+  .comp .demo { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+  .pages { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 14px; }
+  .pagecard { padding: 18px 20px; text-decoration: none; display: grid; gap: 4px; transition: border-color .15s; }
+  .pagecard:hover { border-color: var(--ink-soft); }
+  .pagecard .n { font-family: var(--serif); font-weight: 600; font-size: 1.1rem; color: var(--ink); }
+  .pagecard .d { font-size: .82rem; color: var(--text-2); }
+  .pagecard .pr { font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--clay-dark); }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="index.html">
+    <svg class="mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="6" fill="#16323a"/><rect x="6" y="14" width="3.4" height="6" rx="1" fill="#b5623a"/><rect x="11.3" y="9" width="3.4" height="11" rx="1" fill="#e4efef"/><rect x="16.6" y="6" width="3.4" height="14" rx="1" fill="#2c7a7b"/></svg>
+    NH-Data
+  </a>
+  <nav class="nav">
+    <a href="listings.html">Find facilities</a>
+    <a href="compare.html">Compare</a>
+    <a href="enforcement.html">Enforcement</a>
+    <a href="/blog/">Guides</a>
+    <a href="methodology.html">Methodology</a>
+  </nav>
+</div></header>
+
+<main id="main" class="wrap">
+  <div class="ds-hero">
+    <div class="eyebrow">Design system</div>
+    <h1 class="display" style="font-size:clamp(2.2rem,4vw,3rem);margin:10px 0 12px;">Civic Clarity</h1>
+    <p class="lede" style="max-width:62ch;">A restrained, editorial system for a public-data utility. Calm authority over flash; data as a first-class citizen; trust signals built into every component. Light theme, WCAG-AA targets, tabular figures throughout.</p>
+    <p class="caption" style="margin-top:4px;">Static implementation reference for the Civic Clarity visual system.</p>
+  </div>
+
+  <!-- PAGES / HUB -->
+  <section class="ds-section">
+    <h2>Screens</h2>
+    <p class="blurb">All prototype pages, in priority order. Each is responsive (desktop + mobile) and shares this system.</p>
+    <div class="pages">
+      <a class="card pagecard" href="compare.html"><span class="pr">Priority 1 · interactive</span><span class="n">Comparison tool</span><span class="d">Side-by-side facilities, direction-aware better/worse.</span></a>
+      <a class="card pagecard" href="facility.html"><span class="pr">Priority 2</span><span class="n">Facility detail</span><span class="d">Signals, 5-star breakdown, enforcement timeline.</span></a>
+      <a class="card pagecard" href="enforcement.html"><span class="pr">Priority 3 · sensitive</span><span class="n">Enforcement records</span><span class="d">Neutral, sourced register of citations &amp; fines.</span></a>
+      <a class="card pagecard" href="listings.html"><span class="pr">Priority 4</span><span class="n">Location listing</span><span class="d">Facets, sort, regional distribution.</span></a>
+      <a class="card pagecard" href="index.html"><span class="pr">Priority 5</span><span class="n">Home / search</span><span class="d">Search-first entry with trust signals.</span></a>
+      <a class="card pagecard" href="methodology.html"><span class="pr">Priority 6</span><span class="n">Methodology</span><span class="d">Sources, formulas, team, corrections.</span></a>
+      <a class="card pagecard" href="/blog/"><span class="pr">Editorial</span><span class="n">Guides + article</span><span class="d">Sourced explainers (GEO &amp; ad value).</span></a>
+      <a class="card pagecard" href="corrections.html"><span class="pr">Trust</span><span class="n">Corrections</span><span class="d">Report form + public change log.</span></a>
+    </div>
+  </section>
+
+  <!-- COLOR -->
+  <section class="ds-section">
+    <h2>Color</h2>
+    <p class="blurb">A dominant deep-teal “ink” for trust, warm neutrals to carry data density, and a single warm-clay accent reserved for CTAs and emphasis. True red is held back for SFF and abuse flags only.</p>
+    <h4 style="margin:8px 0 10px;">Brand &amp; neutral</h4>
+    <div class="swatches" style="margin-bottom:22px;">
+      <div class="sw"><div class="chip" style="background:#16323a"></div><div class="meta"><div class="n">Ink (primary)</div><div class="h">#16323a</div></div></div>
+      <div class="sw"><div class="chip" style="background:#3d6671"></div><div class="meta"><div class="n">Ink soft</div><div class="h">#3d6671</div></div></div>
+      <div class="sw"><div class="chip" style="background:#2c7a7b"></div><div class="meta"><div class="n">Teal (data)</div><div class="h">#2c7a7b</div></div></div>
+      <div class="sw"><div class="chip" style="background:#b5623a"></div><div class="meta"><div class="n">Clay (accent)</div><div class="h">#b5623a</div></div></div>
+      <div class="sw"><div class="chip" style="background:#faf7f2"></div><div class="meta"><div class="n">Paper</div><div class="h">#faf7f2</div></div></div>
+      <div class="sw"><div class="chip" style="background:#f4efe7"></div><div class="meta"><div class="n">Surface 2</div><div class="h">#f4efe7</div></div></div>
+      <div class="sw"><div class="chip" style="background:#221f1a"></div><div class="meta"><div class="n">Text</div><div class="h">#221f1a</div></div></div>
+      <div class="sw"><div class="chip" style="background:#5c554b"></div><div class="meta"><div class="n">Text 2</div><div class="h">#5c554b</div></div></div>
+    </div>
+    <h4 style="margin:8px 0 10px;">Rating scale — clay → teal-green (never color alone)</h4>
+    <div class="swatches" style="margin-bottom:22px;">
+      <div class="sw"><div class="chip" style="background:var(--rate-1)"></div><div class="meta"><div class="n">1 ★</div></div></div>
+      <div class="sw"><div class="chip" style="background:var(--rate-2)"></div><div class="meta"><div class="n">2 ★</div></div></div>
+      <div class="sw"><div class="chip" style="background:var(--rate-3)"></div><div class="meta"><div class="n">3 ★</div></div></div>
+      <div class="sw"><div class="chip" style="background:var(--rate-4)"></div><div class="meta"><div class="n">4 ★</div></div></div>
+      <div class="sw"><div class="chip" style="background:var(--rate-5)"></div><div class="meta"><div class="n">5 ★</div></div></div>
+    </div>
+    <h4 style="margin:8px 0 10px;">Severity — restrained; red reserved for jeopardy</h4>
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:var(--sev-info)"></div><div class="meta"><div class="n">Minimal</div></div></div>
+      <div class="sw"><div class="chip" style="background:var(--sev-low)"></div><div class="meta"><div class="n">Potential</div></div></div>
+      <div class="sw"><div class="chip" style="background:var(--sev-mid)"></div><div class="meta"><div class="n">Actual harm</div></div></div>
+      <div class="sw"><div class="chip" style="background:var(--sev-high)"></div><div class="meta"><div class="n">Jeopardy / abuse</div></div></div>
+    </div>
+  </section>
+
+  <!-- TYPE -->
+  <section class="ds-section">
+    <h2>Typography</h2>
+    <p class="blurb">Editorial serif (<b>Newsreader</b>) for headlines and authority; humanist sans (<b>Public Sans</b>, the US government type) for UI and body; tabular figures on all data.</p>
+    <div class="scale-row"><span class="tag">Display</span><span class="display">Civic clarity</span></div>
+    <div class="scale-row"><span class="tag">H1 serif</span><div class="display" style="font-size:2.2rem;">Compare with clear eyes</div></div>
+    <div class="scale-row"><span class="tag">H2 serif</span><h2>Inspection &amp; enforcement record</h2></div>
+    <div class="scale-row"><span class="tag">Lede</span><span class="lede">Federal data, made readable when the decision matters.</span></div>
+    <div class="scale-row"><span class="tag">Body sans</span><span>Public Sans body copy keeps dense data scannable and calm. The quick brown fox jumps over the lazy dog.</span></div>
+    <div class="scale-row"><span class="tag">Tabular</span><span class="tnum" style="font-size:1.1rem;font-weight:600;">0.52 · 3.41 · $21,400 · Top 8%</span></div>
+    <div class="scale-row"><span class="tag">Eyebrow</span><span class="eyebrow">Enforcement records</span></div>
+  </section>
+
+  <!-- COMPONENTS -->
+  <section class="ds-section">
+    <h2>Components</h2>
+    <p class="blurb">The reusable pieces that make data trustworthy and scannable.</p>
+    <div class="comp-grid">
+      <div class="card comp"><h4>Rating badges</h4><div class="demo">
+        <span class="rating" data-r="5" data-label="Overall"></span>
+        <span class="rating" data-r="3" data-label="Health"></span>
+        <span class="rating" data-r="2" data-label="Staffing"></span>
+      </div></div>
+      <div class="card comp"><h4>Overall badge</h4><div class="demo">
+        <span class="overall" style="--r:var(--rate-4)"><span class="big">4</span><span class="of">/ 5<br>overall</span></span>
+      </div></div>
+      <div class="card comp"><h4>Severity / risk</h4><div class="demo">
+        <span class="sev sev-info"><span class="dot"></span>Minimal harm</span>
+        <span class="sev sev-low"><span class="dot"></span>Potential for harm</span>
+        <span class="sev sev-mid"><span class="dot"></span>Actual harm</span>
+        <span class="sev sev-high"><span class="dot"></span>Immediate jeopardy</span>
+        <span class="flag">⚠ Special Focus Facility</span>
+      </div></div>
+      <div class="card comp"><h4>Percentile bar</h4><div class="demo" style="width:100%">
+        <div class="pctile" data-p="92" style="width:100%"><div class="track"><div class="fill"></div></div><div class="label"><span>Sangamon County</span><b>Top 8%</b></div></div>
+      </div></div>
+      <div class="card comp"><h4>Trend + sparkline</h4><div class="demo">
+        <span class="trend down" data-dir="down"><span class="arr"></span>Declining</span>
+        <span class="spark" data-points="4,4,3,3,2,2" data-w="120" data-h="34"></span>
+        <span class="caption">4★ → 2★ over 18 months</span>
+      </div></div>
+      <div class="card comp"><h4>Source stamp</h4><div class="demo">
+        <span class="source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/><path d="M6 3.2v3M6 8.2h.01"/></svg> Source: <b>CMS</b> · as of <b>2026-04</b></span>
+      </div></div>
+      <div class="card comp"><h4>Methodology disclosure</h4><div class="demo" style="width:100%">
+        <details class="method" style="width:100%"><summary>How is this calculated?</summary><p>Overall rating ranked against all county facilities. “Top 8%” means 92% score lower.</p></details>
+      </div></div>
+      <div class="card comp"><h4>Filter chips</h4><div class="demo"><div class="chips">
+        <button class="chip on">4★+</button><button class="chip">Non-profit</button><button class="chip">Medicaid</button><button class="chip">Hide SFF</button>
+      </div></div></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <div class="between" style="align-items:flex-start; flex-wrap:wrap; gap:32px;">
+    <div style="max-width:340px;">
+      <div class="brand" style="color:#fff; margin-bottom:10px;">NH-Data</div>
+      <p class="byline">An independent civic-data project. Ratings and enforcement records are published by CMS. Figures shown here are illustrative sample data.</p>
+    </div>
+    <div class="row" style="gap:48px; flex-wrap:wrap;">
+      <div class="stack" style="gap:8px;"><div class="foothead">Data</div>
+        <a href="methodology.html">Methodology</a><a href="corrections.html">Corrections</a></div>
+      <div class="stack" style="gap:8px;"><div class="foothead">About</div>
+        <a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="methodology.html#team">Editorial team</a></div>
+    </div>
+  </div>
+</div></footer>
+
+<script src="styles/nh.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

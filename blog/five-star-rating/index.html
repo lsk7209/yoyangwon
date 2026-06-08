@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="google-adsense-account" content="ca-pub-3050601904412736">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<title>CMS Nursing Home Five-Star Rating Guide &middot; NH-Data</title>
+<meta name="description" content="CMS nursing home five-star rating guide explaining health inspections, staffing, quality measures, self-reported data, and facility comparison.">
+<link rel="canonical" href="https://yoyangwon.com/blog/five-star-rating/">
+<link rel="alternate" type="application/rss+xml" title="NH-Data Blog RSS" href="../../rss.xml">
+<link rel="stylesheet" href="../../styles/nh-data.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How to read a CMS five-star rating (and what it hides)",
+      "author": { "@type": "Person", "name": "Dana Koenig" },
+            "publisher": { "@type": "Organization", "name": "NH-Data" },
+      "dateModified": "2026-04-01",
+      "about": "CMS Nursing Home Five-Star Quality Rating System",
+      "isBasedOn": "https://www.cms.gov/Medicare/Provider-Enrollment-and-Certification/CertificationandComplianc/FSQRS.html"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does a CMS five-star nursing home rating measure?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The overall star is a roll-up of three domains: health inspections (weighted most heavily, from on-site state surveys), staffing (payroll-verified nurse hours per resident per day), and quality measures (15 clinical outcomes, much of it facility-reported)." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which part of the rating is most trustworthy?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The health-inspection domain is the hardest to game and the most heavily weighted. When the overall star and the health-inspection star disagree, weight the inspection star more." }
+        },
+        {
+          "@type": "Question",
+          "name": "How many staffing hours are enough?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Registered-nurse hours per resident per day is the single figure most consistently linked to better outcomes. Below roughly 0.5 RN hours per resident per day warrants a direct question during a tour, regardless of the overall star." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+  .art-head { max-width: 760px; margin: 0 auto; padding: 40px 0 8px; }
+  .crumbs { font-size: .82rem; color: var(--text-3); margin-bottom: 14px; }
+  .crumbs a { color: var(--text-2); text-decoration: none; }
+  .art-head h1 { font-size: clamp(2rem, 4vw, 2.9rem); line-height: 1.06; margin: 6px 0 14px; }
+  .byline { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; font-size: .88rem; color: var(--text-2); margin-top: 16px; }
+  .byline .av { width: 40px; height: 40px; border-radius: 50%; background: var(--surface-2); border: 1px solid var(--line); display: grid; place-items: center; font-family: var(--serif); color: var(--ink-soft); }
+  .byline b { color: var(--ink); }
+  .byline .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--text-3); }
+
+  .art-layout { display: grid; grid-template-columns: 1fr minmax(0,720px) 1fr; gap: 32px; align-items: start; padding: 28px 0 48px; }
+  .art-body { grid-column: 2; max-width: 720px; }
+  .art-aside { position: sticky; top: 84px; }
+  .toc { padding: 18px; display: grid; gap: 10px; }
+  .toc h4 { margin-bottom: 2px; }
+  .toc a { display: block; color: var(--text-2); text-decoration: none; font-size: .88rem; padding: 4px 0; border-bottom: 1px solid var(--line); }
+  .toc a:hover { color: var(--ink); border-color: var(--clay); }
+  @media (max-width: 1040px){ .art-layout { grid-template-columns: 1fr; } .art-aside { display:none; } .art-body { grid-column: 1; max-width: 760px; margin: 0 auto; } }
+
+  .art-body p { font-size: 1.08rem; line-height: 1.7; color: var(--text); margin: 0 0 1.1em; max-width: none; }
+  .art-body h2 { font-size: 1.6rem; margin: 38px 0 10px; }
+  .art-body h3 { margin: 26px 0 6px; }
+  .art-body .lead { font-size: 1.22rem; line-height: 1.6; color: var(--text-2); font-family: var(--serif); }
+  .art-body ul { line-height: 1.7; color: var(--text); font-size: 1.05rem; }
+  .pullbox { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--clay); border-radius: var(--r-md); padding: 18px 20px; margin: 24px 0; }
+  .pullbox .lbl { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--clay-dark); margin-bottom: 6px; }
+  .demo-mini { display:flex; gap:14px; align-items:center; flex-wrap:wrap; background:var(--surface-2); border:1px solid var(--line); border-radius:var(--r-md); padding:16px 18px; margin: 22px 0; }
+
+  .relbox { margin-top: 48px; border-top: 2px solid var(--line-2); padding-top: 24px; }
+  .relgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 600px){ .relgrid { grid-template-columns: 1fr; } }
+  .relcard { padding: 16px 18px; }
+  .relcard .cat { font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--clay-dark); }
+  .relcard h4 { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; margin-top: 4px; }
+  .relcard a { text-decoration: none; color: var(--ink); }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="/">
+    <svg class="mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="6" fill="#16323a"/><rect x="6" y="14" width="3.4" height="6" rx="1" fill="#b5623a"/><rect x="11.3" y="9" width="3.4" height="11" rx="1" fill="#e4efef"/><rect x="16.6" y="6" width="3.4" height="14" rx="1" fill="#2c7a7b"/></svg>
+    NH-Data
+  </a>
+  <nav class="nav">
+    <a href="/listings.html">Find facilities</a>
+    <a href="/compare.html">Compare</a>
+    <a href="/enforcement.html">Enforcement</a>
+    <a href="/blog/" class="active">Guides</a>
+    <a href="/methodology.html">Methodology</a>
+  </nav>
+</div></header>
+
+<main id="main" class="wrap">
+  <div class="art-head">
+    <div class="crumbs"><a href="/blog/">Blog</a> &middot; Ratings</div>
+    <div class="eyebrow">Ratings</div>
+    <h1>How to read a CMS five-star rating (and what it hides)</h1>
+    <p class="lede">The overall star is an average of three very different things. Understanding what each one measures &mdash; and which is self-reported &mdash; is the difference between a number and a decision.</p>
+    <div class="byline">
+      <div class="av">DK</div>
+      <div><b>Dana Koenig</b><br><span class="caption">Editor &middot; clinical review pending</span></div>
+      <span class="dot"></span><span>8 min read</span><span class="dot"></span><span>Updated April 2026</span>
+    </div>
+  </div>
+
+  <div class="art-layout">
+    <article class="art-body">
+      <p class="lead">If you remember one thing: the overall five-star rating is a roll-up, not a measurement. Two facilities with the same three stars can be very different places.</p>
+
+      <p>The Centers for Medicare &amp; Medicaid Services (CMS) publishes a star rating for nearly every certified nursing home in the country. CMS explains the official rating system on its <a href="https://www.cms.gov/Medicare/Provider-Enrollment-and-Certification/CertificationandComplianc/FSQRS.html" rel="noopener">Five-Star Quality Rating System page</a>. It&rsquo;s the most visible number in the entire system &mdash; and the most misread. The overall score combines three separate domains, each collected in a completely different way.</p>
+
+      <h2 id="domains">The three domains behind the star</h2>
+      <p>Health inspections carry the most weight. Staffing and quality measures adjust the result up or down. Here&rsquo;s how they differ &mdash; and how much to trust each.</p>
+
+      <table class="data">
+        <thead><tr><th>Domain</th><th>What it measures</th><th>Source</th><th class="num">Trust</th></tr></thead>
+        <tbody>
+          <tr><td><b>Health inspection</b></td><td>On-site survey findings &amp; complaints</td><td>State inspectors</td><td class="num">High</td></tr>
+          <tr><td><b>Staffing</b></td><td>Nurse hours per resident per day</td><td>Payroll (PBJ)</td><td class="num">High</td></tr>
+          <tr><td><b>Quality measures</b></td><td>15 clinical outcomes</td><td class="num" style="text-align:left">Facility-reported</td><td class="num">Medium</td></tr>
+        </tbody>
+        <caption>Source: CMS Five-Star Technical Users&rsquo; Guide &middot; as of 2026-04</caption>
+      </table>
+
+      <h3 id="health-inspections">1. Health inspections &mdash; the backbone</h3>
+      <p>This domain reflects what trained state inspectors found on-site over three recent survey cycles, plus complaint investigations. It&rsquo;s the hardest to game and the most heavily weighted. When the overall star and the health-inspection star disagree, trust the inspection star more.</p>
+
+      <div class="demo-mini">
+        <span class="rating" data-r="2" data-label="Health inspection"></span>
+        <span class="caption">A 2-star inspection rating on a facility profile looks like this &mdash; color, icon, and number together.</span>
+      </div>
+
+      <h3 id="staffing">2. Staffing &mdash; payroll-verified hours</h3>
+      <p>Since 2018, staffing is drawn from payroll data (the Payroll-Based Journal), not self-reported estimates. Registered-nurse hours per resident per day is the single figure most consistently linked to better outcomes. A facility can post a decent overall star while running thin on RN coverage &mdash; so look at the raw hours, not just the staffing star.</p>
+
+      <div class="pullbox">
+        <div class="lbl">Rule of thumb</div>
+        <p style="margin:0;font-size:1.05rem;">Below roughly <b>0.5 RN hours per resident per day</b> deserves a hard question on any tour &mdash; regardless of the overall star.</p>
+      </div>
+
+      <h3 id="quality-measures">3. Quality measures &mdash; read with care</h3>
+      <p>The third domain blends 15 clinical outcomes such as falls, pressure ulcers, and re-hospitalizations. Crucially, much of this data is reported by the facility itself. It&rsquo;s useful, but it&rsquo;s the domain most worth cross-checking against the inspection record and staffing hours.</p>
+
+      <h2 id="putting-it-together">Putting it together</h2>
+      <p>Start with the overall star to filter. Then split it apart: weight the health-inspection star most, confirm staffing in raw hours, and treat quality measures as a tiebreaker rather than a verdict. Finally, check the <a href="/enforcement.html">enforcement record</a> and the 18-month trend &mdash; a falling 4-star can be a worse bet than a stable 3-star.</p>
+
+      <div class="card" style="padding:22px 24px; display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; background:var(--surface-2); margin-top:28px;">
+        <div><h3 style="margin-bottom:4px;">Try it on a real facility</h3><p class="caption" style="margin:0;">See the three domains broken out on a live profile.</p></div>
+        <a class="btn btn-primary" href="/facility.html">Open a facility profile &rarr;</a>
+      </div>
+
+      <div class="source" style="margin-top:18px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/><path d="M6 3.2v3M6 8.2h.01"/></svg> Source: <b>CMS Five-Star Quality Rating System Technical Users&rsquo; Guide</b> &middot; as of <b>2026-04</b></div>
+
+      <!-- related -->
+      <div class="relbox">
+        <h3 style="margin-bottom:14px;">Related guides</h3>
+        <div class="relgrid">
+          <a class="card relcard" href="/blog/five-star-rating/"><span class="cat">Staffing</span><h4>Staffing hours: the number that quietly predicts care</h4></a>
+          <a class="card relcard" href="/blog/five-star-rating/"><span class="cat">Safety</span><h4>What a nursing-home abuse flag actually means</h4></a>
+        </div>
+      </div>
+    </article>
+
+    <aside class="art-aside">
+      <nav class="card toc" aria-label="Article table of contents">
+        <h4>In this guide</h4>
+        <a href="#domains">The three domains behind the star</a>
+        <a href="#health-inspections">Health inspections</a>
+        <a href="#staffing">Staffing hours</a>
+        <a href="#quality-measures">Quality measures</a>
+        <a href="#putting-it-together">Putting it together</a>
+      </nav>
+    </aside>
+  </div>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <div class="between" style="align-items:flex-start; flex-wrap:wrap; gap:32px;">
+    <div style="max-width:340px;">
+      <div class="brand" style="color:#fff; margin-bottom:10px;">NH-Data</div>
+      <p class="byline" style="display:block;">An independent civic-data project. Ratings and enforcement records are published by CMS. Figures shown here are illustrative sample data.</p>
+    </div>
+    <div class="row" style="gap:48px; flex-wrap:wrap;">
+      <div class="stack" style="gap:8px;"><div class="foothead">Data</div>
+        <a href="/methodology.html">Methodology</a><a href="/methodology.html#sources">Sources &amp; cadence</a><a href="/corrections.html">Corrections</a></div>
+      <div class="stack" style="gap:8px;"><div class="foothead">Explore</div>
+        <a href="/listings.html">Find facilities</a><a href="/compare.html">Compare</a><a href="/blog/">Guides</a></div>
+      <div class="stack" style="gap:8px;"><div class="foothead">About</div>
+        <a href="/about.html">About</a><a href="/privacy.html">Privacy</a><a href="/methodology.html#team">Editorial team</a><a href="/methodology.html#contact">Contact</a></div>
+    </div>
+  </div>
+  <hr style="border:0; border-top:1px solid #2c4d56; margin:28px 0 16px;">
+  <p class="byline" style="margin:0;display:block;">Maintained by the NH-Data editorial team &middot; Last data refresh: 2026-04 &middot; <a href="/corrections.html">Report a correction</a></p>
+</div></footer>
+
+<script src="../../styles/nh.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="google-adsense-account" content="ca-pub-3050601904412736">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Nursing Home CMS Profile · Ratings, Staffing & Inspections</title>
+<meta name="description" content="Nursing home CMS profile with ratings, staffing, local percentile, trend, enforcement timeline, flags, and source-dated methodology.">
+<link rel="canonical" href="https://yoyangwon.com/facility.html">
+<link rel="alternate" type="application/rss+xml" title="NH-Data Blog RSS" href="rss.xml">
+<link rel="stylesheet" href="styles/nh-data.css">
+<style>
+  .fac-header { background: linear-gradient(180deg, #1b3b44, #16323a); color: #eaf1f2; padding: 32px 0 28px; }
+  .fac-header .eyebrow { color: #c9956f; }
+  .fac-header h1 { color: #fff; font-size: clamp(1.8rem,3.4vw,2.5rem); margin: 8px 0 6px; }
+  .fac-header .addr { color: #b9c8cb; font-size: .95rem; }
+  .fac-header .tags { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .fac-header .tag { font-size: .8rem; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-radius: 100px; padding: 5px 13px; color: #dbe6e8; white-space: nowrap; }
+  .hdr-overall { display: flex; align-items: center; gap: 16px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: var(--r-lg); padding: 16px 22px; }
+  .hdr-overall .big { font-family: var(--serif); font-size: 3.4rem; line-height: .9; color: #fff; font-weight: 600; }
+  .hdr-overall .meta { font-size: .82rem; color: #b9c8cb; }
+  .hdr-overall .pips { display: flex; gap: 4px; margin-bottom: 6px; }
+  .hdr-overall .pip { width: 13px; height: 13px; border-radius: 3px; background: rgba(255,255,255,.22); }
+  .hdr-overall .pip.on { background: #c9956f; }
+  .hdr-top { display: flex; justify-content: space-between; gap: 28px; align-items: center; flex-wrap: wrap; }
+
+  .body-grid { display: grid; grid-template-columns: 1fr 332px; gap: 36px; align-items: start; padding: 40px 0; }
+  @media (max-width: 940px){ .body-grid { grid-template-columns: 1fr; } }
+
+  .block { margin-bottom: 36px; }
+  .block > h2 { font-size: 1.5rem; margin-bottom: 4px; }
+  .block .blurb { color: var(--text-2); font-size: .92rem; margin-bottom: 18px; }
+
+  .signal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 560px){ .signal-grid { grid-template-columns: 1fr; } }
+  .sigcard { padding: 18px; display: grid; gap: 10px; }
+  .sigcard .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .sigcard .top .lab { font-weight: 700; color: var(--ink); font-size: .98rem; }
+  .sigcard .big { font-family: var(--serif); font-size: 2rem; color: var(--ink); line-height: 1; font-variant-numeric: tabular-nums; }
+
+  .domain-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+  @media (max-width: 640px){ .domain-grid { grid-template-columns: 1fr; } }
+  .domcard { padding: 16px 18px; display: grid; gap: 8px; }
+  .domcard .lab { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--text-3); font-weight: 700; }
+  .domcard .v { display: flex; align-items: center; gap: 8px; }
+  .domcard .v .n { font-family: var(--serif); font-size: 1.7rem; color: var(--ink); line-height: 1; }
+
+  /* timeline */
+  .tl { display: grid; gap: 0; }
+  .tl-item { display: grid; grid-template-columns: 132px 1fr; gap: 18px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+  .tl-item .when { font-variant-numeric: tabular-nums; }
+  .tl-item .when .d { font-weight: 700; color: var(--ink); }
+  .tl-item .when .s { font-size: .78rem; color: var(--text-3); }
+  .tl-item .ftag { font-family: var(--sans); font-weight: 700; color: var(--ink); font-size: .9rem; letter-spacing: .02em; }
+  .tl-item .desc { color: var(--text); font-size: .94rem; margin: 6px 0 8px; }
+  .tl-item .row2 { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  @media (max-width: 560px){ .tl-item { grid-template-columns: 1fr; gap: 6px; } }
+
+  .rail { display: grid; gap: 18px; position: sticky; top: 84px; }
+  .rail .card { padding: 18px; }
+  .rail h4 { margin-bottom: 12px; }
+
+  .stamp-row { display: flex; align-items: center; gap: 8px; padding: 9px 0; border-top: 1px solid var(--line); font-size: .78rem; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="index.html">
+    <svg class="mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="6" fill="#16323a"/><rect x="6" y="14" width="3.4" height="6" rx="1" fill="#b5623a"/><rect x="11.3" y="9" width="3.4" height="11" rx="1" fill="#e4efef"/><rect x="16.6" y="6" width="3.4" height="14" rx="1" fill="#2c7a7b"/></svg>
+    NH-Data
+  </a>
+  <nav class="nav">
+    <a href="listings.html">Find facilities</a>
+    <a href="compare.html">Compare</a>
+    <a href="enforcement.html">Enforcement</a>
+    <a href="/blog/">Guides</a>
+    <a href="methodology.html">Methodology</a>
+  </nav>
+</div></header>
+
+<div class="fac-header">
+  <div class="wrap">
+    <div class="hdr-top">
+      <div>
+        <div class="eyebrow">Facility profile</div>
+        <h1 id="facName">Maplewood Health &amp; Rehabilitation</h1>
+        <div class="addr" id="facAddr"></div>
+        <div class="tags" id="facTags"></div>
+      </div>
+      <div class="hdr-overall" id="facOverall"></div>
+    </div>
+  </div>
+</div>
+
+<main id="main" class="wrap">
+  <div class="body-grid">
+    <!-- LEFT: primary data -->
+    <div>
+      <!-- abuse flag, surfaced calmly but clearly -->
+      <div class="flag" id="facAbuseFlag" style="font-size:.9rem; padding:11px 15px; margin-bottom:28px; white-space:normal; display:none;">
+        ⚠ This facility is flagged by CMS for an incident of abuse within the most recent review period.
+        <a href="#timeline" style="color:var(--sev-high); margin-left:6px;">See the record →</a>
+      </div>
+
+      <!-- DERIVED SIGNALS -->
+      <section class="block">
+        <h2>Derived signals</h2>
+        <p class="blurb">Context CMS doesn’t show directly — how this facility ranks locally, where it’s heading, and how severe its record is. Each signal links to how it’s calculated.</p>
+        <div class="signal-grid" id="facSignals"></div>
+      </section>
+
+      <!-- 5-STAR BREAKDOWN -->
+      <section class="block">
+        <h2>Five-star breakdown</h2>
+        <p class="blurb">The overall rating is built from three domains. CMS weights health inspections most heavily.</p>
+        <div class="domain-grid" id="facDomains"></div>
+        <div class="source" style="margin-top:14px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/><path d="M6 3.2v3M6 8.2h.01"/></svg> Source: <b>CMS Care Compare · Provider Information</b> · as of <b>2026-04</b></div>
+      </section>
+
+      <!-- VIOLATION TIMELINE -->
+      <section class="block" id="timeline">
+        <h2>Inspection &amp; enforcement record</h2>
+        <p class="blurb">Health-inspection and complaint findings in reverse-chronological order. Each entry is a factual record from CMS; severity is CMS’s own classification.</p>
+        <div class="tl" id="tl"></div>
+        <div class="between" style="margin-top:16px;">
+          <div class="source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/><path d="M6 3.2v3M6 8.2h.01"/></svg> Source: <b>CMS Health Deficiencies dataset</b> · as of <b>2026-04</b></div>
+          <a class="caption" href="corrections.html">Believe a record is wrong? Report a correction →</a>
+        </div>
+      </section>
+
+      <!-- COMPARE CTA -->
+      <div class="card" style="padding:22px 24px; display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; background:var(--surface-2);">
+        <div>
+          <h3 style="margin-bottom:4px;" id="facCompareName">See how this facility compares nearby</h3>
+          <p class="caption" style="margin:0;">Line it up against the top-rated facilities within 5 miles.</p>
+        </div>
+        <a class="btn btn-primary" id="facCompareLink" href="compare.html">Compare nearby facilities →</a>
+      </div>
+    </div>
+
+    <!-- RIGHT: context rail -->
+    <aside>
+      <div class="rail">
+        <div class="card">
+          <h4>County context</h4>
+          <table class="data" style="font-size:.85rem;">
+            <tr><td style="padding:7px 0;border:0;">County median rating</td><td class="num" style="padding:7px 0;border:0;"><b>3.0★</b></td></tr>
+            <tr><td style="padding:7px 0;border:0;">Median RN hours/day</td><td class="num" style="padding:7px 0;border:0;"><b>0.68</b></td></tr>
+            <tr><td style="padding:7px 0;border:0;">This facility, RN hours</td><td class="num" id="facRailRn" style="padding:7px 0;border:0;"><b>0.52</b></td></tr>
+            <tr><td style="padding:7px 0;border:0;">Facilities in county</td><td class="num" style="padding:7px 0;border:0;"><b>41</b></td></tr>
+          </table>
+          <a class="btn btn-ghost btn-sm" href="listings.html" style="margin-top:12px;width:100%;justify-content:center;">All Sangamon County facilities</a>
+        </div>
+
+        <div class="card">
+          <h4>Data provenance</h4>
+          <div class="stamp-row source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/></svg> Ratings: <b>CMS Care Compare</b></div>
+          <div class="stamp-row source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/></svg> Staffing: <b>Payroll-Based Journal</b></div>
+          <div class="stamp-row source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/></svg> Refreshed: <b>2026-04</b> (quarterly)</div>
+          <a class="caption" href="methodology.html" style="display:inline-block;margin-top:10px;">Full methodology &amp; cadence →</a>
+        </div>
+
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <div class="between" style="align-items:flex-start; flex-wrap:wrap; gap:32px;">
+    <div style="max-width:340px;">
+      <div class="brand" style="color:#fff; margin-bottom:10px;">NH-Data</div>
+      <p class="byline">An independent civic-data project. Ratings and enforcement records are published by the Centers for Medicare &amp; Medicaid Services (CMS). Figures shown here are illustrative sample data.</p>
+    </div>
+    <div class="row" style="gap:48px; flex-wrap:wrap;">
+      <div class="stack" style="gap:8px;"><div class="foothead">Data</div>
+        <a href="/blog/">Guides</a>
+    <a href="methodology.html">Methodology</a><a href="methodology.html#sources">Sources &amp; cadence</a><a href="corrections.html">Corrections</a></div>
+      <div class="stack" style="gap:8px;"><div class="foothead">About</div>
+        <a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="methodology.html#team">Editorial team</a><a href="methodology.html#contact">Contact</a></div>
+    </div>
+  </div>
+  <hr style="border:0; border-top:1px solid #2c4d56; margin:28px 0 16px;">
+  <p class="byline" style="margin:0;">Maintained by the NH-Data editorial team · Last data refresh: 2026-04 · <a href="corrections.html">Report a correction</a></p>
+</div></footer>
+
+<script src="styles/data.js"></script>
+<script src="styles/nh.js"></script>
+<script>
+(function(){
+  const esc = window.NH.escapeHtml;
+  const sevCls = { info:'sev-info', low:'sev-low', mid:'sev-mid', high:'sev-high' };
+  const params = new URLSearchParams(location.search);
+  const id = params.get('id') || 'maplewood';
+  const f = (window.FACILITIES.find(x=>x.id===id)) || window.FACILITIES.find(x=>x.id==='maplewood');
+  const defs = (window.DEFS && window.DEFS[f.id]) ? window.DEFS[f.id].slice() : [];
+  defs.sort((a,b)=> a.date < b.date ? 1 : -1);
+  const ccn = { maplewood:'145211', riverside:'145087', oakhaven:'145402', cedarridge:'145219', prairievista:'145164', lincolnpark:'145330' }[f.id] || '145000';
+
+  // ---- title + header ----
+  document.title = `${f.name} · NH-Data`;
+  document.getElementById('facName').textContent = f.name;
+  document.getElementById('facAddr').textContent = `${f.address} · CMS #${ccn}`;
+  document.getElementById('facTags').innerHTML = [
+    f.ownership, `${f.beds} certified beds`, `${f.occupancy}% occupied`, 'Medicare & Medicaid'
+  ].map(t=>`<span class="tag">${esc(t)}</span>`).join('');
+
+  const pips = Array.from({length:5},(_,i)=>`<span class="pip${i<f.overall?' on':''}"></span>`).join('');
+  document.getElementById('facOverall').innerHTML = `
+    <div>
+      <div class="pips">${pips}</div>
+      <div class="meta">Overall<br>CMS 5-star</div>
+    </div>
+    <div class="big">${f.overall}</div>
+    <div class="meta" style="align-self:flex-end;">out&nbsp;of&nbsp;5</div>`;
+
+  // ---- abuse flag ----
+  const af = document.getElementById('facAbuseFlag');
+  if(f.abuse) af.style.display = '';
+
+  // ---- derived signals ----
+  const pctTop = 100 - f.pctile;
+  const medianRank = f.pctile >= 50 ? 'above' : 'below';
+  const first = f.trend[0], last = f.trend[f.trend.length-1];
+  const dir = last < first ? 'down' : last > first ? 'up' : 'flat';
+  const dirLab = dir==='down' ? 'Declining' : dir==='up' ? 'Improving' : 'Stable';
+  const sevState = f.sevHigh >= 3 ? ['sev-high','High'] : f.sevHigh >= 1 ? ['sev-mid','Elevated'] : ['sev-info','Low'];
+  const harmLine = f.sevHigh > 0
+    ? `<b style="color:var(--clay-dark)">${f.sevHigh} reached actual harm or immediate jeopardy</b> across the last three surveys.`
+    : `No actual-harm or immediate-jeopardy findings in the last three surveys.`;
+  let statusFlags = '';
+  if(f.sff) statusFlags += `<span class="flag" style="align-self:flex-start;">⚠ Special Focus Facility</span>`;
+  if(f.abuse) statusFlags += `<span class="flag" style="align-self:flex-start;">⚠ Abuse icon flagged</span>`;
+  if(!f.sff) statusFlags += `<span class="sev sev-info" style="align-self:flex-start;"><span class="dot"></span>Not on Special Focus list</span>`;
+  if(!f.abuse && !f.sff) statusFlags += `<span class="sev" style="align-self:flex-start;color:var(--rate-5);border-color:#bcdcc9;background:#e7f1ea;"><span class="dot"></span>No active flags</span>`;
+
+  document.getElementById('facSignals').innerHTML = `
+    <div class="card sigcard">
+      <div class="top"><span class="lab">Local standing</span></div>
+      <div class="pctile" data-p="${f.pctile}">
+        <div class="track"><div class="fill"></div></div>
+        <div class="label"><span>Sangamon County</span><b>Top ${pctTop}%</b></div>
+      </div>
+      <div class="caption">Ranks ${medianRank} the county median of nursing homes on overall rating.</div>
+      <details class="method"><summary>How is this calculated?</summary><p>Overall star rating ranked against all 41 CMS-certified nursing homes in the same county. “Top ${pctTop}%” means ${f.pctile}% of county facilities score at or below this one.</p></details>
+    </div>
+    <div class="card sigcard">
+      <div class="top"><span class="lab">18-month trend</span>
+        <span class="trend ${dir}" data-dir="${dir}"><span class="arr"></span>${dirLab}</span></div>
+      <div class="spark" data-points="${f.trend.join(',')}" data-w="150" data-h="42"></div>
+      <div class="caption">${esc(f.trendNote)}.</div>
+      <details class="method"><summary>How is this calculated?</summary><p>Plots the official overall star rating for each of the last six published quarters. A visual summary of CMS history — not a separate NH-Data score.</p></details>
+    </div>
+    <div class="card sigcard">
+      <div class="top"><span class="lab">Deficiency severity</span>
+        <span class="sev ${sevState[0]}"><span class="dot"></span>${sevState[1]}</span></div>
+      <div class="big">${f.deficiencies} <span style="font-size:1rem;color:var(--text-2);font-family:var(--sans)">deficiencies</span></div>
+      <div class="caption">${harmLine}</div>
+      <details class="method"><summary>How is this scored?</summary><p>Weighted by CMS scope-and-severity grid (A–L). Actual-harm (G+) and immediate-jeopardy (J–L) findings carry the most weight.</p></details>
+    </div>
+    <div class="card sigcard">
+      <div class="top"><span class="lab">Status flags</span></div>
+      <div style="display:flex;flex-direction:column;gap:8px;">${statusFlags}</div>
+      <details class="method"><summary>What do these mean?</summary><p>CMS adds an abuse icon when a facility was cited for abuse with harm, or twice for potential harm, in two recent cycles. Special Focus Facilities have a persistent record of poor compliance.</p></details>
+    </div>`;
+
+  // ---- five-star breakdown ----
+  const dom = (lab,val,cap)=>`<div class="card domcard"><div class="lab">${lab}</div><div class="v"><span class="n">${val}</span><span class="rating" data-r="${val}" data-val="off"></span></div><div class="caption">${cap}</div></div>`;
+  document.getElementById('facDomains').innerHTML =
+    dom('Health inspection', f.health, 'From on-site surveys &amp; complaint investigations.') +
+    dom('Staffing', f.staffing, `${f.rnHrs.toFixed(2)} RN hrs &amp; ${f.totalHrs.toFixed(2)} total nurse hrs / resident / day.`) +
+    dom('Quality measures', f.qm, '15 long- &amp; short-stay clinical outcomes.');
+
+  // ---- compare CTA + rail ----
+  const firstName = f.name.split(' ')[0];
+  document.getElementById('facCompareName').textContent = `See how ${firstName} compares nearby`;
+  document.getElementById('facCompareLink').href = `compare.html?id=${encodeURIComponent(f.id)}`;
+  const rnCls = f.rnHrs < 0.68 ? 'color:var(--clay-dark)' : 'color:var(--rate-5)';
+  document.getElementById('facRailRn').style.cssText = `padding:7px 0;border:0;${rnCls}`;
+  document.getElementById('facRailRn').innerHTML = `<b>${f.rnHrs.toFixed(2)}</b>`;
+
+  // ---- timeline ----
+  const tl = document.getElementById('tl');
+  tl.innerHTML = defs.length ? defs.map(d=>{
+    const dstr = new Date(d.date+'T00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+    return `<div class="tl-item">
+      <div class="when"><div class="d">${dstr}</div><div class="s">${d.survey}</div></div>
+      <div>
+        <div class="row2" style="margin-bottom:2px;">
+          <span class="ftag">${esc(d.ftag)}</span>
+          <span class="sev ${sevCls[d.sev]}"><span class="dot"></span>${esc(d.harm)}</span>
+          <span class="caption">Scope: ${esc(d.scope)}</span>
+        </div>
+        <div class="desc">${esc(d.text)}</div>
+        <div class="source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/><path d="M6 3.2v3M6 8.2h.01"/></svg> Source: <b>CMS</b> · recorded <b>${esc(d.date)}</b></div>
+      </div>
+    </div>`;
+  }).join('') : `<div class="card" style="padding:24px;color:var(--text-2);">No health-inspection or complaint findings recorded in the most recent surveys.</div>`;
+
+  // ---- dynamic JSON-LD (GEO) ----
+  const ld = {
+    "@context":"https://schema.org","@type":"MedicalOrganization","name":f.name,
+    "additionalType":"https://www.wikidata.org/wiki/Q1788452",
+    "identifier":{"@type":"PropertyValue","propertyID":"CMS Certification Number","value":ccn},
+    "address":{"@type":"PostalAddress","streetAddress":f.address.split(',')[0],"addressLocality":f.city.split(',')[0],"addressRegion":"IL","addressCountry":"US"},
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":String(f.overall),"bestRating":"5","worstRating":"1","ratingExplanation":"CMS Five-Star Quality Rating (overall)","author":{"@type":"GovernmentOrganization","name":"Centers for Medicare & Medicaid Services"}},
+    "numberOfBeds":f.beds,"sameAs":"https://www.medicare.gov/care-compare/"
+  };
+  const s = document.createElement('script'); s.type='application/ld+json'; s.textContent = JSON.stringify(ld,null,2);
+  document.head.appendChild(s);
+
+  NH.enhance(document);
+})();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

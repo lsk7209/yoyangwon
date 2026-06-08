@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="google-adsense-account" content="ca-pub-3050601904412736">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Compare Nursing Homes Side by Side · CMS Ratings & Staffing</title>
+<meta name="description" content="Compare nursing homes side by side using CMS ratings, staffing hours, deficiencies, fines, abuse flags, and source-dated facility records.">
+<link rel="canonical" href="https://yoyangwon.com/compare.html">
+<link rel="alternate" type="application/rss+xml" title="NH-Data Blog RSS" href="rss.xml">
+<link rel="stylesheet" href="styles/nh-data.css">
+<style>
+  /* ---- compare-specific ---- */
+  .cmp-intro { padding: 36px 0 20px; }
+  .cmp-scroll { overflow-x: auto; padding-bottom: 8px; -webkit-overflow-scrolling: touch; }
+  .cmp { border-collapse: separate; border-spacing: 0; width: 100%; min-width: 720px; }
+  .cmp th, .cmp td { padding: 14px 16px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  .cmp thead th { vertical-align: bottom; border-bottom: 2px solid var(--line-2); background: var(--paper); }
+  .cmp .rowlab { width: 200px; min-width: 180px; position: sticky; left: 0; background: var(--paper); z-index: 2; }
+  .cmp .rowlab .k { font-weight: 700; color: var(--ink); font-size: .92rem; }
+  .cmp .rowlab .sub { font-size: .76rem; color: var(--text-3); }
+  .cmp td.cell { font-variant-numeric: tabular-nums; }
+  .cmp td.best { background: var(--teal-tint); }
+  .cmp td.worst { background: #faf1ec; }
+  .cmp .cellval { font-weight: 700; color: var(--ink); font-size: 1.02rem; display: flex; align-items: center; gap: 7px; }
+  .cmp .cellsub { font-size: .78rem; color: var(--text-2); margin-top: 2px; }
+  .winflag { font-size: .68rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--rate-5); display: inline-flex; align-items: center; gap: 3px; }
+  .loseflag { font-size: .68rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--clay-dark); }
+  /* column header cards */
+  .colhead { width: 240px; }
+  .colcard { display: grid; gap: 10px; }
+  .colcard .nm { font-family: var(--serif); font-weight: 600; font-size: 1.08rem; color: var(--ink); line-height: 1.15; }
+  .colcard .ct { font-size: .82rem; color: var(--text-2); }
+  .colcard .ctl { display: flex; gap: 8px; align-items: center; }
+  .iconbtn { border: 1px solid var(--line-2); background: var(--surface); border-radius: var(--r-sm); width: 28px; height: 28px; display: grid; place-items: center; cursor: pointer; color: var(--text-2); }
+  .iconbtn:hover { border-color: var(--clay); color: var(--clay); }
+  .addcol { width: 240px; }
+  .addbox { border: 1.5px dashed var(--line-2); border-radius: var(--r-md); padding: 18px; text-align: center; }
+  .addbox select { width: 100%; margin-top: 10px; padding: 9px; border-radius: var(--r-sm); border: 1px solid var(--line-2); font-family: var(--sans); font-size: .9rem; background: var(--surface); color: var(--text); }
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: .82rem; color: var(--text-2); align-items: center; margin-top: 14px; }
+  .legend .sw { width: 14px; height: 14px; border-radius: 3px; display: inline-block; vertical-align: -2px; margin-right: 6px; border: 1px solid var(--line-2); }
+  .layout { display: grid; grid-template-columns: 1fr 300px; gap: 32px; align-items: start; }
+  @media (max-width: 980px){ .layout { grid-template-columns: 1fr; } .side { display: none; } }
+  /* mobile stacked compare */
+  #cmpMobile { display: none; }
+  @media (max-width: 640px){
+    .cmp-scroll { display: none; }
+    #cmpMobile { display: grid; gap: 16px; }
+  }
+  .mcard { padding: 0; overflow: hidden; }
+  .mhead { display: flex; gap: 12px; align-items: flex-start; padding: 16px; border-bottom: 1px solid var(--line); background: var(--surface-2); }
+  .mhead .nm { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; color: var(--ink); line-height: 1.15; }
+  .mhead .ct { font-size: .8rem; color: var(--text-2); }
+  .mhead .ctl { display: flex; gap: 6px; margin-top: 8px; }
+  .mhead .ctl select { flex: 1; padding: 6px; border: 1px solid var(--line-2); border-radius: 4px; font-family: var(--sans); font-size: .78rem; background: var(--surface); }
+  .mrow { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; padding: 11px 16px; border-bottom: 1px solid var(--line); }
+  .mrow:last-child { border-bottom: 0; }
+  .mrow .ml { font-size: .82rem; color: var(--text-2); }
+  .mrow .ml .sub { font-size: .72rem; color: var(--text-3); }
+  .mrow .mv { text-align: right; }
+  .mrow.best { background: var(--teal-tint); }
+  .mrow.worst { background: #faf1ec; }
+  .maddcard { padding: 18px; }
+  .maddcard select { width: 100%; margin-top: 8px; padding: 9px; border-radius: var(--r-sm); border: 1px solid var(--line-2); font-family: var(--sans); font-size: .9rem; background: var(--surface); }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="index.html">
+    <svg class="mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="6" fill="#16323a"/><rect x="6" y="14" width="3.4" height="6" rx="1" fill="#b5623a"/><rect x="11.3" y="9" width="3.4" height="11" rx="1" fill="#e4efef"/><rect x="16.6" y="6" width="3.4" height="14" rx="1" fill="#2c7a7b"/></svg>
+    NH-Data
+  </a>
+  <nav class="nav">
+    <a href="listings.html">Find facilities</a>
+    <a href="compare.html" class="active">Compare</a>
+    <a href="enforcement.html">Enforcement</a>
+    <a href="/blog/">Guides</a>
+    <a href="methodology.html">Methodology</a>
+  </nav>
+</div></header>
+
+<main id="main" class="wrap">
+  <div class="cmp-intro">
+    <div class="eyebrow">Comparison tool</div>
+    <h1 style="margin:6px 0 8px;">Compare nursing homes, side by side</h1>
+    <p class="lede">Up to three facilities, every metric aligned on one row. Better and worse values are marked with color, an icon, and a label — never color alone.</p>
+    <div class="legend">
+      <span><span class="sw" style="background:var(--teal-tint)"></span>Best in this comparison</span>
+      <span><span class="sw" style="background:#faf1ec"></span>Weakest in this comparison</span>
+      <span class="source"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="5"/><path d="M6 3.2v3M6 8.2h.01"/></svg> Source: <b>CMS Care Compare</b> · as of <b>2026-04</b></span>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div>
+      <div class="cmp-scroll">
+        <table class="cmp" id="cmp"></table>
+      </div>
+      <div id="cmpMobile"></div>
+
+      <details class="method" style="margin-top:18px;">
+        <summary>How are “Local percentile” and “Trend” derived?</summary>
+        <p><b>Local percentile</b> ranks a facility’s overall rating against all CMS-certified nursing homes in the same county. A higher percentile means the facility scores better than that share of nearby peers.</p>
+        <p><b>Trend</b> plots the overall star rating across the last six published quarters. It is a visual summary of the official rating history — not a separate score. See the <a href="methodology.html">methodology page</a> for the full formula and update cadence.</p>
+      </details>
+
+    </div>
+
+    <aside class="side stack" style="gap:20px;">
+      <div class="card" style="padding:18px;">
+        <h2 style="font-size:1.1rem;margin-bottom:10px;">Reading this comparison</h2>
+        <p class="caption" style="margin:0 0 10px;">Star ratings run 1–5. For staffing hours and percentile, higher is better. For deficiencies, fines, and turnover, lower is better — the tool accounts for direction automatically.</p>
+        <a class="btn btn-ghost btn-sm" href="methodology.html">Read the methodology</a>
+      </div>
+
+    </aside>
+  </div>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <div class="between" style="align-items:flex-start; flex-wrap:wrap; gap:32px;">
+    <div style="max-width:340px;">
+      <div class="brand" style="color:#fff; margin-bottom:10px;">NH-Data</div>
+      <p class="byline">An independent civic-data project. Facility ratings and enforcement records are published by the Centers for Medicare &amp; Medicaid Services (CMS). Figures shown here are illustrative sample data.</p>
+    </div>
+    <div class="row" style="gap:48px; flex-wrap:wrap;">
+      <div class="stack" style="gap:8px;"><div class="foothead">Data</div>
+        <a href="/blog/">Guides</a>
+    <a href="methodology.html">Methodology</a><a href="methodology.html#sources">Sources &amp; cadence</a><a href="corrections.html">Corrections</a></div>
+      <div class="stack" style="gap:8px;"><div class="foothead">About</div>
+        <a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="methodology.html#team">Editorial team</a><a href="methodology.html#contact">Contact</a></div>
+    </div>
+  </div>
+  <hr style="border:0; border-top:1px solid #2c4d56; margin:28px 0 16px;">
+  <p class="byline" style="margin:0;">Maintained by the NH-Data editorial team · Last data refresh: 2026-04 · <a href="corrections.html">Report a correction</a></p>
+</div></footer>
+
+<script src="styles/data.js"></script>
+<script src="styles/nh.js"></script>
+<script>
+(function(){
+  const esc = window.NH.escapeHtml;
+  const byId = id => FACILITIES.find(f => f.id === id);
+  let selected = ['riverside','maplewood','prairievista'];
+  // 1) compare tray from listings takes priority
+  let tray = [];
+  try { tray = JSON.parse(localStorage.getItem('nh_compare')||'[]').filter(id=>byId(id)); } catch(e){}
+  const seedId = new URLSearchParams(location.search).get('id');
+  if(tray.length >= 2){
+    selected = tray.slice(0,3);
+  } else if(seedId && byId(seedId)){
+    selected = [seedId, ...['riverside','maplewood','prairievista','cedarridge'].filter(x=>x!==seedId)].slice(0,3);
+  } else if(tray.length === 1){
+    selected = [tray[0], ...['riverside','maplewood','prairievista'].filter(x=>x!==tray[0])].slice(0,3);
+  }
+
+  // metric rows: dir = +1 higher better, -1 lower better, 0 no winner
+  const ROWS = [
+    { key:'overall',  lab:'Overall rating', sub:'CMS 5-star', dir:1, render:f=>starCell(f.overall) },
+    { key:'health',   lab:'Health inspection', sub:'5-star domain', dir:1, render:f=>starCell(f.health) },
+    { key:'staffing', lab:'Staffing', sub:'5-star domain', dir:1, render:f=>starCell(f.staffing) },
+    { key:'qm',       lab:'Quality measures', sub:'5-star domain', dir:1, render:f=>starCell(f.qm) },
+    { key:'rnHrs',    lab:'RN hours / resident / day', sub:'Reported PBJ', dir:1, render:f=>numCell(f.rnHrs.toFixed(2),' hrs') },
+    { key:'totalHrs', lab:'Total nurse staffing', sub:'Hours / resident / day', dir:1, render:f=>numCell(f.totalHrs.toFixed(2),' hrs') },
+    { key:'turnover', lab:'Total nurse turnover', sub:'Annual', dir:-1, render:f=>numCell(f.turnover,'%') },
+    { key:'pctile',   lab:'Local percentile', sub:'vs. county peers', dir:1, render:f=>numCell('Top '+(100-f.pctile)+'%','') },
+    { key:'deficiencies', lab:'Recent deficiencies', sub:'Last 3 surveys', dir:-1, render:f=>numCell(f.deficiencies,'') },
+    { key:'sevHigh',  lab:'Actual-harm or worse', sub:'Severe deficiencies', dir:-1, render:f=>numCell(f.sevHigh,'') },
+    { key:'fines',    lab:'Federal fines', sub:'Trailing 3 yrs', dir:-1, render:f=>numCell('$'+f.fines.toLocaleString(),'') },
+    { key:'flags',    lab:'Status flags', sub:'SFF · abuse', dir:0, render:f=>flagCell(f) },
+    { key:'trend',    lab:'Rating trend', sub:'Last 6 quarters', dir:0, render:f=>trendCell(f) },
+    { key:'ownership',lab:'Ownership', sub:'Provider type', dir:0, render:f=>`<div class="cellval" style="font-weight:600">${esc(f.ownership)}</div><div class="cellsub">${f.beds} beds · ${f.occupancy}% occupied</div>` }
+  ];
+
+  function starCell(v){
+    return `<div class="cellval"><span class="rating" data-r="${v}" data-val="off"></span><span style="font-variant-numeric:tabular-nums">${v}.0</span></div>`;
+  }
+  function numCell(v,suffix){ return `<div class="cellval">${v}${suffix}</div>`; }
+  function flagCell(f){
+    if(f.sff) return `<span class="flag">⚠ Special Focus Facility</span>`;
+    if(f.abuse) return `<span class="flag">⚠ Abuse icon flagged</span>`;
+    return `<div class="cellsub" style="color:var(--rate-5);font-weight:600">No active flags</div>`;
+  }
+  function trendCell(f){
+    return `<div class="cellval"><span class="spark" data-points="${f.trend.join(',')}" data-w="72" data-h="22"></span></div><div class="cellsub">${esc(f.trendNote)}</div>`;
+  }
+
+  function bestWorst(row){
+    if(row.dir===0) return {};
+    const vals = selected.map(id => byId(id)[row.key]);
+    const best = row.dir>0 ? Math.max(...vals) : Math.min(...vals);
+    const worst = row.dir>0 ? Math.min(...vals) : Math.max(...vals);
+    return { best, worst, allSame: best===worst };
+  }
+
+  function render(){
+    const t = document.getElementById('cmp');
+    // header
+    let head = '<thead><tr><th class="rowlab"></th>';
+    selected.forEach((id,i)=>{
+      const f = byId(id);
+      head += `<th scope="col" class="colhead"><div class="colcard">
+        <div class="overall" data-r="${f.overall}" style="--r:var(--rate-${f.overall}); padding:8px 12px; align-self:flex-start;">
+          <span class="big">${f.overall}</span><span class="of">/ 5<br>overall</span></div>
+        <div class="nm">${esc(f.name)}</div>
+        <div class="ct">${esc(f.city)} · ${esc(f.ownership)}</div>
+        <div class="ctl">
+          <select data-i="${i}" name="compare-facility-${i}" class="swap" style="flex:1;padding:6px;border:1px solid var(--line-2);border-radius:4px;font-family:var(--sans);font-size:.8rem;background:var(--surface)">${optionsFor(id)}</select>
+          <button class="iconbtn rm" data-i="${i}" title="Remove">✕</button>
+        </div>
+      </div></th>`;
+    });
+    if(selected.length<3){
+      const avail = FACILITIES.filter(f=>!selected.includes(f.id));
+      head += `<th scope="col" class="addcol"><div class="addbox">
+        <div class="caption" style="margin-bottom:2px;">Add a facility</div>
+        <div style="font-family:var(--serif);color:var(--ink);font-size:1rem;">Compare a third</div>
+        <select id="addsel" name="add-facility"><option value="">Choose a facility…</option>${avail.map(f=>`<option value="${esc(f.id)}">${esc(f.name)} — ${esc(f.city)}</option>`).join('')}</select>
+      </div></th>`;
+    }
+    head += '</tr></thead>';
+
+    let body = '<tbody>';
+    ROWS.forEach(row=>{
+      const bw = bestWorst(row);
+      body += `<tr><th scope="row" class="rowlab"><div class="k">${row.lab}</div><div class="sub">${row.sub}</div></th>`;
+      selected.forEach(id=>{
+        const f = byId(id);
+        let cls = 'cell';
+        let tag = '';
+        if(row.dir!==0 && !bw.allSame){
+          if(f[row.key]===bw.best){ cls+=' best'; tag = `<div class="winflag">▲ Best</div>`; }
+          else if(f[row.key]===bw.worst){ cls+=' worst'; tag = `<div class="loseflag">▼ Weakest</div>`; }
+        }
+        body += `<td class="${cls}">${row.render(f)}${tag}</td>`;
+      });
+      if(selected.length<3) body += '<td></td>';
+      body += '</tr>';
+    });
+    body += '</tbody>';
+    t.innerHTML = head + body;
+    renderMobile();
+    NH.enhance(document.querySelector('main'));
+    wire();
+  }
+
+  function renderMobile(){
+    const m = document.getElementById('cmpMobile');
+    // precompute best/worst per row
+    const bwByKey = {};
+    ROWS.forEach(row => bwByKey[row.key] = bestWorst(row));
+    let html = selected.map((id,i)=>{
+      const f = byId(id);
+      const rows = ROWS.map(row=>{
+        const bw = bwByKey[row.key];
+        let cls = 'mrow', tag = '';
+        if(row.dir!==0 && !bw.allSame){
+          if(f[row.key]===bw.best){ cls+=' best'; tag = `<div class="winflag">▲ Best</div>`; }
+          else if(f[row.key]===bw.worst){ cls+=' worst'; tag = `<div class="loseflag">▼ Weakest</div>`; }
+        }
+        return `<div class="${cls}"><span class="ml">${row.lab}<br><span class="sub">${row.sub}</span></span><span class="mv">${row.render(f)}${tag}</span></div>`;
+      }).join('');
+      return `<div class="card mcard">
+        <div class="mhead">
+          <div class="overall" style="--r:var(--rate-${f.overall});padding:6px 12px;flex:0 0 auto;"><span class="big">${f.overall}</span><span class="of">/5</span></div>
+          <div style="flex:1;">
+            <div class="nm">${esc(f.name)}</div>
+            <div class="ct">${esc(f.city)} · ${esc(f.ownership)}</div>
+            <div class="ctl">
+              <select data-i="${i}" name="mobile-compare-facility-${i}" class="swap">${optionsFor(id)}</select>
+              <button class="iconbtn rm" data-i="${i}" title="Remove">✕</button>
+            </div>
+          </div>
+        </div>
+        ${rows}
+      </div>`;
+    }).join('');
+    if(selected.length<3){
+      const avail = FACILITIES.filter(f=>!selected.includes(f.id));
+      html += `<div class="card maddcard">
+        <div class="caption">Add a facility</div>
+        <div style="font-family:var(--serif);color:var(--ink);font-size:1.05rem;">Compare another</div>
+        <select id="addselM" name="mobile-add-facility"><option value="">Choose a facility…</option>${avail.map(f=>`<option value="${esc(f.id)}">${esc(f.name)} — ${esc(f.city)}</option>`).join('')}</select>
+      </div>`;
+    }
+    m.innerHTML = html;
+  }
+
+  function optionsFor(current){
+    return FACILITIES.map(f=>`<option value="${esc(f.id)}" ${f.id===current?'selected':''}>${esc(f.name)}</option>`).join('');
+  }
+
+  function wire(){
+    document.querySelectorAll('.rm').forEach(b=>b.onclick=()=>{
+      if(selected.length>1){ selected.splice(+b.dataset.i,1); render(); }
+    });
+    document.querySelectorAll('.swap').forEach(s=>s.onchange=()=>{
+      const i=+s.dataset.i; if(!selected.includes(s.value)||selected[i]===s.value){ selected[i]=s.value; render(); } else { render(); }
+    });
+    const add=document.getElementById('addsel');
+    if(add) add.onchange=()=>{ if(add.value){ selected.push(add.value); render(); } };
+    const addM=document.getElementById('addselM');
+    if(addM) addM.onchange=()=>{ if(addM.value){ selected.push(addM.value); render(); } };
+  }
+
+  render();
+})();
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
