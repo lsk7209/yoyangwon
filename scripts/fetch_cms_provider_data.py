@@ -2,6 +2,8 @@ import argparse
 import json
 import math
 import re
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -12,6 +14,8 @@ PROVIDER_DATASET = "4pq5-n9py"
 DEFICIENCY_DATASET = "r5ix-sfxw"
 API_BASE = "https://data.cms.gov/provider-data/api/1/datastore/query"
 SPRINGFIELD_IL = (39.7817, -89.6501)
+FETCH_ATTEMPTS = 3
+FETCH_TIMEOUT = 45
 
 
 def fetch_dataset(dataset: str, conditions: list[tuple[str, str]], limit: int = 5000, offset: int = 0) -> dict:
@@ -22,8 +26,16 @@ def fetch_dataset(dataset: str, conditions: list[tuple[str, str]], limit: int = 
         params[f"conditions[{index}][operator]"] = "="
     url = f"{API_BASE}/{dataset}/0?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(url, headers={"User-Agent": "Caregos CMS ETL"})
-    with urllib.request.urlopen(req, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+    last_error: BaseException | None = None
+    for attempt in range(1, FETCH_ATTEMPTS + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=FETCH_TIMEOUT) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except (TimeoutError, urllib.error.URLError, OSError) as error:
+            last_error = error
+            if attempt < FETCH_ATTEMPTS:
+                time.sleep(attempt * 2)
+    raise RuntimeError(f"CMS fetch failed for {dataset} offset {offset}: {last_error}") from last_error
 
 
 def fetch_all(dataset: str, conditions: list[tuple[str, str]], page_size: int = 500) -> list[dict]:
@@ -156,51 +168,7 @@ def js_assign(name: str, value) -> str:
     return f"window.{name} = {json.dumps(value, ensure_ascii=True, indent=2)};"
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(description="Fetch CMS Provider Data and generate styles/data.js.")
-    parser.add_argument("--state", default="IL")
-    parser.add_argument("--county", default="Sangamon")
-    parser.add_argument("--out", default=str(ROOT / "styles" / "data.js"))
-    parser.add_argument("--raw-dir", default=str(ROOT / "content" / "cms"))
-    args = parser.parse_args()
-
-    raw_dir = Path(args.raw_dir)
-    raw_dir.mkdir(parents=True, exist_ok=True)
-
-    providers = fetch_all(PROVIDER_DATASET, [("state", args.state), ("countyparish", args.county)])
-    if not providers:
-        raise SystemExit(f"No CMS provider rows found for {args.county}, {args.state}.")
-
-    percentile_by_ccn = percentile_map(providers)
-    defs_by_ccn: dict[str, list[dict]] = {}
-    raw_defs_by_ccn: dict[str, list[dict]] = {}
-    for row in providers:
-        ccn = row.get("cms_certification_number_ccn", "")
-        raw_defs = fetch_all(DEFICIENCY_DATASET, [("cms_certification_number_ccn", ccn)], page_size=500)
-        raw_defs.sort(key=lambda item: item.get("survey_date", ""), reverse=True)
-        raw_defs_by_ccn[ccn] = raw_defs
-        defs_by_ccn[ccn] = [deficiency_to_public(item) for item in raw_defs[:10]]
-
-    facilities = [
-        normalize_provider(row, percentile_by_ccn, defs_by_ccn.get(row.get("cms_certification_number_ccn", ""), []))
-        for row in providers
-    ]
-    facilities.sort(key=lambda item: (item["city"], item["name"]))
-    public_defs = {facility["id"]: defs_by_ccn.get(facility["ccn"], []) for facility in facilities}
-    metadata = {
-        "source": "CMS Provider Data Catalog",
-        "providerDataset": PROVIDER_DATASET,
-        "deficiencyDataset": DEFICIENCY_DATASET,
-        "state": args.state,
-        "county": args.county,
-        "facilityCount": len(facilities),
-        "processingDates": sorted({row.get("processing_date", "") for row in providers if row.get("processing_date")}),
-    }
-
-    (raw_dir / "provider_info_sangamon_il.json").write_text(json.dumps(providers, ensure_ascii=True, indent=2), encoding="utf-8")
-    (raw_dir / "health_deficiencies_sangamon_il.json").write_text(json.dumps(raw_defs_by_ccn, ensure_ascii=True, indent=2), encoding="utf-8")
-    (raw_dir / "public_facilities_sangamon_il.json").write_text(json.dumps({"metadata": metadata, "facilities": facilities, "defs": public_defs}, ensure_ascii=True, indent=2), encoding="utf-8")
-
+def write_data_js(out: Path, metadata: dict, facilities: list[dict], public_defs: dict[str, list[dict]]) -> None:
     js = "\n".join(
         [
             "/* Generated from CMS Provider Data Catalog. Do not edit by hand.",
@@ -212,8 +180,90 @@ def main() -> None:
             "",
         ]
     )
-    Path(args.out).write_text(js, encoding="utf-8")
-    print(json.dumps({"status": "ok", "facilities": len(facilities), "out": args.out, "source": metadata}, indent=2))
+    out.write_text(js, encoding="utf-8")
+
+
+def use_cached_public_data(raw_dir: Path, out: Path, error: BaseException) -> bool:
+    cache_path = raw_dir / "public_facilities_sangamon_il.json"
+    if not cache_path.exists():
+        return False
+
+    cached = json.loads(cache_path.read_text(encoding="utf-8"))
+    metadata = cached.get("metadata")
+    facilities = cached.get("facilities")
+    public_defs = cached.get("defs")
+    if not isinstance(metadata, dict) or not isinstance(facilities, list) or not isinstance(public_defs, dict):
+        return False
+
+    metadata = {**metadata, "cacheFallback": True}
+    write_data_js(out, metadata, facilities, public_defs)
+    print(
+        json.dumps(
+            {
+                "status": "cached",
+                "reason": str(error),
+                "facilities": len(facilities),
+                "out": str(out),
+                "cache": str(cache_path),
+                "source": metadata,
+            },
+            indent=2,
+        )
+    )
+    return True
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Fetch CMS Provider Data and generate styles/data.js.")
+    parser.add_argument("--state", default="IL")
+    parser.add_argument("--county", default="Sangamon")
+    parser.add_argument("--out", default=str(ROOT / "styles" / "data.js"))
+    parser.add_argument("--raw-dir", default=str(ROOT / "content" / "cms"))
+    args = parser.parse_args()
+
+    raw_dir = Path(args.raw_dir)
+    raw_dir.mkdir(parents=True, exist_ok=True)
+
+    try:
+        providers = fetch_all(PROVIDER_DATASET, [("state", args.state), ("countyparish", args.county)])
+        if not providers:
+            raise SystemExit(f"No CMS provider rows found for {args.county}, {args.state}.")
+
+        percentile_by_ccn = percentile_map(providers)
+        defs_by_ccn: dict[str, list[dict]] = {}
+        raw_defs_by_ccn: dict[str, list[dict]] = {}
+        for row in providers:
+            ccn = row.get("cms_certification_number_ccn", "")
+            raw_defs = fetch_all(DEFICIENCY_DATASET, [("cms_certification_number_ccn", ccn)], page_size=500)
+            raw_defs.sort(key=lambda item: item.get("survey_date", ""), reverse=True)
+            raw_defs_by_ccn[ccn] = raw_defs
+            defs_by_ccn[ccn] = [deficiency_to_public(item) for item in raw_defs[:10]]
+
+        facilities = [
+            normalize_provider(row, percentile_by_ccn, defs_by_ccn.get(row.get("cms_certification_number_ccn", ""), []))
+            for row in providers
+        ]
+        facilities.sort(key=lambda item: (item["city"], item["name"]))
+        public_defs = {facility["id"]: defs_by_ccn.get(facility["ccn"], []) for facility in facilities}
+        metadata = {
+            "source": "CMS Provider Data Catalog",
+            "providerDataset": PROVIDER_DATASET,
+            "deficiencyDataset": DEFICIENCY_DATASET,
+            "state": args.state,
+            "county": args.county,
+            "facilityCount": len(facilities),
+            "processingDates": sorted({row.get("processing_date", "") for row in providers if row.get("processing_date")}),
+        }
+
+        (raw_dir / "provider_info_sangamon_il.json").write_text(json.dumps(providers, ensure_ascii=True, indent=2), encoding="utf-8")
+        (raw_dir / "health_deficiencies_sangamon_il.json").write_text(json.dumps(raw_defs_by_ccn, ensure_ascii=True, indent=2), encoding="utf-8")
+        (raw_dir / "public_facilities_sangamon_il.json").write_text(json.dumps({"metadata": metadata, "facilities": facilities, "defs": public_defs}, ensure_ascii=True, indent=2), encoding="utf-8")
+        write_data_js(Path(args.out), metadata, facilities, public_defs)
+        print(json.dumps({"status": "ok", "facilities": len(facilities), "out": args.out, "source": metadata}, indent=2))
+    except Exception as error:
+        if use_cached_public_data(raw_dir, Path(args.out), error):
+            return
+        raise
 
 
 if __name__ == "__main__":
