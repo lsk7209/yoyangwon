@@ -468,7 +468,7 @@ def render_index(posts: list[dict]) -> str:
 
 def render_rss(posts: list[dict], site_url: str, now: datetime) -> str:
     items = []
-    for post in posts[:25]:
+    for post in posts:
         link = urljoin(site_url.rstrip("/") + "/", f"blog/{post['slug']}/")
         pub = email.utils.format_datetime(parse_dt(post["publish_at"]))
         items.append(
