@@ -5,8 +5,15 @@
     <link>https://caregos.com/blog/</link>
     <description>Nursing home CMS rating, staffing, inspection, payment, and enforcement guides from Caregos.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jun 2026 09:25:09 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 13:35:47 +0000</lastBuildDate>
     <atom:link href="https://caregos.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Practical Out-Of-Pocket Nursing Home Costs Framework for Reading Billing</title>
+      <link>https://caregos.com/blog/out-of-pocket-warning/</link>
+      <guid isPermaLink="true">https://caregos.com/blog/out-of-pocket-warning/</guid>
+      <pubDate>Wed, 17 Jun 2026 19:00:00 +0900</pubDate>
+      <description>Public data can help compare quality, but it cannot replace a written cost estimate from the facility and payer-specific coverage review.</description>
+    </item>
     <item>
       <title>Rehab To Long-Term Care Nursing Home Explained Through Medicare SNF, CMS Data, and Family Questions</title>
       <link>https://caregos.com/blog/rehab-to-long-term-transition/</link>
