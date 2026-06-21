@@ -5,8 +5,15 @@
     <link>https://caregos.com/blog/</link>
     <description>Nursing home CMS rating, staffing, inspection, payment, and enforcement guides from Caregos.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Jun 2026 16:24:47 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 21:02:48 +0000</lastBuildDate>
     <atom:link href="https://caregos.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What CTA Reveals About Nursing Home Scorecard in a Nursing Home Record</title>
+      <link>https://caregos.com/blog/data-scorecard/</link>
+      <guid isPermaLink="true">https://caregos.com/blog/data-scorecard/</guid>
+      <pubDate>Mon, 22 Jun 2026 04:00:00 +0900</pubDate>
+      <description>A useful scorecard keeps severe findings visible instead of averaging them away. Separate rating, staffing, enforcement, fit, and distance.</description>
+    </item>
     <item>
       <title>A Practical Compare Three Nursing Homes Framework for Reading Shortlist</title>
       <link>https://caregos.com/blog/compare-three-not-ten/</link>
