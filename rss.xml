@@ -5,8 +5,15 @@
     <link>https://caregos.com/blog/</link>
     <description>Nursing home CMS rating, staffing, inspection, payment, and enforcement guides from Caregos.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Jun 2026 08:53:29 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 12:04:14 +0000</lastBuildDate>
     <atom:link href="https://caregos.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nearby Nursing Home Percentile Explained Through CMS Stars, CMS Data, and Family Questions</title>
+      <link>https://caregos.com/blog/nearby-facility-percentile/</link>
+      <guid isPermaLink="true">https://caregos.com/blog/nearby-facility-percentile/</guid>
+      <pubDate>Sun, 21 Jun 2026 18:00:00 +0900</pubDate>
+      <description>A percentile places a facility among local peers. It is more useful than a raw rank when counties have different numbers of facilities.</description>
+    </item>
     <item>
       <title>When Beds Matters More Than the Headline: A Nursing Home Occupancy Rate Review</title>
       <link>https://caregos.com/blog/occupancy-rate-signal/</link>
