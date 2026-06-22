@@ -5,8 +5,22 @@
     <link>https://caregos.com/blog/</link>
     <description>Nursing home CMS rating, staffing, inspection, payment, and enforcement guides from Caregos.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jun 2026 02:36:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 10:31:53 +0000</lastBuildDate>
     <atom:link href="https://caregos.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CMS Provider Data Catalog Nursing Home and Provider Information: How to Read the Nursing Home Decision</title>
+      <link>https://caregos.com/blog/cms-provider-data-catalog/</link>
+      <guid isPermaLink="true">https://caregos.com/blog/cms-provider-data-catalog/</guid>
+      <pubDate>Mon, 22 Jun 2026 19:00:00 +0900</pubDate>
+      <description>The CMS Provider Data Catalog is the starting point for many public nursing home datasets, including provider information and inspection records.</description>
+    </item>
+    <item>
+      <title>Using Best Nursing Home Near Me Data and Resident Risk Without Overreading the Data</title>
+      <link>https://caregos.com/blog/best-nursing-home-search/</link>
+      <guid isPermaLink="true">https://caregos.com/blog/best-nursing-home-search/</guid>
+      <pubDate>Mon, 22 Jun 2026 14:00:00 +0900</pubDate>
+      <description>There is no universal best facility. The best match depends on medical needs, staffing needs, inspection concerns, payer fit, and visit access.</description>
+    </item>
     <item>
       <title>Recent Complaint Nursing Home: The Compare Questions to Ask Before a Tour</title>
       <link>https://caregos.com/blog/compare-after-complaint/</link>
