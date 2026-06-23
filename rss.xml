@@ -5,8 +5,15 @@
     <link>https://caregos.com/blog/</link>
     <description>Nursing home CMS rating, staffing, inspection, payment, and enforcement guides from Caregos.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2026 02:02:02 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 08:23:25 +0000</lastBuildDate>
     <atom:link href="https://caregos.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When Article Date Matters More Than the Headline: A Source Date Nursing Home Data Review</title>
+      <link>https://caregos.com/blog/source-date-vs-page-date/</link>
+      <guid isPermaLink="true">https://caregos.com/blog/source-date-vs-page-date/</guid>
+      <pubDate>Tue, 23 Jun 2026 15:00:00 +0900</pubDate>
+      <description>The page update date tells you when a site changed. The source date tells you when the underlying CMS data was current.</description>
+    </item>
     <item>
       <title>The CMS Certification Number Nursing Home Checklist for Provider Number and Safer Nursing Home Choices</title>
       <link>https://caregos.com/blog/ccn-provider-number/</link>
