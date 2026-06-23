@@ -5,8 +5,15 @@
     <link>https://caregos.com/blog/</link>
     <description>Nursing home CMS rating, staffing, inspection, payment, and enforcement guides from Caregos.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2026 17:09:40 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 21:22:11 +0000</lastBuildDate>
     <atom:link href="https://caregos.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Facility Records Reveals About Public Nursing Home Data Privacy in a Nursing Home Record</title>
+      <link>https://caregos.com/blog/public-data-privacy/</link>
+      <guid isPermaLink="true">https://caregos.com/blog/public-data-privacy/</guid>
+      <pubDate>Wed, 24 Jun 2026 06:00:00 +0900</pubDate>
+      <description>CMS public datasets describe facility performance and compliance. They should not expose private resident medical records.</description>
+    </item>
     <item>
       <title>A Practical Sample Nursing Home Data Framework for Reading Public Data</title>
       <link>https://caregos.com/blog/sample-data-warning/</link>
