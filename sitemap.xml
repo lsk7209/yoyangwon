@@ -373,6 +373,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://caregos.com/blog/sample-data-warning/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://caregos.com/blog/scope-severity-grid/</loc>
     <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
