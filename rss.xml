@@ -5,8 +5,15 @@
     <link>https://caregos.com/blog/</link>
     <description>Nursing home CMS rating, staffing, inspection, payment, and enforcement guides from Caregos.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2026 08:23:25 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 12:27:29 +0000</lastBuildDate>
     <atom:link href="https://caregos.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nursing Home Data Correction Explained Through Correction Request, CMS Data, and Family Questions</title>
+      <link>https://caregos.com/blog/correction-request/</link>
+      <guid isPermaLink="true">https://caregos.com/blog/correction-request/</guid>
+      <pubDate>Tue, 23 Jun 2026 20:00:00 +0900</pubDate>
+      <description>If a record looks wrong, save the page, source date, facility identifier, and the specific field. A correction request should be precise.</description>
+    </item>
     <item>
       <title>When Article Date Matters More Than the Headline: A Source Date Nursing Home Data Review</title>
       <link>https://caregos.com/blog/source-date-vs-page-date/</link>
