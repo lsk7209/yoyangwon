@@ -8,7 +8,7 @@ window.DATA_SOURCE = {
   "county": "Sangamon",
   "facilityCount": 8,
   "processingDates": [
-    "2026-05-01"
+    "2026-06-01"
   ]
 };
 window.FACILITIES = [
@@ -25,7 +25,7 @@ window.FACILITIES = [
     "health": 2,
     "staffing": 1,
     "qm": 2,
-    "pctile": 50,
+    "pctile": 62,
     "trend": [
       1
     ],
@@ -35,7 +35,7 @@ window.FACILITIES = [
     "turnover": 58,
     "deficiencies": 10,
     "sevHigh": 1,
-    "fines": 306199,
+    "fines": 221674,
     "sff": false,
     "sffStatus": "",
     "abuse": true,
@@ -50,21 +50,21 @@ window.FACILITIES = [
     "ownership": "Non profit - Corporation",
     "beds": 109,
     "occupancy": 86,
-    "overall": 2,
-    "health": 3,
+    "overall": 1,
+    "health": 2,
     "staffing": 3,
     "qm": 1,
-    "pctile": 75,
+    "pctile": 62,
     "trend": [
-      2
+      1
     ],
     "trendNote": "CMS current release",
     "rnHrs": 0.59,
     "totalHrs": 4.66,
     "turnover": 63,
     "deficiencies": 10,
-    "sevHigh": 3,
-    "fines": 15935,
+    "sevHigh": 4,
+    "fines": 10358,
     "sff": false,
     "sffStatus": "",
     "abuse": false,
@@ -83,7 +83,7 @@ window.FACILITIES = [
     "health": 1,
     "staffing": 1,
     "qm": 3,
-    "pctile": 50,
+    "pctile": 62,
     "trend": [
       1
     ],
@@ -94,8 +94,8 @@ window.FACILITIES = [
     "deficiencies": 10,
     "sevHigh": 1,
     "fines": 309361,
-    "sff": true,
-    "sffStatus": "SFF Candidate",
+    "sff": false,
+    "sffStatus": "",
     "abuse": false,
     "distance": 3.8
   },
@@ -112,7 +112,7 @@ window.FACILITIES = [
     "health": 1,
     "staffing": 1,
     "qm": 3,
-    "pctile": 50,
+    "pctile": 62,
     "trend": [
       1
     ],
@@ -199,7 +199,7 @@ window.FACILITIES = [
     "health": 2,
     "staffing": 2,
     "qm": 1,
-    "pctile": 50,
+    "pctile": 62,
     "trend": [
       1
     ],
@@ -209,7 +209,7 @@ window.FACILITIES = [
     "turnover": 57,
     "deficiencies": 10,
     "sevHigh": 2,
-    "fines": 173197,
+    "fines": 210507,
     "sff": false,
     "sffStatus": "",
     "abuse": false,
@@ -247,6 +247,15 @@ window.FACILITIES = [
 ];
 window.DEFS = {
   "arcadia-care-auburn-145136": [
+    {
+      "date": "2026-04-02",
+      "ftag": "F-755",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide pharmaceutical services to meet the needs of each resident and employ or obtain the services of a licensed pharmacist.",
+      "survey": "Health"
+    },
     {
       "date": "2025-11-19",
       "ftag": "F-557",
@@ -327,18 +336,18 @@ window.DEFS = {
       "harm": "Potential for harm",
       "text": "Implement a program that monitors antibiotic use.",
       "survey": "Health"
-    },
-    {
-      "date": "2024-11-08",
-      "ftag": "F-760",
-      "scope": "Isolated",
-      "sev": "mid",
-      "harm": "Potential for harm",
-      "text": "Ensure that residents are free from significant medication errors.",
-      "survey": "Health"
     }
   ],
   "villa-health-care-east-145721": [
+    {
+      "date": "2026-04-14",
+      "ftag": "F-689",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Immediate jeopardy",
+      "text": "Ensure that a nursing home area is free from accident hazards and provides adequate supervision to prevent accidents.",
+      "survey": "Health"
+    },
     {
       "date": "2026-01-29",
       "ftag": "F-805",
@@ -418,15 +427,6 @@ window.DEFS = {
       "sev": "mid",
       "harm": "Potential for harm",
       "text": "Ensure drugs and biologicals used in the facility are labeled in accordance with currently accepted professional principles; and all drugs and biologicals must be stored in locked compartments, separately locked, compartments for controlled drugs.",
-      "survey": "Health"
-    },
-    {
-      "date": "2024-08-13",
-      "ftag": "F-880",
-      "scope": "Pattern",
-      "sev": "mid",
-      "harm": "Potential for harm",
-      "text": "Provide and implement an infection prevention and control program.",
       "survey": "Health"
     }
   ],
@@ -524,6 +524,15 @@ window.DEFS = {
   ],
   "arcadia-care-on-the-hill-145160": [
     {
+      "date": "2026-04-22",
+      "ftag": "F-684",
+      "scope": "Isolated",
+      "sev": "high",
+      "harm": "Actual harm",
+      "text": "Provide appropriate treatment and care according to orders, resident\u2019s preferences and goals.",
+      "survey": "Health"
+    },
+    {
       "date": "2025-11-26",
       "ftag": "F-689",
       "scope": "Isolated",
@@ -602,15 +611,6 @@ window.DEFS = {
       "sev": "high",
       "harm": "Immediate jeopardy",
       "text": "Ensure services provided by the nursing facility meet professional standards of quality.",
-      "survey": "Health"
-    },
-    {
-      "date": "2025-09-17",
-      "ftag": "F-760",
-      "scope": "Isolated",
-      "sev": "high",
-      "harm": "Immediate jeopardy",
-      "text": "Ensure that residents are free from significant medication errors.",
       "survey": "Health"
     }
   ],
