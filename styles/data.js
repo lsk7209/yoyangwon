@@ -9,7 +9,8 @@ window.DATA_SOURCE = {
   "facilityCount": 8,
   "processingDates": [
     "2026-06-01"
-  ]
+  ],
+  "cacheFallback": true
 };
 window.FACILITIES = [
   {
