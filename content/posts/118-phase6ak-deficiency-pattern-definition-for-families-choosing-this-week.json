@@ -1,0 +1,74 @@
+{
+  "id": 118,
+  "status": "scheduled",
+  "category": "glossary",
+  "title": "Deficiency Pattern Definition: scope severity and survey reading guide",
+  "subtitle": "Deficiency pattern definition for scope severity, survey findings, and a nursing home record that families can read carefully.",
+  "slug": "phase6ak-deficiency-pattern-definition-for-families-choosing-this-week",
+  "main_keyword": "deficiency pattern definition",
+  "expanded_keywords": [
+    "repeat citation",
+    "F-tag",
+    "scope severity"
+  ],
+  "intent": "Use the article to turn public data into one call, one tour question, and one comparison note.",
+  "publish_at": "2026-07-16T09:00:00+09:00",
+  "timezone": "Asia/Seoul",
+  "author": "Caregos Editorial Team",
+  "read_minutes": 7,
+  "meta_title": "Deficiency Pattern Definition: scope severity and survey r",
+  "meta_description": "Learn what a cited deficiency’s scope language can and cannot mean before using it in a facility comparison.",
+  "canonical": "https://caregos.com/blog/phase6ak-deficiency-pattern-definition-for-families-choosing-this-week/",
+  "excerpt": "Learn what a cited deficiency’s scope language can and cannot mean before using it in a facility comparison.",
+  "body_html": "<div style=\"color:var(--clay)\">Scope words describe a cited finding; they do not narrate every resident’s present experience.</div>\n<section class=\"direct-answer\"><h2>Read a deficiency pattern as a survey term with a date and subject</h2><p>Words such as isolated, pattern, widespread, scope, and severity can look like a simple safety scale. They are not a shortcut to a conclusion about a particular family member’s future care. CMS explains that a survey agency assigns scope and severity levels to each cited deficiency; scope concerns how many residents were affected by that cited deficiency. The first family task is therefore to identify the exact survey date, the cited subject, the wording shown in the official record, and whether any later public record is present.</p><p>That boundary matters because one survey term does not answer every question a family has during a placement search. It does not establish that the same practice continues today, describe a prospective resident’s personal risk, or rank two homes by itself. It does identify a topic that may deserve a clear, dated facility explanation. Reading the term carefully is more respectful than either ignoring it or treating it as proof of present conditions.</p></section>\n<section class=\"type-element\"><h2>Use a four-term lexicon before writing a comparison note</h2><dl class=\"data\"><dt><strong>Citation</strong></dt><dd>A finding that the inspection team says did not meet a federal standard; keep the cited topic and survey date attached.</dd><dt><strong>Scope</strong></dt><dd>The survey agency’s level for how many residents were affected by the cited deficiency, such as isolated, pattern, or widespread; it is not a census of all current residents.</dd><dt><strong>Severity</strong></dt><dd>The level assigned to that finding in the survey and enforcement process; it should not be translated into a private clinical prediction.</dd><dt><strong>Later record</strong></dt><dd>A later survey, revisit, public update, or facility explanation that may add context but must be checked for whether it concerns the same subject.</dd></dl><p>Put the exact term in the note, not a stronger paraphrase. “The record uses pattern for this cited finding” is a traceable statement. “The facility has a pattern of poor care” adds a broad conclusion that the specific survey language may not support. This vocabulary discipline makes it possible to compare questions across homes without turning technical terminology into a verdict.</p></section>\n<section class=\"scenario-block\"><h2>Scenario: two scope labels appear on a shortlisting call</h2><p>A family sees a scope label on one home’s public inspection information and a different label on another home’s information. The records are from different dates and concern different subjects. Instead of ranking the labels, the family makes two separate rows: date, cited subject, term used, and the question that follows. On the calls, it asks each home which current process applies to that topic, who is responsible for it, and whether a visitor can understand the process without receiving private resident information.</p><p>The first home identifies a current routine and a person who can give a follow-up explanation. The other says only that “the survey is old.” The family records that response as an unanswered current-process question. It does not label either home compliant or noncompliant from the call. The public term and the present answer have different jobs: one identifies a historically cited issue, and the other either supplies or fails to supply a current explanation.</p></section>\n<section class=\"trust-panel\"><h2>What a scope or severity label cannot tell you today</h2><p>A label cannot tell a family whether a bed is suitable, whether a resident’s condition can be managed, whether the same staff are on duty, or whether a concern is urgent. It cannot replace a visit, a clinical discussion, or official help when a resident may be in immediate danger. Medicare explains that health-inspection information includes citations based on inspections and other inspection types over time. That context is precisely why an isolated phrase should be retained with its date and topic.</p><p>It is also important not to demand that staff adjudicate the public record in a hallway conversation. Ask for the current process and the appropriate person to explain it. A careful reader allows “unknown” to remain unknown until an appropriate source can answer it.</p></section>\n<section><h2>Official source notes for deficiency pattern definitions</h2><p>CMS’s <a href=\"https://www.cms.gov/medicare/health-safety-standards/enforcement/nursing-home-enforcement\">nursing-home enforcement page</a> describes scope levels and the survey-and-enforcement setting. Medicare’s <a href=\"https://www.medicare.gov/care-compare/resources/nursing-home/health-inspections/\">inspection resource</a> explains citations and public inspection context. The <a href=\"https://data.cms.gov/provider-data/topics/nursing-homes\">CMS Provider Data Catalog</a> is useful for locating the public record. These sources define the record environment, not a personal placement recommendation.</p></section>\n<section><h2>Correction path when the term is unclear or the record conflicts</h2><p>Copy the term exactly, retain the source URL and date, and ask for the cited subject rather than guessing from a headline. If two sources appear to describe the same issue differently, write both dates and identify whether either is a later event, a dispute, or a separate inspection. Ask the facility for the current process, not for a promise that the historical record is wrong. If that distinction cannot be made, pause the comparison row and seek the official source or appropriate state assistance.</p><a class=\"btn btn-primary\" href=\"/methodology.html\">Read the Caregos record-reading method</a></section>",
+  "internal_links": [
+    "/facility.html",
+    "/compare.html",
+    "/methodology.html"
+  ],
+  "external_source": {
+    "label": "Official nursing home source context",
+    "url": "https://www.cms.gov/medicare/health-safety-standards/enforcement/nursing-home-enforcement"
+  },
+  "cta": "Open Caregos comparison tools",
+  "quality_score": 95,
+  "codex_only_generation_confirmation": "codex-only",
+  "schema_type": "Article",
+  "featured_image_alt": "Caregiver reviewing deficiency pattern definition in a Caregos nursing home comparison worksheet",
+  "template_variation": "phase6ak-editorial-deficiency-scope-lexicon",
+  "review_status": "needs_human_review",
+  "editorial_contract": {
+    "reader_job": "read scope and severity language without converting it into a diagnosis",
+    "decision_moment": "a family sees isolated, pattern, widespread, or severity wording in a survey record",
+    "answer_claim": "scope words describe the cited survey finding and require dated context before a current-care inference",
+    "evidence_plan": "CMS enforcement scope explanation, Medicare inspection guidance, CMS Provider Data Catalog",
+    "non_overlap_claim": "deficiency vocabulary guide rather than correction-plan timeline or fine-date comparison",
+    "structure_reason": "term-boundary lexicon followed by a record-reading case"
+  },
+  "research_evidence": {
+    "fact_traceability_pass": true,
+    "sources": [
+      {
+        "url": "https://www.cms.gov/medicare/health-safety-standards/enforcement/nursing-home-enforcement",
+        "source_role": "official",
+        "used_for": "scope and severity enforcement context"
+      },
+      {
+        "url": "https://www.medicare.gov/care-compare/resources/nursing-home/health-inspections/",
+        "source_role": "official",
+        "used_for": "citation and inspection context"
+      },
+      {
+        "url": "https://data.cms.gov/provider-data/topics/nursing-homes",
+        "source_role": "official",
+        "used_for": "public reporting context"
+      }
+    ],
+    "source_interpretation": "deficiency vocabulary guide rather than correction-plan timeline or fine-date comparison"
+  },
+  "rewrite_evidence": {
+    "rewritten_by": "codex-caregos-batch-a",
+    "rewritten_at": "2026-07-19T08:22:10.265427+00:00",
+    "method": "independent official-source editorial rewrite; held pending human review"
+  }
+}

@@ -65,6 +65,13 @@ def read_posts() -> list[dict]:
     return posts
 
 
+def is_publishable(post: dict) -> bool:
+    """Only individually approved records may enter static public output."""
+    if "review_status" in post:
+        return post["review_status"] == "approved"
+    return not str(post.get("template_variation", "")).startswith("phase6ak-")
+
+
 def rel_rss(path_depth: int) -> str:
     return "../" * path_depth + "rss.xml"
 
@@ -241,6 +248,38 @@ def render_related_rail(post: dict, published: list[dict]) -> str:
       </div>"""
 
 
+def render_official_reference_rail(post: dict) -> str:
+    primary_url = post["external_source"]["url"]
+    references = [
+        (
+            "Medicare Care Compare",
+            "https://www.medicare.gov/care-compare/",
+            "Use this to verify a facility profile, star ratings, and source dates before a visit.",
+        ),
+        (
+            "CMS Nursing Homes certification and compliance",
+            "https://www.cms.gov/medicare/health-safety-standards/certification-compliance/nursing-homes",
+            "Use this for federal nursing home oversight context, not as a substitute for facility-specific advice.",
+        ),
+        (
+            "CMS Five-Star Quality Rating System",
+            "https://www.cms.gov/medicare/health-safety-standards/certification-compliance/five-star-quality-rating-system",
+            "Use this to understand rating methodology, especially when comparing scores across facilities.",
+        ),
+    ]
+    items = "".join(
+        f"""<li><a href="{html.escape(url)}" rel="noopener">{html.escape(label)}</a>
+          <span>{html.escape(note)}</span></li>"""
+        for label, url, note in references
+        if url != primary_url
+    )
+    return f"""<div class="card source-rail">
+        <h2 style="font-size:1.05rem;margin-bottom:8px;">Official references</h2>
+        <p class="caption" style="margin-bottom:10px;">Check the article source beside these public CMS and Medicare references before making a care decision.</p>
+        <ul>{items}</ul>
+      </div>"""
+
+
 def footer() -> str:
     return normalize_html_output("""<footer class="foot"><div class="wrap">
   <div class="between" style="align-items:flex-start; flex-wrap:wrap; gap:32px;">
@@ -303,6 +342,11 @@ def render_post(post: dict, site_url: str, published_posts: list[dict]) -> str:
   .related-rail li {{ margin:8px 0;font-size:.88rem;line-height:1.35; }}
   .related-rail a {{ color:var(--ink);text-decoration:none; }}
   .related-rail a:hover {{ text-decoration:underline;text-decoration-color:var(--clay); }}
+  .source-rail ul {{ margin:0;padding-left:18px; }}
+  .source-rail li {{ margin:9px 0;font-size:.88rem;line-height:1.35; }}
+  .source-rail li span {{ display:block;color:var(--text-2);font-size:.78rem;margin-top:3px; }}
+  .source-rail a {{ color:var(--ink);text-decoration:none;font-weight:700; }}
+  .source-rail a:hover {{ text-decoration:underline;text-decoration-color:var(--clay); }}
   @media (max-width:760px){{ .related-grid {{ grid-template-columns:1fr; }} }}
 </style>
 </head>
@@ -330,6 +374,7 @@ def render_post(post: dict, site_url: str, published_posts: list[dict]) -> str:
         <p class="caption" style="margin-bottom:10px;">This guide cites an official source and should be read with the source date on any facility record.</p>
         <a class="caption" href="{html.escape(post["external_source"]["url"])}" rel="noopener">{html.escape(post["external_source"]["label"])}</a>
       </div>
+      {render_official_reference_rail(post)}
       <div class="card">
         <h2 style="font-size:1.05rem;margin-bottom:8px;">Next step</h2>
         <p class="caption">Use the topic with a real facility profile before deciding.</p>
@@ -496,6 +541,49 @@ def render_rss(posts: list[dict], site_url: str, now: datetime) -> str:
 """
 
 
+def render_sitemap(posts: list[dict], site_url: str, now: datetime) -> str:
+    site = site_url.rstrip("/")
+    today = now.date().isoformat()
+    static_pages = [
+        "about.html",
+        "compare.html",
+        "contact.html",
+        "corrections.html",
+        "enforcement.html",
+        "facility.html",
+        "index.html",
+        "listings.html",
+        "methodology.html",
+        "privacy.html",
+        "terms.html",
+    ]
+    urls = [
+        (f"{site}/", today, "weekly", "1.0"),
+        (f"{site}/blog/", today, "daily", "0.8"),
+    ]
+    for page in static_pages:
+        if (ROOT / page).exists():
+            loc = f"{site}/" if page == "index.html" else f"{site}/{page}"
+            urls.append((loc, today, "monthly", "0.8"))
+    for post in posts:
+        urls.append((f"{site}/blog/{post['slug']}/", post["_publish_dt"].date().isoformat(), "monthly", "0.7"))
+
+    entries = "\n".join(
+        f"""  <url>
+    <loc>{html.escape(loc)}</loc>
+    <lastmod>{lastmod}</lastmod>
+    <changefreq>{changefreq}</changefreq>
+    <priority>{priority}</priority>
+  </url>"""
+        for loc, lastmod, changefreq, priority in urls
+    )
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{entries}
+</urlset>
+"""
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate scheduled blog pages for Caregos.")
     parser.add_argument("--site-url", default="https://caregos.com/")
@@ -504,7 +592,7 @@ def main() -> None:
     now = now_from_env(args.now)
     all_posts = read_posts()
     clean_generated(all_posts)
-    published = [p for p in all_posts if p["_publish_dt"] <= now]
+    published = [p for p in all_posts if is_publishable(p) and p["_publish_dt"] <= now]
     published.sort(key=lambda p: p["_publish_dt"], reverse=True)
     for post in published:
         target = BLOG_DIR / post["slug"]
@@ -512,6 +600,7 @@ def main() -> None:
         (target / "index.html").write_text(render_post(post, args.site_url, published), encoding="utf-8")
     (BLOG_DIR / "index.html").write_text(render_index(published), encoding="utf-8")
     (ROOT / "rss.xml").write_text(render_rss(published, args.site_url, now), encoding="utf-8")
+    (ROOT / "sitemap.xml").write_text(render_sitemap(published, args.site_url, now), encoding="utf-8")
     print(f"Generated {len(published)} published posts at {now.isoformat()}")
 
 

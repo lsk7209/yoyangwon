@@ -1,0 +1,79 @@
+{
+  "id": 114,
+  "status": "scheduled",
+  "category": "data",
+  "title": "Provider Number Record Match: verify the CMS Certification Number",
+  "subtitle": "Use a provider number record match, CMS Certification Number, facility address, ownership date, and Care Compare profile check before drawing conclusions.",
+  "slug": "phase6ak-provider-number-record-match-for-families-choosing-this-week",
+  "main_keyword": "provider number record match",
+  "expanded_keywords": [
+    "CMS Certification Number",
+    "facility name",
+    "provider data"
+  ],
+  "intent": "Use the article to turn public data into one call, one tour question, and one comparison note.",
+  "publish_at": "2026-07-12T09:00:00+09:00",
+  "timezone": "Asia/Seoul",
+  "author": "Andre Trevino",
+  "read_minutes": 7,
+  "meta_title": "Provider Number Record Match: verify the CMS Certification",
+  "meta_description": "A provider number record match prevents families from comparing a public record for the wrong nursing home when names, chains, or addresses are similar.",
+  "canonical": "https://caregos.com/blog/phase6ak-provider-number-record-match-for-families-choosing-this-week/",
+  "excerpt": "Match the CMS Certification Number with name, address, provider type, and data date before using a public profile in a care decision.",
+  "body_html": "<p>Search results can create a quiet but serious comparison error: a family reads an inspection, staffing, or ownership field for a facility with a similar name and assumes it belongs to the home that offered a bed. A <strong>provider number record match</strong> begins before ratings are discussed. It matches the facility’s public identity across the CMS Certification Number, name, street address, provider type, and data date.</p>\n<div class=\"card direct-answer\" style=\"padding:18px;margin:18px 0;border-left:4px solid var(--teal);\"><h2>Match the record before interpreting the record</h2><p>CMS’s Provider Information data use the CMS Certification Number, commonly called the CCN, to identify a facility. Copy the CCN exactly, then compare it with the name and address shown on the current profile. A close name match is useful but not enough when a chain has several locations, an address changed, or an old search result remains visible.</p></div>\n<h2>The five fields in a facility identity check</h2><ol><li><strong>CCN:</strong> record the exact identifier without dropping a leading zero.</li><li><strong>Facility name:</strong> capture the spelling on the public profile and on the admissions material.</li><li><strong>Street address and state:</strong> compare the physical location, not only a city name.</li><li><strong>Provider type:</strong> note whether the record identifies a nursing home/SNF/NF context relevant to the search.</li><li><strong>Data date:</strong> save the release or processing date so an older record is not presented as current.</li></ol><p>CMS’s data dictionary identifies CCN as the CMS Certification Number. Its provider dataset includes one row per active nursing home and fields such as address, provider type, certified beds, ownership-related indicators, and quality information. Those fields are valuable only after the identity match is complete.</p>\n<h2>Do not use a business name as the only key</h2><p>Legal business names, brand names, chain names, and an admissions brochure may not look identical. A recent ownership change can add another layer of confusion without proving that the wrong record is displayed. Rather than deciding from a name difference, ask the facility to confirm its current CCN and address in writing or point the family to the correct public profile. The purpose is factual reconciliation, not an accusation about the facility.</p>\n<h2>Scenario: a near-match appears in a search result</h2><div class=\"well scenario-block\" style=\"padding:18px;margin:18px 0;\"><p>A caregiver searches a home’s name and finds two profiles in the same metropolitan area. One has an address that resembles the referral packet but a different street number. The family is tempted to compare its staffing field with another candidate. Instead, they open the Provider Information record, copy the CCN, and ask admissions to verify the identifier on the proposed admission location. Only after the address and CCN agree do they use the profile to frame tour questions. This extra minute prevents an entire comparison notebook from being built on a wrong facility.</p></div>\n<h2>How certification context changes the conversation</h2><p>CMS explains that skilled nursing facilities and nursing facilities must meet federal requirements to receive Medicare or Medicaid payment, with state and CMS roles varying by facility type. That context explains why provider type belongs in the record match. It does not mean that a CCN decides payment coverage for one admission, and it does not replace a direct confirmation of services, bed availability, or clinical suitability.</p>\n<h2>What a CCN cannot tell a family</h2><p>An identifier cannot tell a family whether the resident will thrive there, whether a particular department has capacity, whether a recent management change improved or harmed care, or whether a public measure applies to a planned admission. It is a key for finding the right record. Keep the identity check separate from tour impressions, payment questions, and care-plan discussions.</p>\n<h2>Correction path when records do not reconcile</h2><p>Pause before sharing or acting on a screenshot. Save the public page URL, data date, CCN, name, and address; then state the mismatch precisely. Ask the facility which CCN applies to the offered location and use the CMS dataset contact or relevant public-data channel for a data question. Do not merge two records merely because the names look related.</p>\n<h2>Official source note and the next verification step</h2><p>Use the <a href=\"https://data.cms.gov/provider-data/dataset/4pq5-n9py\" rel=\"noopener\">CMS Provider Information dataset</a>, the <a href=\"https://data.cms.gov/provider-data/sites/default/files/data_dictionaries/nursing_home/NH_Data_Dictionary.pdf\" rel=\"noopener\">nursing-home data dictionary</a>, and <a href=\"https://www.cms.gov/medicare/health-safety-standards/certification-compliance/nursing-homes\" rel=\"noopener\">CMS certification context</a>. The next question is simple: “Please confirm the CCN and street address for the exact location offering this bed.”</p><div class=\"well trust-panel type-element article-cta\" style=\"padding:18px;margin-top:18px;background:var(--surface-2);\"><a class=\"btn btn-primary btn-sm\" href=\"/facility.html\">Check a facility record</a></div>",
+  "internal_links": [
+    "/facility.html",
+    "/compare.html",
+    "/methodology.html"
+  ],
+  "external_source": {
+    "label": "CMS Provider Data Catalog",
+    "url": "https://data.cms.gov/provider-data/"
+  },
+  "cta": "Open Caregos comparison tools",
+  "quality_score": 94,
+  "codex_only_generation_confirmation": "codex-only",
+  "schema_type": "Article",
+  "featured_image_alt": "Caregiver reviewing provider number record match in a Caregos nursing home comparison worksheet",
+  "template_variation": "phase6ak-editorial-ccn-identity-reconciliation",
+  "review_status": "needs_human_review",
+  "editorial_contract": {
+    "reader_job": "confirm that a public profile belongs to the facility under consideration",
+    "decision_moment": "two similarly named homes, a recent ownership change, or a search result creates record ambiguity",
+    "answer_claim": "a record should be reconciled by CCN, name, address, provider type, and data date before ratings or citations are compared",
+    "evidence_plan": "CMS Provider Information dataset, CMS data dictionary, and CMS nursing-home certification context",
+    "non_overlap_claim": "facility-identity reconciliation, not ownership evaluation or rating interpretation",
+    "structure_reason": "identity-matching audit trail",
+    "source_interpretation": "Uses the CCN as an identity check across records; it does not infer continuity of care or ownership quality from an identifier."
+  },
+  "research_evidence": {
+    "fact_traceability_pass": true,
+    "unresolved_claims": [
+      "A public record cannot establish current staffing, a quoted price, or an individual resident's clinical fit."
+    ],
+    "source_interpretation": "Uses the CCN as an identity check across records; it does not infer continuity of care or ownership quality from an identifier.",
+    "sources": [
+      {
+        "url": "https://data.cms.gov/provider-data/dataset/4pq5-n9py",
+        "source_role": "official",
+        "used_for": "provider-information fields"
+      },
+      {
+        "url": "https://data.cms.gov/provider-data/sites/default/files/data_dictionaries/nursing_home/NH_Data_Dictionary.pdf",
+        "source_role": "official",
+        "used_for": "CCN definition"
+      },
+      {
+        "url": "https://www.cms.gov/medicare/health-safety-standards/certification-compliance/nursing-homes",
+        "source_role": "official",
+        "used_for": "SNF/NF certification context"
+      }
+    ]
+  },
+  "rewrite_evidence": {
+    "rewritten_by": "Codex editorial draft",
+    "rewritten_at": "2026-07-19T05:00:00+00:00",
+    "content_sha256_before": "f65648f8d5d76d7183a65366bb06735380bac518cb29ce04750efebe10a15152",
+    "method": "individual contract-and-source rewrite; remains held until independent human approval"
+  }
+}

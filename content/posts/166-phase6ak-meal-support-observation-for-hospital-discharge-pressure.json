@@ -1,0 +1,39 @@
+{
+  "id": 166,
+  "status": "scheduled",
+  "category": "tour",
+  "title": "Meal Support Observation: a Caregos reading guide for hospital discharge pressure",
+  "subtitle": "An official-source reading guide for meal support observation, dining room, resident dignity, staffing observation, and practical facility comparison.",
+  "slug": "phase6ak-meal-support-observation-for-hospital-discharge-pressure",
+  "main_keyword": "meal support observation",
+  "expanded_keywords": [
+    "dining room",
+    "resident dignity",
+    "staffing observation"
+  ],
+  "intent": "Use the article to keep a fast discharge decision tied to dates, staffing, payment, and resident fit.",
+  "publish_at": "2026-09-02T09:00:00+09:00",
+  "timezone": "Asia/Seoul",
+  "author": "Caregos Editorial Team",
+  "read_minutes": 7,
+  "meta_title": "Meal Support Observation: a Caregos reading guide for hosp",
+  "meta_description": "Meal support observation explained with official nursing home source context, practical checks, tour questions, and resident-fit cautions for for hospital dis",
+  "canonical": "https://caregos.com/blog/phase6ak-meal-support-observation-for-hospital-discharge-pressure/",
+  "excerpt": "Meal support observation can help families compare facilities when it is read with dates, severity, and resident fit.",
+  "body_html": "<nav class=\"card toc\" aria-label=\"Article table of contents\"><strong>On this page</strong><ol><li><a href=\"#main-answer\">Main answer</a></li><li><a href=\"#checks\">Checks</a></li><li><a href=\"#scenario\">Scenario</a></li><li><a href=\"#source\">Source</a></li></ol></nav>\n<h2 id=\"main-answer\">Main answer for meal support observation</h2>\n<p><b>meal support observation</b> matters when it changes a real nursing home decision. Use the article to keep a fast discharge decision tied to dates, staffing, payment, and resident fit.</p>\n<p>Read it beside dining room, resident dignity, and the resident's actual care needs. Public records are useful decision support, not a live bedside report.</p>\n<div class=\"card direct-answer\" style=\"padding:18px;margin:18px 0;border-left:4px solid var(--clay);\"><h2 style=\"font-size:1.12rem;margin-bottom:6px;\">Direct answer</h2><p style=\"margin:0;\">Use the public record to decide what to verify next. Do not use one score, fine, or label as the whole admission decision.</p></div>\n<h2 id=\"checks\">What to check before relying on meal support observation</h2>\n<ul><li>Check the official source date and the facility identifier.</li><li>Look for whether dining room appears once or repeats.</li><li>Ask how the facility monitors the issue today, not only what happened on the survey date.</li><li>Compare at least two nearby options before treating the finding as decisive.</li></ul>\n<table class=\"data\"><thead><tr><th>Signal</th><th>Question</th><th>Why it matters</th></tr></thead><tbody><tr><td>meal support observation</td><td>What changed after the record date?</td><td>It separates old context from current practice.</td></tr><tr><td>dining room</td><td>Is this repeated, severe, or isolated?</td><td>Patterns usually deserve more weight than one stale item.</td></tr><tr><td>staffing observation</td><td>How does this affect this resident?</td><td>Resident fit is more important than a generic ranking.</td></tr></tbody></table>\n<div id=\"scenario\" class=\"well scenario-block\" style=\"padding:18px;margin:18px 0;\"><h2 style=\"font-size:1.1rem;margin-bottom:8px;\">Real-world scenario: meal support observation</h2><p>A family is comparing two facilities for hospital discharge pressure. One looks stronger on the headline rating, while the other gives clearer answers about dining room. The better next step is not to guess; it is to write one source-based question and ask both facilities the same way.</p><p>If the answers conflict, save the source date, the facility name, and the exact field before deciding. That keeps the decision grounded and makes a correction request possible if the data looks wrong.</p></div>\n<h2>Questions to ask about meal support observation</h2>\n<ul><li>Which role owns this issue now: administrator, director of nursing, social worker, or business office?</li><li>What documentation would you show a family to confirm the current process?</li><li>How would this issue affect a resident with mobility, dementia, rehab, medication, or payment needs?</li></ul>\n<h2 id=\"source\">Source check</h2>\n<p>Official source for this article: <a href=\"https://acl.gov/ltc\" rel=\"noopener\">Administration for Community Living</a>. Source checked for this phase6ak batch on 2026-06-22.</p>\n<div class=\"well trust-panel\" style=\"padding:18px;margin:18px 0;\"><h2 style=\"font-size:1.1rem;margin-bottom:8px;\">Data source, limits, and correction path</h2><p><b>Data source:</b> This article points back to official public nursing home sources and should be checked against the facility profile date.</p><p><b>What this article cannot tell you:</b> It cannot confirm bed availability, live staffing on a specific shift, medical suitability, legal rights, or payment approval for a particular resident.</p><p><b>Correction path:</b> If the record appears inconsistent, save the page URL, source date, facility identifier, and exact field before requesting a correction.</p></div>\n<div class=\"card article-cta\" style=\"padding:18px;margin-top:18px;background:var(--surface-2);\"><h2 style=\"font-size:1.1rem;margin-bottom:6px;\">Next practical step</h2><p style=\"margin-bottom:12px;\">Use this guide as one filter, then compare at least two facilities before deciding.</p><a class=\"btn btn-primary btn-sm\" href=\"/facility.html\">Open Caregos comparison tools</a></div>",
+  "internal_links": [
+    "/facility.html",
+    "/compare.html",
+    "/methodology.html"
+  ],
+  "external_source": {
+    "label": "Administration for Community Living",
+    "url": "https://acl.gov/ltc"
+  },
+  "cta": "Open Caregos comparison tools",
+  "quality_score": 94,
+  "codex_only_generation_confirmation": "codex-only",
+  "schema_type": "Article",
+  "featured_image_alt": "Caregiver reviewing meal support observation in a Caregos nursing home comparison worksheet",
+  "template_variation": "phase6ak-official-source"
+}

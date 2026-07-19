@@ -69,6 +69,12 @@ def load_posts() -> list[dict]:
     return posts
 
 
+def is_publishable(post: dict) -> bool:
+    if "review_status" in post:
+        return post["review_status"] == "approved"
+    return not str(post.get("template_variation", "")).startswith("phase6ak-")
+
+
 def html_pages() -> list[Path]:
     return list(ROOT.glob("*.html")) + list(BLOG_DIR.glob("**/index.html"))
 
@@ -127,8 +133,10 @@ def audit_public_encoding(errors: list[str]) -> None:
 
 def audit_scheduling(posts: list[dict], errors: list[str]) -> list[dict]:
     now = current_time()
-    due = [post for post in posts if post["_publish_dt"] <= now]
-    future = [post for post in posts if post["_publish_dt"] > now]
+    publishable = [post for post in posts if is_publishable(post)]
+    held = [post for post in posts if not is_publishable(post)]
+    due = [post for post in publishable if post["_publish_dt"] <= now]
+    future = [post for post in publishable if post["_publish_dt"] > now]
     rss = (ROOT / "rss.xml").read_text(encoding="utf-8")
     sitemap = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
     if rss.count("<item>") != len(due):
@@ -149,6 +157,12 @@ def audit_scheduling(posts: list[dict], errors: list[str]) -> list[dict]:
             errors.append(f"{slug}: future post leaked into sitemap")
         if f"/blog/{slug}/" in rss:
             errors.append(f"{slug}: future post leaked into RSS")
+    for post in held:
+        slug = post["slug"]
+        if (BLOG_DIR / slug / "index.html").exists():
+            errors.append(f"{slug}: held post HTML exists")
+        if f"/blog/{slug}/" in sitemap or f"/blog/{slug}/" in rss:
+            errors.append(f"{slug}: held post leaked into public discovery output")
     return due
 
 

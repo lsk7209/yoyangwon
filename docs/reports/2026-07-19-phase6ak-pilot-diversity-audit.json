@@ -1,0 +1,174 @@
+{
+  "scope": "five phase6ak pilot rewrites only; non-mutating audit",
+  "pilot_ids": [
+    103,
+    148,
+    179,
+    204,
+    212
+  ],
+  "records": [
+    {
+      "id": 103,
+      "source_path": "content/posts/103-phase6ak-rn-hours-weekday-weekend-for-families-choosing-this-week.json",
+      "main_keyword": "RN hours weekday weekend comparison",
+      "template_variation": "phase6ak-editorial-staffing-reconciliation",
+      "h2_signature": [
+        "why a staffing average cannot answer the weekend-care question",
+        "start with the same resident need on both sides of the comparison",
+        "reconcile weekday and weekend coverage in one evidence sheet",
+        "ask who owns a missed-shift escalation",
+        "sunday coverage remains unresolved after a reassuring tour",
+        "read cms staffing fields as reported context, not a shift guarantee",
+        "hand the family a comparison record they can verify later",
+        "what staffing data cannot establish about this resident's shift",
+        "cms staffing report used for the reconciliation",
+        "if the facility answer conflicts with the public record",
+        "do not rank either home until the missing shift is explained"
+      ],
+      "status": "needs_human_review"
+    },
+    {
+      "id": 148,
+      "source_path": "content/posts/148-phase6ak-health-inspection-first-screen-for-hospital-discharge-pressure.json",
+      "main_keyword": "health inspection first screen",
+      "template_variation": "phase6ak-editorial-triage",
+      "h2_signature": [
+        "why an inspection first screen is useful during discharge pressure",
+        "use a 20-minute inspection screen before making the first call",
+        "turn the public record into a discharge-triage card",
+        "read survey findings in chronological order before comparing homes",
+        "use cited concerns to prepare a visit rather than diagnose care",
+        "two calls that change the discharge conversation",
+        "verify the unresolved concern during the tour",
+        "give the discharge team a dated evidence note",
+        "what an inspection record cannot tell you today",
+        "inspection timeline and correction records to verify",
+        "pause the shortlist when the timeline does not reconcile"
+      ],
+      "status": "needs_human_review"
+    },
+    {
+      "id": 179,
+      "source_path": "content/posts/179-phase6ak-medicaid-application-timeline-for-medicaid-pending-searches.json",
+      "main_keyword": "Medicaid application timeline nursing home",
+      "template_variation": "phase6ak-editorial-dependency-map",
+      "h2_signature": [
+        "why a pending medicaid answer needs a dependency map, not a promise",
+        "map the decision dependencies before accepting a conditional bed",
+        "call in an order that protects the pending application",
+        "separate facility participation from the person's eligibility result",
+        "a bed offer arrives before the state decision",
+        "ask for facts that create a documented next step",
+        "keep the case record useful without turning it into benefits advice",
+        "eligibility decisions this map cannot make",
+        "state medicaid records needed for the pending follow-up",
+        "do not treat verbal assurance as an eligibility decision",
+        "next record to obtain before changing the care plan"
+      ],
+      "status": "needs_human_review"
+    },
+    {
+      "id": 204,
+      "source_path": "content/posts/204-phase6ak-two-facility-shortlist-review-for-second-opinion-tours.json",
+      "main_keyword": "two facility shortlist review",
+      "template_variation": "phase6ak-editorial-decision-ledger",
+      "h2_signature": [
+        "why resident fit belongs in the comparison before the score",
+        "write the resident-fit column before looking at a rank",
+        "use a two-home ledger that exposes the real tradeoff",
+        "convert public information into a tie-break question",
+        "when the rating and the visit point in different directions",
+        "run a short second-opinion tour around the unresolved fit issue",
+        "share one decision record instead of competing family memories",
+        "information a shortlist cannot supply without the resident",
+        "public-data reference for the screening questions",
+        "keep both candidates until the fit question is answered",
+        "what to bring to the final family decision"
+      ],
+      "status": "needs_human_review"
+    },
+    {
+      "id": 212,
+      "source_path": "content/posts/212-phase6ak-meal-support-observation-for-second-opinion-tours.json",
+      "main_keyword": "meal support observation",
+      "template_variation": "phase6ak-editorial-observation-protocol",
+      "h2_signature": [
+        "why a meal observation needs a purpose before the dining room visit",
+        "set the observation purpose without pretending to inspect care",
+        "use a fifteen-minute dignity-and-support observation note",
+        "separate what you saw from what you need to ask",
+        "a second tour after the first question went unanswered",
+        "turn a respectful observation into one answerable question",
+        "keep a private record that helps the resident and family",
+        "questions a dining-room visit leaves open",
+        "resident-rights source used for the observation boundary",
+        "request follow-up when observation and explanation diverge",
+        "how to carry the unanswered question into the next visit"
+      ],
+      "status": "needs_human_review"
+    }
+  ],
+  "pair_similarity": [
+    {
+      "left_id": 103,
+      "right_id": 148,
+      "h2_jaccard": 0.079208
+    },
+    {
+      "left_id": 103,
+      "right_id": 179,
+      "h2_jaccard": 0.048544
+    },
+    {
+      "left_id": 103,
+      "right_id": 204,
+      "h2_jaccard": 0.10101
+    },
+    {
+      "left_id": 103,
+      "right_id": 212,
+      "h2_jaccard": 0.081633
+    },
+    {
+      "left_id": 148,
+      "right_id": 179,
+      "h2_jaccard": 0.060606
+    },
+    {
+      "left_id": 148,
+      "right_id": 204,
+      "h2_jaccard": 0.092784
+    },
+    {
+      "left_id": 148,
+      "right_id": 212,
+      "h2_jaccard": 0.095745
+    },
+    {
+      "left_id": 179,
+      "right_id": 204,
+      "h2_jaccard": 0.039604
+    },
+    {
+      "left_id": 179,
+      "right_id": 212,
+      "h2_jaccard": 0.108696
+    },
+    {
+      "left_id": 204,
+      "right_id": 212,
+      "h2_jaccard": 0.119565
+    }
+  ],
+  "summary": {
+    "max_h2_jaccard": 0.119565,
+    "h2_signatures_unique": true,
+    "template_variations_unique": true,
+    "main_keywords_unique": true,
+    "human_review_required": true,
+    "publication_eligible": false,
+    "status": "pass",
+    "errors": []
+  }
+}

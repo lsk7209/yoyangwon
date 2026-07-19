@@ -33,18 +33,24 @@ jobs:
           python scripts/validate_bulk_tracking.py content/bulk-post-tracking.csv --threshold 90 --publish-ready
           python scripts/validate_cms_data.py
           python scripts/validate_public_seo.py
+      - name: Hold public indexing and AdSense during editorial remediation
+        if: always()
+        run: |
+          python scripts/apply_adsense_review_hold.py
       - name: Commit generated public pages
+        if: always()
         run: |
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add blog rss.xml sitemap.xml styles/data.js content/cms
+            git add blog rss.xml sitemap.xml robots.txt *.html styles/data.js content/cms
             git commit -m "Release due scheduled blog posts"
             git push
           else
             echo "No scheduled posts due."
           fi
       - name: Submit sitemap to Google Search Console
+        if: ${{ success() && false }}
         env:
           GSC_TOKEN_JSON: ${{ secrets.GSC_TOKEN_JSON }}
           ADSENSE_OAUTH_CLIENT_JSON: ${{ secrets.ADSENSE_OAUTH_CLIENT_JSON }}

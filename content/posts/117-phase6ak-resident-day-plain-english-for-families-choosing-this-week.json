@@ -1,0 +1,79 @@
+{
+  "id": 117,
+  "status": "scheduled",
+  "category": "glossary",
+  "title": "Resident Day Plain English: read hours per resident day correctly",
+  "subtitle": "Use resident day plain English, hours per resident day, a staffing metric date, and a facility-specific question before comparing homes.",
+  "slug": "phase6ak-resident-day-plain-english-for-families-choosing-this-week",
+  "main_keyword": "resident day plain English",
+  "expanded_keywords": [
+    "hours per resident day",
+    "staffing metric",
+    "PBJ"
+  ],
+  "intent": "Use the article to turn public data into one call, one tour question, and one comparison note.",
+  "publish_at": "2026-07-15T09:00:00+09:00",
+  "timezone": "Asia/Seoul",
+  "author": "Andre Trevino",
+  "read_minutes": 6,
+  "meta_title": "Resident Day Plain English: read hours per resident day co",
+  "meta_description": "Resident day plain English explains why a nursing-home measure’s denominator and reporting period matter before a family compares facilities.",
+  "canonical": "https://caregos.com/blog/phase6ak-resident-day-plain-english-for-families-choosing-this-week/",
+  "excerpt": "A resident-day measure describes an aggregate rate over a defined period; it is not a count of incidents or a forecast for one resident.",
+  "body_html": "<p>A rate expressed “per resident day” can look more precise than it feels. Families may read it as a count of people, a count of nights, or a prediction that the same event will happen to a parent. A <strong>resident day plain English</strong> explanation starts with a different question: which residents, which days, which reporting period, and which event does this measure actually describe?</p>\n<div class=\"card direct-answer\" style=\"padding:18px;margin:18px 0;border-left:4px solid var(--clay);\"><h2>Read the denominator before deciding what the rate means</h2><p>A resident-day measure is an aggregate calculation over a defined group and period. It is not a bedside log and it is not a promise about one admission. CMS quality-measure material explains, for example, that some long-stay measures use days after a resident’s 100th cumulative day in the nursing home. That definition changes the question a family should ask.</p></div>\n<h2>Why “per resident day” is not the number of residents</h2><p>A denominator spreads a measure across a collection of eligible days. If two homes have different resident populations, lengths of stay, or reporting periods, a plain count would not make the same comparison as a rate. That does not make the rate unhelpful. It means the family should not convert it into “this many people had this problem” without reading the measure definition. CMS says quality measures describe average performance in particular areas and do not detail a single resident’s experience.</p>\n<h2>Walk through the measure in four plain-language steps</h2><table class=\"data\"><thead><tr><th>Step</th><th>What to locate</th><th>Why it changes interpretation</th></tr></thead><tbody><tr><td>1. Resident group</td><td>Short-stay or long-stay definition</td><td>The population may not resemble a planned admission</td></tr><tr><td>2. Event</td><td>What the numerator counts</td><td>A hospitalization, visit, or other outcome is not interchangeable</td></tr><tr><td>3. Days</td><td>How resident days are defined</td><td>The denominator is not simply beds or people</td></tr><tr><td>4. Period</td><td>Data-collection and reporting dates</td><td>Older data may not describe today’s operations</td></tr></tbody></table><p>Writing those four fields beside each candidate prevents a familiar error: comparing a long-stay rate at one home to a short-stay concern at another as though the numbers answer the same question.</p>\n<h2>Long-stay resident days change the family’s tour question</h2><p>CMS describes long-stay quality measures as applying to residents who have stayed 101 days or more and notes that long-stay resident days for certain measures are days after the 100th cumulative day. A family arranging a short rehabilitation stay should not quietly assume that such a rate forecasts the first week after discharge. Instead, the rate can prompt a scoped question: “For residents with needs like ours, how do you review a change in condition and who explains the current care-plan process?” The measure raises a question; it does not answer it.</p>\n<h2>Scenario: two numbers look far apart on Care Compare</h2><div class=\"well scenario-block\" style=\"padding:18px;margin:18px 0;\"><p>A family sees different rates for hospitalizations per long-stay resident day at two homes. Their father is entering for a short post-hospital rehabilitation stay. Before declaring one facility safer, they note that the displayed measure concerns long-stay residents, copy the reporting period, and check whether the candidate homes provide the therapy and discharge planning he needs. On the tours, they ask both homes how a change in condition is assessed and how the family receives the care-plan update. The comparison becomes more useful because the family did not ask a long-stay metric to answer a short-stay placement question.</p></div>\n<h2>Data sources and timing leave important questions open</h2><p>CMS explains that Care Compare and Provider Data Catalog information can come from health inspections, Minimum Data Set assessments, payroll staffing submissions, and Medicare claims, with different sources and update cycles. A record can therefore be accurate for its reporting purpose while still being incomplete for a current admission decision. Use the date and source note to decide what must be asked in person. Do not assume that a delayed refresh proves that care is unchanged.</p>\n<h2>What this denominator cannot tell you</h2><p>It cannot tell you whether a resident will be hospitalized, whether an event was avoidable, which staff member was present, or whether a specific bed is appropriate. It also cannot establish negligence or resolve a clinical disagreement. When a number produces concern, bring the defined measure and reporting period to a clinician or facility conversation instead of making a causal claim from an aggregate rate.</p>\n<h2>Keep the measure and correction path separate</h2><p>Save the exact measure label, facility identifier, page URL, and source date. If the profile appears attached to the wrong facility or the displayed field is inconsistent with its stated definition, ask for clarification with those facts. A disagreement about how to interpret a rate is not automatically a data error; a correction request needs a precise record mismatch.</p>\n<h2>Official source note and the one question worth carrying into a tour</h2><p>Read the <a href=\"https://data.cms.gov/provider-data/topics/nursing-homes/quality-measures\" rel=\"noopener\">CMS quality-measure definitions</a>, <a href=\"https://data.cms.gov/provider-data/topics/nursing-homes/data-sources\" rel=\"noopener\">data-source notes</a>, and <a href=\"https://www.cms.gov/medicare/health-safety-standards/certification-compliance/five-star-quality-rating-system\" rel=\"noopener\">Five-Star comparison guidance</a>. Then ask: “Which residents and period does this measure describe, and what current care-plan process should we verify for our family member?”</p><div class=\"well trust-panel type-element article-cta\" style=\"padding:18px;margin-top:18px;background:var(--surface-2);\"><a class=\"btn btn-primary btn-sm\" href=\"/compare.html\">Compare measure notes</a></div>",
+  "internal_links": [
+    "/facility.html",
+    "/compare.html",
+    "/methodology.html"
+  ],
+  "external_source": {
+    "label": "CMS Provider Data Catalog",
+    "url": "https://data.cms.gov/provider-data/"
+  },
+  "cta": "Open Caregos comparison tools",
+  "quality_score": 94,
+  "codex_only_generation_confirmation": "codex-only",
+  "schema_type": "Article",
+  "featured_image_alt": "Caregiver reviewing resident day plain English in a Caregos nursing home comparison worksheet",
+  "template_variation": "phase6ak-editorial-resident-day-denominator-walkthrough",
+  "review_status": "needs_human_review",
+  "editorial_contract": {
+    "reader_job": "translate a resident-day denominator into a careful question about an aggregate quality measure",
+    "decision_moment": "a family sees a rate per resident day and is unsure whether it means many individual incidents",
+    "answer_claim": "the denominator, resident group, reporting period, and measure definition must be read before comparing a rate",
+    "evidence_plan": "CMS quality-measure definitions, Provider Data Catalog data sources, and Care Compare context",
+    "non_overlap_claim": "measure-denominator walkthrough, not a staffing-hours or inspection-record guide",
+    "structure_reason": "plain-language numerator/denominator walkthrough with a comparison guardrail",
+    "source_interpretation": "Explains an aggregate rate’s denominator and limits so a family can ask a facility-specific question without treating the measure as a resident prediction."
+  },
+  "research_evidence": {
+    "fact_traceability_pass": true,
+    "unresolved_claims": [
+      "A public record cannot establish current staffing, a quoted price, or an individual resident's clinical fit."
+    ],
+    "source_interpretation": "Explains an aggregate rate’s denominator and limits so a family can ask a facility-specific question without treating the measure as a resident prediction.",
+    "sources": [
+      {
+        "url": "https://data.cms.gov/provider-data/topics/nursing-homes/quality-measures",
+        "source_role": "official",
+        "used_for": "long-stay resident-day and quality-measure definitions"
+      },
+      {
+        "url": "https://data.cms.gov/provider-data/topics/nursing-homes/data-sources",
+        "source_role": "official",
+        "used_for": "data-source and update context"
+      },
+      {
+        "url": "https://www.cms.gov/medicare/health-safety-standards/certification-compliance/five-star-quality-rating-system",
+        "source_role": "official",
+        "used_for": "comparison-use limit"
+      }
+    ]
+  },
+  "rewrite_evidence": {
+    "rewritten_by": "Codex editorial draft",
+    "rewritten_at": "2026-07-19T05:00:00+00:00",
+    "content_sha256_before": "2864904de0efffe3d8d5d83af915229ff8969920dc323b6290722776ed47cf52",
+    "method": "individual contract-and-source rewrite; remains held until independent human approval"
+  }
+}

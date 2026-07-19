@@ -1,0 +1,74 @@
+{
+  "id": 116,
+  "status": "scheduled",
+  "category": "data",
+  "title": "Dataset To Tour Question: provider data and facility tour guide",
+  "subtitle": "Dataset to tour question for provider data, inspection record, and facility tour observations that a family can compare.",
+  "slug": "phase6ak-dataset-to-tour-question-for-families-choosing-this-week",
+  "main_keyword": "dataset to tour question",
+  "expanded_keywords": [
+    "provider data",
+    "inspection record",
+    "facility tour"
+  ],
+  "intent": "Use the article to turn public data into one call, one tour question, and one comparison note.",
+  "publish_at": "2026-07-14T09:00:00+09:00",
+  "timezone": "Asia/Seoul",
+  "author": "Dana Koenig",
+  "read_minutes": 9,
+  "meta_title": "Dataset To Tour Question: provider data and facility tour ",
+  "meta_description": "Turn one public data field into a dated observation request, rather than treating the field as a bedside verdict.",
+  "canonical": "https://caregos.com/blog/phase6ak-dataset-to-tour-question-for-families-choosing-this-week/",
+  "excerpt": "Turn one public data field into a dated observation request, rather than treating the field as a bedside verdict.",
+  "body_html": "<div style=\"color:var(--teal)\">A public field earns its place in a decision only when it changes what a family checks in person.</div>\n<section class=\"direct-answer\"><h2>Translate one dataset field into one observation, not a facility verdict</h2><p>A family can open a provider-data file or a Care Compare profile and immediately see numbers, dates, and labels that feel decisive. They are valuable starting points, but they are not a live report about a particular resident or a particular shift. The productive move is to write the field exactly as displayed, keep its reporting date beside it, and ask what visit observation could either add context or show that a further question is needed.</p><p>For example, a staffing-related field should not become “there will be enough help for my parent tonight.” It can become: “During the hours we would normally visit, how are call requests assigned and who can explain a delay?” An inspection-related field should not become “this home is unsafe.” It can become: “I saw this dated public finding; what process is used now, and what can a visitor reasonably see or ask about it?” The distinction prevents a population-level public measure from being presented as a promise about one person.</p></section>\n<section class=\"type-element\"><h2>Build a field-to-observation card before each facility tour</h2><table class=\"data\"><thead><tr><th>Keep from the public record</th><th>Turn it into</th><th>Record after the visit</th></tr></thead><tbody><tr><td>Field name, facility identifier, and reporting date</td><td>A neutral question about the current process</td><td>Who answered, the date, and any source offered</td></tr><tr><td>An inspection topic or quality-measure label</td><td>One observable part of the routine relevant to the topic</td><td>What was actually observed, without guessing about private care</td></tr><tr><td>A comparison concern</td><td>The same question for both homes</td><td>Whether the answers are comparable or need follow-up</td></tr></tbody></table><p>The card is intentionally modest. It asks a family to separate the source from its interpretation and the interpretation from a conclusion. CMS publishes nursing-home data for public use, while Medicare explains that inspection results reflect inspections and complaints over time. Those facts make a public record useful context; they do not settle bed availability, resident fit, current staffing on a named shift, or clinical suitability.</p></section>\n<section class=\"scenario-block\"><h2>Scenario: a data field changes the second tour itinerary</h2><p>Two facilities remain after a hospital discharge planner gives a family names and addresses. A public profile leads the family to want clarity about a care-process topic at one home. Rather than arriving with an accusation, the family writes the field name and date on its card. It asks the same opening question at both homes: “What is the current process for this topic, who can explain it, and what should a family understand during a visit?”</p><p>At the first home, the answer identifies a role, a routine, and a way to ask a follow-up question. At the second, the answer is broad reassurance and no one can identify the current owner of the process. Neither answer erases or proves anything in the public record. The result is a better comparison note: one home supplied a traceable explanation and one left a question open. The family can then decide whether to seek clarification, arrange a second visit, or compare another factor that matters more for the resident.</p></section>\n<section class=\"trust-panel\"><h2>What provider data cannot supply for a resident arriving this week</h2><p>Provider data cannot supply a personal care plan, a guarantee about a medication schedule, an answer about a room, or a prediction of how a resident will respond to the setting. It also cannot show every feature of family communication or every detail of a particular shift. Medicare recommends using available comparison information and visiting facilities under consideration. The visit is not a substitute for public data; it is the place to test whether the family can obtain a current, specific explanation.</p><p>Do not turn a field into a request for another resident’s information. A useful tour question asks about the home’s process, ownership, and communication. If the person answering cannot connect a question to a current process, leave that gap visible in the comparison note rather than filling it with a positive or negative assumption.</p></section>\n<section><h2>Official source notes for the field-to-tour conversion</h2><p>Use the <a href=\"https://data.cms.gov/provider-data/topics/nursing-homes\">CMS Provider Data Catalog</a> to identify public nursing-home data and its reporting context. Read <a href=\"https://www.medicare.gov/care-compare/resources/nursing-home/health-inspections/\">Medicare’s health-inspection explanation</a> before treating an inspection field as a present-tense conclusion. For the visit itself, use <a href=\"https://www.medicare.gov/providers-services/original-medicare/nursing-homes/choosing\">Medicare’s choosing-a-nursing-home guidance</a>. These sources support a method for asking better questions; none determines the appropriate facility for an individual.</p></section>\n<section><h2>Correction path when a public field and a tour answer do not align</h2><p>Keep both records. Save the public URL, the facility identifier, and the displayed date; then write the name or role of the person who answered, the date of the conversation, and the follow-up source they offered. Ask which statement concerns the historical record and which describes the current process. If the distinction remains unclear, pause the inference rather than choosing the answer that is easiest to hear. A comparison note that says “needs dated follow-up” is a complete and responsible result.</p><a class=\"btn btn-primary\" href=\"/compare.html\">Open a dated comparison worksheet</a></section>",
+  "internal_links": [
+    "/facility.html",
+    "/compare.html",
+    "/methodology.html"
+  ],
+  "external_source": {
+    "label": "Official nursing home source context",
+    "url": "https://data.cms.gov/provider-data/topics/nursing-homes"
+  },
+  "cta": "Open Caregos comparison tools",
+  "quality_score": 95,
+  "codex_only_generation_confirmation": "codex-only",
+  "schema_type": "Article",
+  "featured_image_alt": "Caregiver reviewing dataset to tour question in a Caregos nursing home comparison worksheet",
+  "template_variation": "phase6ak-editorial-data-to-observation-card",
+  "review_status": "needs_human_review",
+  "editorial_contract": {
+    "reader_job": "convert one public field into an observable tour question",
+    "decision_moment": "a Care Compare or Provider Data field changes a shortlist",
+    "answer_claim": "a dataset field is most useful when it names what to observe, ask, and record on the visit",
+    "evidence_plan": "CMS Provider Data Catalog, Medicare Care Compare inspection context, Medicare visit guidance",
+    "non_overlap_claim": "data-to-observation card rather than an inspection chronology or rating explanation",
+    "structure_reason": "field-to-observation translation board with a two-home visit scenario"
+  },
+  "research_evidence": {
+    "fact_traceability_pass": true,
+    "sources": [
+      {
+        "url": "https://data.cms.gov/provider-data/topics/nursing-homes",
+        "source_role": "official",
+        "used_for": "dataset and reporting-context boundary"
+      },
+      {
+        "url": "https://www.medicare.gov/care-compare/resources/nursing-home/health-inspections/",
+        "source_role": "official",
+        "used_for": "inspection-record meaning and limits"
+      },
+      {
+        "url": "https://www.medicare.gov/providers-services/original-medicare/nursing-homes/choosing",
+        "source_role": "official",
+        "used_for": "visit and comparison boundary"
+      }
+    ],
+    "source_interpretation": "data-to-observation card rather than an inspection chronology or rating explanation"
+  },
+  "rewrite_evidence": {
+    "rewritten_by": "codex-caregos-batch-a",
+    "rewritten_at": "2026-07-19T08:22:10.265427+00:00",
+    "method": "independent official-source editorial rewrite; held pending human review"
+  }
+}

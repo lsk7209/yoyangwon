@@ -1,0 +1,4018 @@
+{
+  "generated_at": "2026-07-19T08:25:16.490546+00:00",
+  "scope": "held phase6ak records only",
+  "record_count": 115,
+  "main_keyword_groups": [
+    {
+      "main_keyword": "Medicaid application timeline nursing home",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "Medicare SNF days question",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "RN hours weekday weekend comparison",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "complaint survey reading order",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "correction plan follow up",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "dataset to tour question",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "deficiency pattern definition",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "facility distance tradeoff",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "fine date vs survey date",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "health inspection first screen",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "meal support observation",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "medication review question",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "night shift call plan",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "nurse turnover question script",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "private pay rate change nursing home",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "provider number record match",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "resident day plain English",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "resident fit over ranking",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "scope severity family note",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "source date decision rule",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "star rating refresh check",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "therapy discharge question",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    },
+    {
+      "main_keyword": "two facility shortlist review",
+      "record_count": 5,
+      "reader_situations": [
+        "adult-children-comparing-from-another-city",
+        "families-choosing-this-week",
+        "hospital-discharge-pressure",
+        "medicaid-pending-searches",
+        "second-opinion-tours"
+      ],
+      "contract_gate": "required"
+    }
+  ],
+  "summary": {
+    "requires_individual_contract": 115,
+    "contract_complete_human_review_pending": 23,
+    "eligible_for_approval": 0,
+    "eligible_for_publication": 0,
+    "shared_template_rewrite_prohibited": true
+  },
+  "records": [
+    {
+      "id": 101,
+      "slug": "phase6ak-star-rating-refresh-check-for-families-choosing-this-week",
+      "source_path": "content/posts/101-phase6ak-star-rating-refresh-check-for-families-choosing-this-week.json",
+      "category": "ratings",
+      "main_keyword": "star rating refresh check",
+      "expanded_keywords": [
+        "CMS star rating",
+        "data refresh",
+        "nursing home comparison"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-star-rating-refresh-tree",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-star-rating-refresh-check-for-adult-children-comparing-from-another-city",
+        "phase6ak-star-rating-refresh-check-for-hospital-discharge-pressure",
+        "phase6ak-star-rating-refresh-check-for-medicaid-pending-searches",
+        "phase6ak-star-rating-refresh-check-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 102,
+      "slug": "phase6ak-health-inspection-first-screen-for-families-choosing-this-week",
+      "source_path": "content/posts/102-phase6ak-health-inspection-first-screen-for-families-choosing-this-week.json",
+      "category": "ratings",
+      "main_keyword": "health inspection first screen",
+      "expanded_keywords": [
+        "survey findings",
+        "deficiencies",
+        "local nursing home"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-health-inspection-first-screen-for-adult-children-comparing-from-another-city",
+        "phase6ak-health-inspection-first-screen-for-hospital-discharge-pressure",
+        "phase6ak-health-inspection-first-screen-for-medicaid-pending-searches",
+        "phase6ak-health-inspection-first-screen-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 103,
+      "slug": "phase6ak-rn-hours-weekday-weekend-for-families-choosing-this-week",
+      "source_path": "content/posts/103-phase6ak-rn-hours-weekday-weekend-for-families-choosing-this-week.json",
+      "category": "staffing",
+      "main_keyword": "RN hours weekday weekend comparison",
+      "expanded_keywords": [
+        "CMS staffing data",
+        "weekend staffing",
+        "nursing home comparison"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-staffing-reconciliation",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-rn-hours-weekday-weekend-for-adult-children-comparing-from-another-city",
+        "phase6ak-rn-hours-weekday-weekend-for-hospital-discharge-pressure",
+        "phase6ak-rn-hours-weekday-weekend-for-medicaid-pending-searches",
+        "phase6ak-rn-hours-weekday-weekend-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 104,
+      "slug": "phase6ak-turnover-question-script-for-families-choosing-this-week",
+      "source_path": "content/posts/104-phase6ak-turnover-question-script-for-families-choosing-this-week.json",
+      "category": "staffing",
+      "main_keyword": "nurse turnover question script",
+      "expanded_keywords": [
+        "staff stability",
+        "agency staff",
+        "care continuity"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-turnover-conversation-ledger",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-turnover-question-script-for-adult-children-comparing-from-another-city",
+        "phase6ak-turnover-question-script-for-hospital-discharge-pressure",
+        "phase6ak-turnover-question-script-for-medicaid-pending-searches",
+        "phase6ak-turnover-question-script-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 105,
+      "slug": "phase6ak-scope-severity-family-note-for-families-choosing-this-week",
+      "source_path": "content/posts/105-phase6ak-scope-severity-family-note-for-families-choosing-this-week.json",
+      "category": "inspections",
+      "main_keyword": "scope severity family note",
+      "expanded_keywords": [
+        "inspection severity",
+        "actual harm",
+        "deficiency pattern"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-scope-severity-evidence-note",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-scope-severity-family-note-for-adult-children-comparing-from-another-city",
+        "phase6ak-scope-severity-family-note-for-hospital-discharge-pressure",
+        "phase6ak-scope-severity-family-note-for-medicaid-pending-searches",
+        "phase6ak-scope-severity-family-note-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 106,
+      "slug": "phase6ak-complaint-survey-reading-order-for-families-choosing-this-week",
+      "source_path": "content/posts/106-phase6ak-complaint-survey-reading-order-for-families-choosing-this-week.json",
+      "category": "inspections",
+      "main_keyword": "complaint survey reading order",
+      "expanded_keywords": [
+        "standard survey",
+        "complaint investigation",
+        "nursing home record"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-complaint-survey-chronology",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-complaint-survey-reading-order-for-adult-children-comparing-from-another-city",
+        "phase6ak-complaint-survey-reading-order-for-hospital-discharge-pressure",
+        "phase6ak-complaint-survey-reading-order-for-medicaid-pending-searches",
+        "phase6ak-complaint-survey-reading-order-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 107,
+      "slug": "phase6ak-fine-date-vs-survey-date-for-families-choosing-this-week",
+      "source_path": "content/posts/107-phase6ak-fine-date-vs-survey-date-for-families-choosing-this-week.json",
+      "category": "enforcement",
+      "main_keyword": "fine date vs survey date",
+      "expanded_keywords": [
+        "civil money penalty",
+        "survey timing",
+        "enforcement remedy"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-enforcement-date-lane",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-fine-date-vs-survey-date-for-adult-children-comparing-from-another-city",
+        "phase6ak-fine-date-vs-survey-date-for-hospital-discharge-pressure",
+        "phase6ak-fine-date-vs-survey-date-for-medicaid-pending-searches",
+        "phase6ak-fine-date-vs-survey-date-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 108,
+      "slug": "phase6ak-correction-plan-follow-up-for-families-choosing-this-week",
+      "source_path": "content/posts/108-phase6ak-correction-plan-follow-up-for-families-choosing-this-week.json",
+      "category": "enforcement",
+      "main_keyword": "correction plan follow up",
+      "expanded_keywords": [
+        "plan of correction",
+        "later survey",
+        "compliance history"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-correction-follow-up-timeline",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-correction-plan-follow-up-for-adult-children-comparing-from-another-city",
+        "phase6ak-correction-plan-follow-up-for-hospital-discharge-pressure",
+        "phase6ak-correction-plan-follow-up-for-medicaid-pending-searches",
+        "phase6ak-correction-plan-follow-up-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 109,
+      "slug": "phase6ak-medicare-snf-days-question-for-families-choosing-this-week",
+      "source_path": "content/posts/109-phase6ak-medicare-snf-days-question-for-families-choosing-this-week.json",
+      "category": "payment",
+      "main_keyword": "Medicare SNF days question",
+      "expanded_keywords": [
+        "skilled nursing facility",
+        "rehab stay",
+        "coverage limit"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-snf-coverage-call-worksheet",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medicare-snf-days-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-medicare-snf-days-question-for-hospital-discharge-pressure",
+        "phase6ak-medicare-snf-days-question-for-medicaid-pending-searches",
+        "phase6ak-medicare-snf-days-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 110,
+      "slug": "phase6ak-medicaid-application-timeline-for-families-choosing-this-week",
+      "source_path": "content/posts/110-phase6ak-medicaid-application-timeline-for-families-choosing-this-week.json",
+      "category": "payment",
+      "main_keyword": "Medicaid application timeline nursing home",
+      "expanded_keywords": [
+        "Medicaid pending",
+        "eligibility",
+        "long-term care"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medicaid-application-timeline-for-adult-children-comparing-from-another-city",
+        "phase6ak-medicaid-application-timeline-for-hospital-discharge-pressure",
+        "phase6ak-medicaid-application-timeline-for-medicaid-pending-searches",
+        "phase6ak-medicaid-application-timeline-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 111,
+      "slug": "phase6ak-private-pay-rate-change-for-families-choosing-this-week",
+      "source_path": "content/posts/111-phase6ak-private-pay-rate-change-for-families-choosing-this-week.json",
+      "category": "payment",
+      "main_keyword": "private pay rate change nursing home",
+      "expanded_keywords": [
+        "daily rate",
+        "admission agreement",
+        "billing office"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-private-pay-cost-handoff",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-private-pay-rate-change-for-adult-children-comparing-from-another-city",
+        "phase6ak-private-pay-rate-change-for-hospital-discharge-pressure",
+        "phase6ak-private-pay-rate-change-for-medicaid-pending-searches",
+        "phase6ak-private-pay-rate-change-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 112,
+      "slug": "phase6ak-two-facility-shortlist-review-for-families-choosing-this-week",
+      "source_path": "content/posts/112-phase6ak-two-facility-shortlist-review-for-families-choosing-this-week.json",
+      "category": "comparison",
+      "main_keyword": "two facility shortlist review",
+      "expanded_keywords": [
+        "local comparison",
+        "resident fit",
+        "caregiver distance"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-two-facility-shortlist-review-for-adult-children-comparing-from-another-city",
+        "phase6ak-two-facility-shortlist-review-for-hospital-discharge-pressure",
+        "phase6ak-two-facility-shortlist-review-for-medicaid-pending-searches",
+        "phase6ak-two-facility-shortlist-review-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 113,
+      "slug": "phase6ak-facility-distance-tradeoff-for-families-choosing-this-week",
+      "source_path": "content/posts/113-phase6ak-facility-distance-tradeoff-for-families-choosing-this-week.json",
+      "category": "comparison",
+      "main_keyword": "facility distance tradeoff",
+      "expanded_keywords": [
+        "family visits",
+        "quality rating",
+        "local nursing home"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-distance-visit-capacity-map",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-facility-distance-tradeoff-for-adult-children-comparing-from-another-city",
+        "phase6ak-facility-distance-tradeoff-for-hospital-discharge-pressure",
+        "phase6ak-facility-distance-tradeoff-for-medicaid-pending-searches",
+        "phase6ak-facility-distance-tradeoff-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 114,
+      "slug": "phase6ak-provider-number-record-match-for-families-choosing-this-week",
+      "source_path": "content/posts/114-phase6ak-provider-number-record-match-for-families-choosing-this-week.json",
+      "category": "data",
+      "main_keyword": "provider number record match",
+      "expanded_keywords": [
+        "CMS Certification Number",
+        "facility name",
+        "provider data"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-ccn-identity-reconciliation",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-provider-number-record-match-for-adult-children-comparing-from-another-city",
+        "phase6ak-provider-number-record-match-for-hospital-discharge-pressure",
+        "phase6ak-provider-number-record-match-for-medicaid-pending-searches",
+        "phase6ak-provider-number-record-match-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 115,
+      "slug": "phase6ak-source-date-decision-rule-for-families-choosing-this-week",
+      "source_path": "content/posts/115-phase6ak-source-date-decision-rule-for-families-choosing-this-week.json",
+      "category": "data",
+      "main_keyword": "source date decision rule",
+      "expanded_keywords": [
+        "CMS data date",
+        "page update",
+        "public reporting lag"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-source-date-reconciliation",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-source-date-decision-rule-for-adult-children-comparing-from-another-city",
+        "phase6ak-source-date-decision-rule-for-hospital-discharge-pressure",
+        "phase6ak-source-date-decision-rule-for-medicaid-pending-searches",
+        "phase6ak-source-date-decision-rule-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 116,
+      "slug": "phase6ak-dataset-to-tour-question-for-families-choosing-this-week",
+      "source_path": "content/posts/116-phase6ak-dataset-to-tour-question-for-families-choosing-this-week.json",
+      "category": "data",
+      "main_keyword": "dataset to tour question",
+      "expanded_keywords": [
+        "provider data",
+        "inspection record",
+        "facility tour"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-data-to-observation-card",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-dataset-to-tour-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-dataset-to-tour-question-for-hospital-discharge-pressure",
+        "phase6ak-dataset-to-tour-question-for-medicaid-pending-searches",
+        "phase6ak-dataset-to-tour-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 117,
+      "slug": "phase6ak-resident-day-plain-english-for-families-choosing-this-week",
+      "source_path": "content/posts/117-phase6ak-resident-day-plain-english-for-families-choosing-this-week.json",
+      "category": "glossary",
+      "main_keyword": "resident day plain English",
+      "expanded_keywords": [
+        "hours per resident day",
+        "staffing metric",
+        "PBJ"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-resident-day-denominator-walkthrough",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-resident-day-plain-english-for-adult-children-comparing-from-another-city",
+        "phase6ak-resident-day-plain-english-for-hospital-discharge-pressure",
+        "phase6ak-resident-day-plain-english-for-medicaid-pending-searches",
+        "phase6ak-resident-day-plain-english-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 118,
+      "slug": "phase6ak-deficiency-pattern-definition-for-families-choosing-this-week",
+      "source_path": "content/posts/118-phase6ak-deficiency-pattern-definition-for-families-choosing-this-week.json",
+      "category": "glossary",
+      "main_keyword": "deficiency pattern definition",
+      "expanded_keywords": [
+        "repeat citation",
+        "F-tag",
+        "scope severity"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-deficiency-scope-lexicon",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-deficiency-pattern-definition-for-adult-children-comparing-from-another-city",
+        "phase6ak-deficiency-pattern-definition-for-hospital-discharge-pressure",
+        "phase6ak-deficiency-pattern-definition-for-medicaid-pending-searches",
+        "phase6ak-deficiency-pattern-definition-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 119,
+      "slug": "phase6ak-night-shift-call-plan-for-families-choosing-this-week",
+      "source_path": "content/posts/119-phase6ak-night-shift-call-plan-for-families-choosing-this-week.json",
+      "category": "tour",
+      "main_keyword": "night shift call plan",
+      "expanded_keywords": [
+        "after hours contact",
+        "family notification",
+        "nurse coverage"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-night-call-escalation-map",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-night-shift-call-plan-for-adult-children-comparing-from-another-city",
+        "phase6ak-night-shift-call-plan-for-hospital-discharge-pressure",
+        "phase6ak-night-shift-call-plan-for-medicaid-pending-searches",
+        "phase6ak-night-shift-call-plan-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 120,
+      "slug": "phase6ak-meal-support-observation-for-families-choosing-this-week",
+      "source_path": "content/posts/120-phase6ak-meal-support-observation-for-families-choosing-this-week.json",
+      "category": "tour",
+      "main_keyword": "meal support observation",
+      "expanded_keywords": [
+        "dining room",
+        "resident dignity",
+        "staffing observation"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-meal-support-observation-for-adult-children-comparing-from-another-city",
+        "phase6ak-meal-support-observation-for-hospital-discharge-pressure",
+        "phase6ak-meal-support-observation-for-medicaid-pending-searches",
+        "phase6ak-meal-support-observation-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 121,
+      "slug": "phase6ak-therapy-discharge-question-for-families-choosing-this-week",
+      "source_path": "content/posts/121-phase6ak-therapy-discharge-question-for-families-choosing-this-week.json",
+      "category": "tour",
+      "main_keyword": "therapy discharge question",
+      "expanded_keywords": [
+        "short-term rehab",
+        "discharge plan",
+        "therapy schedule"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-therapy-transition-sequence",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-therapy-discharge-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-therapy-discharge-question-for-hospital-discharge-pressure",
+        "phase6ak-therapy-discharge-question-for-medicaid-pending-searches",
+        "phase6ak-therapy-discharge-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 122,
+      "slug": "phase6ak-medication-review-question-for-families-choosing-this-week",
+      "source_path": "content/posts/122-phase6ak-medication-review-question-for-families-choosing-this-week.json",
+      "category": "tour",
+      "main_keyword": "medication review question",
+      "expanded_keywords": [
+        "pharmacy review",
+        "high risk medication",
+        "family update"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-medication-handoff-dialogue",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medication-review-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-medication-review-question-for-hospital-discharge-pressure",
+        "phase6ak-medication-review-question-for-medicaid-pending-searches",
+        "phase6ak-medication-review-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 123,
+      "slug": "phase6ak-resident-fit-over-ranking-for-families-choosing-this-week",
+      "source_path": "content/posts/123-phase6ak-resident-fit-over-ranking-for-families-choosing-this-week.json",
+      "category": "decision",
+      "main_keyword": "resident fit over ranking",
+      "expanded_keywords": [
+        "care needs",
+        "payer fit",
+        "facility comparison"
+      ],
+      "reader_situation": "families-choosing-this-week",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-resident-fit-decision-ledger",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-resident-fit-over-ranking-for-adult-children-comparing-from-another-city",
+        "phase6ak-resident-fit-over-ranking-for-hospital-discharge-pressure",
+        "phase6ak-resident-fit-over-ranking-for-medicaid-pending-searches",
+        "phase6ak-resident-fit-over-ranking-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 124,
+      "slug": "phase6ak-star-rating-refresh-check-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/124-phase6ak-star-rating-refresh-check-for-adult-children-comparing-from-another-city.json",
+      "category": "ratings",
+      "main_keyword": "star rating refresh check",
+      "expanded_keywords": [
+        "CMS star rating",
+        "data refresh",
+        "nursing home comparison"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-star-rating-refresh-check-for-families-choosing-this-week",
+        "phase6ak-star-rating-refresh-check-for-hospital-discharge-pressure",
+        "phase6ak-star-rating-refresh-check-for-medicaid-pending-searches",
+        "phase6ak-star-rating-refresh-check-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 125,
+      "slug": "phase6ak-health-inspection-first-screen-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/125-phase6ak-health-inspection-first-screen-for-adult-children-comparing-from-another-city.json",
+      "category": "ratings",
+      "main_keyword": "health inspection first screen",
+      "expanded_keywords": [
+        "survey findings",
+        "deficiencies",
+        "local nursing home"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-health-inspection-first-screen-for-families-choosing-this-week",
+        "phase6ak-health-inspection-first-screen-for-hospital-discharge-pressure",
+        "phase6ak-health-inspection-first-screen-for-medicaid-pending-searches",
+        "phase6ak-health-inspection-first-screen-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 126,
+      "slug": "phase6ak-rn-hours-weekday-weekend-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/126-phase6ak-rn-hours-weekday-weekend-for-adult-children-comparing-from-another-city.json",
+      "category": "staffing",
+      "main_keyword": "RN hours weekday weekend comparison",
+      "expanded_keywords": [
+        "registered nurse hours",
+        "PBJ data",
+        "weekend staffing"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-rn-hours-weekday-weekend-for-families-choosing-this-week",
+        "phase6ak-rn-hours-weekday-weekend-for-hospital-discharge-pressure",
+        "phase6ak-rn-hours-weekday-weekend-for-medicaid-pending-searches",
+        "phase6ak-rn-hours-weekday-weekend-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 127,
+      "slug": "phase6ak-turnover-question-script-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/127-phase6ak-turnover-question-script-for-adult-children-comparing-from-another-city.json",
+      "category": "staffing",
+      "main_keyword": "nurse turnover question script",
+      "expanded_keywords": [
+        "staff stability",
+        "agency staff",
+        "care continuity"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-turnover-question-script-for-families-choosing-this-week",
+        "phase6ak-turnover-question-script-for-hospital-discharge-pressure",
+        "phase6ak-turnover-question-script-for-medicaid-pending-searches",
+        "phase6ak-turnover-question-script-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 128,
+      "slug": "phase6ak-scope-severity-family-note-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/128-phase6ak-scope-severity-family-note-for-adult-children-comparing-from-another-city.json",
+      "category": "inspections",
+      "main_keyword": "scope severity family note",
+      "expanded_keywords": [
+        "inspection severity",
+        "actual harm",
+        "deficiency pattern"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-scope-severity-family-note-for-families-choosing-this-week",
+        "phase6ak-scope-severity-family-note-for-hospital-discharge-pressure",
+        "phase6ak-scope-severity-family-note-for-medicaid-pending-searches",
+        "phase6ak-scope-severity-family-note-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 129,
+      "slug": "phase6ak-complaint-survey-reading-order-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/129-phase6ak-complaint-survey-reading-order-for-adult-children-comparing-from-another-city.json",
+      "category": "inspections",
+      "main_keyword": "complaint survey reading order",
+      "expanded_keywords": [
+        "standard survey",
+        "complaint investigation",
+        "nursing home record"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-complaint-survey-reading-order-for-families-choosing-this-week",
+        "phase6ak-complaint-survey-reading-order-for-hospital-discharge-pressure",
+        "phase6ak-complaint-survey-reading-order-for-medicaid-pending-searches",
+        "phase6ak-complaint-survey-reading-order-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 130,
+      "slug": "phase6ak-fine-date-vs-survey-date-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/130-phase6ak-fine-date-vs-survey-date-for-adult-children-comparing-from-another-city.json",
+      "category": "enforcement",
+      "main_keyword": "fine date vs survey date",
+      "expanded_keywords": [
+        "civil money penalty",
+        "survey timing",
+        "enforcement remedy"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-fine-date-vs-survey-date-for-families-choosing-this-week",
+        "phase6ak-fine-date-vs-survey-date-for-hospital-discharge-pressure",
+        "phase6ak-fine-date-vs-survey-date-for-medicaid-pending-searches",
+        "phase6ak-fine-date-vs-survey-date-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 131,
+      "slug": "phase6ak-correction-plan-follow-up-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/131-phase6ak-correction-plan-follow-up-for-adult-children-comparing-from-another-city.json",
+      "category": "enforcement",
+      "main_keyword": "correction plan follow up",
+      "expanded_keywords": [
+        "plan of correction",
+        "later survey",
+        "compliance history"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-correction-plan-follow-up-for-families-choosing-this-week",
+        "phase6ak-correction-plan-follow-up-for-hospital-discharge-pressure",
+        "phase6ak-correction-plan-follow-up-for-medicaid-pending-searches",
+        "phase6ak-correction-plan-follow-up-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 132,
+      "slug": "phase6ak-medicare-snf-days-question-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/132-phase6ak-medicare-snf-days-question-for-adult-children-comparing-from-another-city.json",
+      "category": "payment",
+      "main_keyword": "Medicare SNF days question",
+      "expanded_keywords": [
+        "skilled nursing facility",
+        "rehab stay",
+        "coverage limit"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medicare-snf-days-question-for-families-choosing-this-week",
+        "phase6ak-medicare-snf-days-question-for-hospital-discharge-pressure",
+        "phase6ak-medicare-snf-days-question-for-medicaid-pending-searches",
+        "phase6ak-medicare-snf-days-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 133,
+      "slug": "phase6ak-medicaid-application-timeline-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/133-phase6ak-medicaid-application-timeline-for-adult-children-comparing-from-another-city.json",
+      "category": "payment",
+      "main_keyword": "Medicaid application timeline nursing home",
+      "expanded_keywords": [
+        "Medicaid pending",
+        "eligibility",
+        "long-term care"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medicaid-application-timeline-for-families-choosing-this-week",
+        "phase6ak-medicaid-application-timeline-for-hospital-discharge-pressure",
+        "phase6ak-medicaid-application-timeline-for-medicaid-pending-searches",
+        "phase6ak-medicaid-application-timeline-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 134,
+      "slug": "phase6ak-private-pay-rate-change-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/134-phase6ak-private-pay-rate-change-for-adult-children-comparing-from-another-city.json",
+      "category": "payment",
+      "main_keyword": "private pay rate change nursing home",
+      "expanded_keywords": [
+        "daily rate",
+        "admission agreement",
+        "billing office"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-private-pay-rate-change-for-families-choosing-this-week",
+        "phase6ak-private-pay-rate-change-for-hospital-discharge-pressure",
+        "phase6ak-private-pay-rate-change-for-medicaid-pending-searches",
+        "phase6ak-private-pay-rate-change-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 135,
+      "slug": "phase6ak-two-facility-shortlist-review-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/135-phase6ak-two-facility-shortlist-review-for-adult-children-comparing-from-another-city.json",
+      "category": "comparison",
+      "main_keyword": "two facility shortlist review",
+      "expanded_keywords": [
+        "local comparison",
+        "resident fit",
+        "caregiver distance"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-two-facility-shortlist-review-for-families-choosing-this-week",
+        "phase6ak-two-facility-shortlist-review-for-hospital-discharge-pressure",
+        "phase6ak-two-facility-shortlist-review-for-medicaid-pending-searches",
+        "phase6ak-two-facility-shortlist-review-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 136,
+      "slug": "phase6ak-facility-distance-tradeoff-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/136-phase6ak-facility-distance-tradeoff-for-adult-children-comparing-from-another-city.json",
+      "category": "comparison",
+      "main_keyword": "facility distance tradeoff",
+      "expanded_keywords": [
+        "family visits",
+        "quality rating",
+        "local nursing home"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-facility-distance-tradeoff-for-families-choosing-this-week",
+        "phase6ak-facility-distance-tradeoff-for-hospital-discharge-pressure",
+        "phase6ak-facility-distance-tradeoff-for-medicaid-pending-searches",
+        "phase6ak-facility-distance-tradeoff-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 137,
+      "slug": "phase6ak-provider-number-record-match-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/137-phase6ak-provider-number-record-match-for-adult-children-comparing-from-another-city.json",
+      "category": "data",
+      "main_keyword": "provider number record match",
+      "expanded_keywords": [
+        "CMS Certification Number",
+        "facility name",
+        "provider data"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-provider-number-record-match-for-families-choosing-this-week",
+        "phase6ak-provider-number-record-match-for-hospital-discharge-pressure",
+        "phase6ak-provider-number-record-match-for-medicaid-pending-searches",
+        "phase6ak-provider-number-record-match-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 138,
+      "slug": "phase6ak-source-date-decision-rule-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/138-phase6ak-source-date-decision-rule-for-adult-children-comparing-from-another-city.json",
+      "category": "data",
+      "main_keyword": "source date decision rule",
+      "expanded_keywords": [
+        "CMS data date",
+        "page update",
+        "public reporting lag"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-source-date-decision-rule-for-families-choosing-this-week",
+        "phase6ak-source-date-decision-rule-for-hospital-discharge-pressure",
+        "phase6ak-source-date-decision-rule-for-medicaid-pending-searches",
+        "phase6ak-source-date-decision-rule-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 139,
+      "slug": "phase6ak-dataset-to-tour-question-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/139-phase6ak-dataset-to-tour-question-for-adult-children-comparing-from-another-city.json",
+      "category": "data",
+      "main_keyword": "dataset to tour question",
+      "expanded_keywords": [
+        "provider data",
+        "inspection record",
+        "facility tour"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-dataset-to-tour-question-for-families-choosing-this-week",
+        "phase6ak-dataset-to-tour-question-for-hospital-discharge-pressure",
+        "phase6ak-dataset-to-tour-question-for-medicaid-pending-searches",
+        "phase6ak-dataset-to-tour-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 140,
+      "slug": "phase6ak-resident-day-plain-english-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/140-phase6ak-resident-day-plain-english-for-adult-children-comparing-from-another-city.json",
+      "category": "glossary",
+      "main_keyword": "resident day plain English",
+      "expanded_keywords": [
+        "hours per resident day",
+        "staffing metric",
+        "PBJ"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-resident-day-plain-english-for-families-choosing-this-week",
+        "phase6ak-resident-day-plain-english-for-hospital-discharge-pressure",
+        "phase6ak-resident-day-plain-english-for-medicaid-pending-searches",
+        "phase6ak-resident-day-plain-english-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 141,
+      "slug": "phase6ak-deficiency-pattern-definition-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/141-phase6ak-deficiency-pattern-definition-for-adult-children-comparing-from-another-city.json",
+      "category": "glossary",
+      "main_keyword": "deficiency pattern definition",
+      "expanded_keywords": [
+        "repeat citation",
+        "F-tag",
+        "scope severity"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-deficiency-pattern-definition-for-families-choosing-this-week",
+        "phase6ak-deficiency-pattern-definition-for-hospital-discharge-pressure",
+        "phase6ak-deficiency-pattern-definition-for-medicaid-pending-searches",
+        "phase6ak-deficiency-pattern-definition-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 142,
+      "slug": "phase6ak-night-shift-call-plan-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/142-phase6ak-night-shift-call-plan-for-adult-children-comparing-from-another-city.json",
+      "category": "tour",
+      "main_keyword": "night shift call plan",
+      "expanded_keywords": [
+        "after hours contact",
+        "family notification",
+        "nurse coverage"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-night-shift-call-plan-for-families-choosing-this-week",
+        "phase6ak-night-shift-call-plan-for-hospital-discharge-pressure",
+        "phase6ak-night-shift-call-plan-for-medicaid-pending-searches",
+        "phase6ak-night-shift-call-plan-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 143,
+      "slug": "phase6ak-meal-support-observation-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/143-phase6ak-meal-support-observation-for-adult-children-comparing-from-another-city.json",
+      "category": "tour",
+      "main_keyword": "meal support observation",
+      "expanded_keywords": [
+        "dining room",
+        "resident dignity",
+        "staffing observation"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-meal-support-observation-for-families-choosing-this-week",
+        "phase6ak-meal-support-observation-for-hospital-discharge-pressure",
+        "phase6ak-meal-support-observation-for-medicaid-pending-searches",
+        "phase6ak-meal-support-observation-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 144,
+      "slug": "phase6ak-therapy-discharge-question-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/144-phase6ak-therapy-discharge-question-for-adult-children-comparing-from-another-city.json",
+      "category": "tour",
+      "main_keyword": "therapy discharge question",
+      "expanded_keywords": [
+        "short-term rehab",
+        "discharge plan",
+        "therapy schedule"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-therapy-discharge-question-for-families-choosing-this-week",
+        "phase6ak-therapy-discharge-question-for-hospital-discharge-pressure",
+        "phase6ak-therapy-discharge-question-for-medicaid-pending-searches",
+        "phase6ak-therapy-discharge-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 145,
+      "slug": "phase6ak-medication-review-question-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/145-phase6ak-medication-review-question-for-adult-children-comparing-from-another-city.json",
+      "category": "tour",
+      "main_keyword": "medication review question",
+      "expanded_keywords": [
+        "pharmacy review",
+        "high risk medication",
+        "family update"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medication-review-question-for-families-choosing-this-week",
+        "phase6ak-medication-review-question-for-hospital-discharge-pressure",
+        "phase6ak-medication-review-question-for-medicaid-pending-searches",
+        "phase6ak-medication-review-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 146,
+      "slug": "phase6ak-resident-fit-over-ranking-for-adult-children-comparing-from-another-city",
+      "source_path": "content/posts/146-phase6ak-resident-fit-over-ranking-for-adult-children-comparing-from-another-city.json",
+      "category": "decision",
+      "main_keyword": "resident fit over ranking",
+      "expanded_keywords": [
+        "care needs",
+        "payer fit",
+        "facility comparison"
+      ],
+      "reader_situation": "adult-children-comparing-from-another-city",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-resident-fit-over-ranking-for-families-choosing-this-week",
+        "phase6ak-resident-fit-over-ranking-for-hospital-discharge-pressure",
+        "phase6ak-resident-fit-over-ranking-for-medicaid-pending-searches",
+        "phase6ak-resident-fit-over-ranking-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 147,
+      "slug": "phase6ak-star-rating-refresh-check-for-hospital-discharge-pressure",
+      "source_path": "content/posts/147-phase6ak-star-rating-refresh-check-for-hospital-discharge-pressure.json",
+      "category": "ratings",
+      "main_keyword": "star rating refresh check",
+      "expanded_keywords": [
+        "CMS star rating",
+        "data refresh",
+        "nursing home comparison"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-star-rating-refresh-check-for-adult-children-comparing-from-another-city",
+        "phase6ak-star-rating-refresh-check-for-families-choosing-this-week",
+        "phase6ak-star-rating-refresh-check-for-medicaid-pending-searches",
+        "phase6ak-star-rating-refresh-check-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 148,
+      "slug": "phase6ak-health-inspection-first-screen-for-hospital-discharge-pressure",
+      "source_path": "content/posts/148-phase6ak-health-inspection-first-screen-for-hospital-discharge-pressure.json",
+      "category": "ratings",
+      "main_keyword": "health inspection first screen",
+      "expanded_keywords": [
+        "survey findings",
+        "deficiencies",
+        "local nursing home"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-triage",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-health-inspection-first-screen-for-adult-children-comparing-from-another-city",
+        "phase6ak-health-inspection-first-screen-for-families-choosing-this-week",
+        "phase6ak-health-inspection-first-screen-for-medicaid-pending-searches",
+        "phase6ak-health-inspection-first-screen-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 149,
+      "slug": "phase6ak-rn-hours-weekday-weekend-for-hospital-discharge-pressure",
+      "source_path": "content/posts/149-phase6ak-rn-hours-weekday-weekend-for-hospital-discharge-pressure.json",
+      "category": "staffing",
+      "main_keyword": "RN hours weekday weekend comparison",
+      "expanded_keywords": [
+        "registered nurse hours",
+        "PBJ data",
+        "weekend staffing"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-rn-hours-weekday-weekend-for-adult-children-comparing-from-another-city",
+        "phase6ak-rn-hours-weekday-weekend-for-families-choosing-this-week",
+        "phase6ak-rn-hours-weekday-weekend-for-medicaid-pending-searches",
+        "phase6ak-rn-hours-weekday-weekend-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 150,
+      "slug": "phase6ak-turnover-question-script-for-hospital-discharge-pressure",
+      "source_path": "content/posts/150-phase6ak-turnover-question-script-for-hospital-discharge-pressure.json",
+      "category": "staffing",
+      "main_keyword": "nurse turnover question script",
+      "expanded_keywords": [
+        "staff stability",
+        "agency staff",
+        "care continuity"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-turnover-question-script-for-adult-children-comparing-from-another-city",
+        "phase6ak-turnover-question-script-for-families-choosing-this-week",
+        "phase6ak-turnover-question-script-for-medicaid-pending-searches",
+        "phase6ak-turnover-question-script-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 151,
+      "slug": "phase6ak-scope-severity-family-note-for-hospital-discharge-pressure",
+      "source_path": "content/posts/151-phase6ak-scope-severity-family-note-for-hospital-discharge-pressure.json",
+      "category": "inspections",
+      "main_keyword": "scope severity family note",
+      "expanded_keywords": [
+        "inspection severity",
+        "actual harm",
+        "deficiency pattern"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-scope-severity-family-note-for-adult-children-comparing-from-another-city",
+        "phase6ak-scope-severity-family-note-for-families-choosing-this-week",
+        "phase6ak-scope-severity-family-note-for-medicaid-pending-searches",
+        "phase6ak-scope-severity-family-note-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 152,
+      "slug": "phase6ak-complaint-survey-reading-order-for-hospital-discharge-pressure",
+      "source_path": "content/posts/152-phase6ak-complaint-survey-reading-order-for-hospital-discharge-pressure.json",
+      "category": "inspections",
+      "main_keyword": "complaint survey reading order",
+      "expanded_keywords": [
+        "standard survey",
+        "complaint investigation",
+        "nursing home record"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-complaint-survey-reading-order-for-adult-children-comparing-from-another-city",
+        "phase6ak-complaint-survey-reading-order-for-families-choosing-this-week",
+        "phase6ak-complaint-survey-reading-order-for-medicaid-pending-searches",
+        "phase6ak-complaint-survey-reading-order-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 153,
+      "slug": "phase6ak-fine-date-vs-survey-date-for-hospital-discharge-pressure",
+      "source_path": "content/posts/153-phase6ak-fine-date-vs-survey-date-for-hospital-discharge-pressure.json",
+      "category": "enforcement",
+      "main_keyword": "fine date vs survey date",
+      "expanded_keywords": [
+        "civil money penalty",
+        "survey timing",
+        "enforcement remedy"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-fine-date-vs-survey-date-for-adult-children-comparing-from-another-city",
+        "phase6ak-fine-date-vs-survey-date-for-families-choosing-this-week",
+        "phase6ak-fine-date-vs-survey-date-for-medicaid-pending-searches",
+        "phase6ak-fine-date-vs-survey-date-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 154,
+      "slug": "phase6ak-correction-plan-follow-up-for-hospital-discharge-pressure",
+      "source_path": "content/posts/154-phase6ak-correction-plan-follow-up-for-hospital-discharge-pressure.json",
+      "category": "enforcement",
+      "main_keyword": "correction plan follow up",
+      "expanded_keywords": [
+        "plan of correction",
+        "later survey",
+        "compliance history"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-correction-plan-follow-up-for-adult-children-comparing-from-another-city",
+        "phase6ak-correction-plan-follow-up-for-families-choosing-this-week",
+        "phase6ak-correction-plan-follow-up-for-medicaid-pending-searches",
+        "phase6ak-correction-plan-follow-up-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 155,
+      "slug": "phase6ak-medicare-snf-days-question-for-hospital-discharge-pressure",
+      "source_path": "content/posts/155-phase6ak-medicare-snf-days-question-for-hospital-discharge-pressure.json",
+      "category": "payment",
+      "main_keyword": "Medicare SNF days question",
+      "expanded_keywords": [
+        "skilled nursing facility",
+        "rehab stay",
+        "coverage limit"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medicare-snf-days-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-medicare-snf-days-question-for-families-choosing-this-week",
+        "phase6ak-medicare-snf-days-question-for-medicaid-pending-searches",
+        "phase6ak-medicare-snf-days-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 156,
+      "slug": "phase6ak-medicaid-application-timeline-for-hospital-discharge-pressure",
+      "source_path": "content/posts/156-phase6ak-medicaid-application-timeline-for-hospital-discharge-pressure.json",
+      "category": "payment",
+      "main_keyword": "Medicaid application timeline nursing home",
+      "expanded_keywords": [
+        "Medicaid pending",
+        "eligibility",
+        "long-term care"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medicaid-application-timeline-for-adult-children-comparing-from-another-city",
+        "phase6ak-medicaid-application-timeline-for-families-choosing-this-week",
+        "phase6ak-medicaid-application-timeline-for-medicaid-pending-searches",
+        "phase6ak-medicaid-application-timeline-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 157,
+      "slug": "phase6ak-private-pay-rate-change-for-hospital-discharge-pressure",
+      "source_path": "content/posts/157-phase6ak-private-pay-rate-change-for-hospital-discharge-pressure.json",
+      "category": "payment",
+      "main_keyword": "private pay rate change nursing home",
+      "expanded_keywords": [
+        "daily rate",
+        "admission agreement",
+        "billing office"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-private-pay-rate-change-for-adult-children-comparing-from-another-city",
+        "phase6ak-private-pay-rate-change-for-families-choosing-this-week",
+        "phase6ak-private-pay-rate-change-for-medicaid-pending-searches",
+        "phase6ak-private-pay-rate-change-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 158,
+      "slug": "phase6ak-two-facility-shortlist-review-for-hospital-discharge-pressure",
+      "source_path": "content/posts/158-phase6ak-two-facility-shortlist-review-for-hospital-discharge-pressure.json",
+      "category": "comparison",
+      "main_keyword": "two facility shortlist review",
+      "expanded_keywords": [
+        "local comparison",
+        "resident fit",
+        "caregiver distance"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-two-facility-shortlist-review-for-adult-children-comparing-from-another-city",
+        "phase6ak-two-facility-shortlist-review-for-families-choosing-this-week",
+        "phase6ak-two-facility-shortlist-review-for-medicaid-pending-searches",
+        "phase6ak-two-facility-shortlist-review-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 159,
+      "slug": "phase6ak-facility-distance-tradeoff-for-hospital-discharge-pressure",
+      "source_path": "content/posts/159-phase6ak-facility-distance-tradeoff-for-hospital-discharge-pressure.json",
+      "category": "comparison",
+      "main_keyword": "facility distance tradeoff",
+      "expanded_keywords": [
+        "family visits",
+        "quality rating",
+        "local nursing home"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-facility-distance-tradeoff-for-adult-children-comparing-from-another-city",
+        "phase6ak-facility-distance-tradeoff-for-families-choosing-this-week",
+        "phase6ak-facility-distance-tradeoff-for-medicaid-pending-searches",
+        "phase6ak-facility-distance-tradeoff-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 160,
+      "slug": "phase6ak-provider-number-record-match-for-hospital-discharge-pressure",
+      "source_path": "content/posts/160-phase6ak-provider-number-record-match-for-hospital-discharge-pressure.json",
+      "category": "data",
+      "main_keyword": "provider number record match",
+      "expanded_keywords": [
+        "CMS Certification Number",
+        "facility name",
+        "provider data"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-provider-number-record-match-for-adult-children-comparing-from-another-city",
+        "phase6ak-provider-number-record-match-for-families-choosing-this-week",
+        "phase6ak-provider-number-record-match-for-medicaid-pending-searches",
+        "phase6ak-provider-number-record-match-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 161,
+      "slug": "phase6ak-source-date-decision-rule-for-hospital-discharge-pressure",
+      "source_path": "content/posts/161-phase6ak-source-date-decision-rule-for-hospital-discharge-pressure.json",
+      "category": "data",
+      "main_keyword": "source date decision rule",
+      "expanded_keywords": [
+        "CMS data date",
+        "page update",
+        "public reporting lag"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-source-date-decision-rule-for-adult-children-comparing-from-another-city",
+        "phase6ak-source-date-decision-rule-for-families-choosing-this-week",
+        "phase6ak-source-date-decision-rule-for-medicaid-pending-searches",
+        "phase6ak-source-date-decision-rule-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 162,
+      "slug": "phase6ak-dataset-to-tour-question-for-hospital-discharge-pressure",
+      "source_path": "content/posts/162-phase6ak-dataset-to-tour-question-for-hospital-discharge-pressure.json",
+      "category": "data",
+      "main_keyword": "dataset to tour question",
+      "expanded_keywords": [
+        "provider data",
+        "inspection record",
+        "facility tour"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-dataset-to-tour-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-dataset-to-tour-question-for-families-choosing-this-week",
+        "phase6ak-dataset-to-tour-question-for-medicaid-pending-searches",
+        "phase6ak-dataset-to-tour-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 163,
+      "slug": "phase6ak-resident-day-plain-english-for-hospital-discharge-pressure",
+      "source_path": "content/posts/163-phase6ak-resident-day-plain-english-for-hospital-discharge-pressure.json",
+      "category": "glossary",
+      "main_keyword": "resident day plain English",
+      "expanded_keywords": [
+        "hours per resident day",
+        "staffing metric",
+        "PBJ"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-resident-day-plain-english-for-adult-children-comparing-from-another-city",
+        "phase6ak-resident-day-plain-english-for-families-choosing-this-week",
+        "phase6ak-resident-day-plain-english-for-medicaid-pending-searches",
+        "phase6ak-resident-day-plain-english-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 164,
+      "slug": "phase6ak-deficiency-pattern-definition-for-hospital-discharge-pressure",
+      "source_path": "content/posts/164-phase6ak-deficiency-pattern-definition-for-hospital-discharge-pressure.json",
+      "category": "glossary",
+      "main_keyword": "deficiency pattern definition",
+      "expanded_keywords": [
+        "repeat citation",
+        "F-tag",
+        "scope severity"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-deficiency-pattern-definition-for-adult-children-comparing-from-another-city",
+        "phase6ak-deficiency-pattern-definition-for-families-choosing-this-week",
+        "phase6ak-deficiency-pattern-definition-for-medicaid-pending-searches",
+        "phase6ak-deficiency-pattern-definition-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 165,
+      "slug": "phase6ak-night-shift-call-plan-for-hospital-discharge-pressure",
+      "source_path": "content/posts/165-phase6ak-night-shift-call-plan-for-hospital-discharge-pressure.json",
+      "category": "tour",
+      "main_keyword": "night shift call plan",
+      "expanded_keywords": [
+        "after hours contact",
+        "family notification",
+        "nurse coverage"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-night-shift-call-plan-for-adult-children-comparing-from-another-city",
+        "phase6ak-night-shift-call-plan-for-families-choosing-this-week",
+        "phase6ak-night-shift-call-plan-for-medicaid-pending-searches",
+        "phase6ak-night-shift-call-plan-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 166,
+      "slug": "phase6ak-meal-support-observation-for-hospital-discharge-pressure",
+      "source_path": "content/posts/166-phase6ak-meal-support-observation-for-hospital-discharge-pressure.json",
+      "category": "tour",
+      "main_keyword": "meal support observation",
+      "expanded_keywords": [
+        "dining room",
+        "resident dignity",
+        "staffing observation"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-meal-support-observation-for-adult-children-comparing-from-another-city",
+        "phase6ak-meal-support-observation-for-families-choosing-this-week",
+        "phase6ak-meal-support-observation-for-medicaid-pending-searches",
+        "phase6ak-meal-support-observation-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 167,
+      "slug": "phase6ak-therapy-discharge-question-for-hospital-discharge-pressure",
+      "source_path": "content/posts/167-phase6ak-therapy-discharge-question-for-hospital-discharge-pressure.json",
+      "category": "tour",
+      "main_keyword": "therapy discharge question",
+      "expanded_keywords": [
+        "short-term rehab",
+        "discharge plan",
+        "therapy schedule"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-therapy-discharge-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-therapy-discharge-question-for-families-choosing-this-week",
+        "phase6ak-therapy-discharge-question-for-medicaid-pending-searches",
+        "phase6ak-therapy-discharge-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 168,
+      "slug": "phase6ak-medication-review-question-for-hospital-discharge-pressure",
+      "source_path": "content/posts/168-phase6ak-medication-review-question-for-hospital-discharge-pressure.json",
+      "category": "tour",
+      "main_keyword": "medication review question",
+      "expanded_keywords": [
+        "pharmacy review",
+        "high risk medication",
+        "family update"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medication-review-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-medication-review-question-for-families-choosing-this-week",
+        "phase6ak-medication-review-question-for-medicaid-pending-searches",
+        "phase6ak-medication-review-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 169,
+      "slug": "phase6ak-resident-fit-over-ranking-for-hospital-discharge-pressure",
+      "source_path": "content/posts/169-phase6ak-resident-fit-over-ranking-for-hospital-discharge-pressure.json",
+      "category": "decision",
+      "main_keyword": "resident fit over ranking",
+      "expanded_keywords": [
+        "care needs",
+        "payer fit",
+        "facility comparison"
+      ],
+      "reader_situation": "hospital-discharge-pressure",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-resident-fit-over-ranking-for-adult-children-comparing-from-another-city",
+        "phase6ak-resident-fit-over-ranking-for-families-choosing-this-week",
+        "phase6ak-resident-fit-over-ranking-for-medicaid-pending-searches",
+        "phase6ak-resident-fit-over-ranking-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 170,
+      "slug": "phase6ak-star-rating-refresh-check-for-medicaid-pending-searches",
+      "source_path": "content/posts/170-phase6ak-star-rating-refresh-check-for-medicaid-pending-searches.json",
+      "category": "ratings",
+      "main_keyword": "star rating refresh check",
+      "expanded_keywords": [
+        "CMS star rating",
+        "data refresh",
+        "nursing home comparison"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-star-rating-refresh-check-for-adult-children-comparing-from-another-city",
+        "phase6ak-star-rating-refresh-check-for-families-choosing-this-week",
+        "phase6ak-star-rating-refresh-check-for-hospital-discharge-pressure",
+        "phase6ak-star-rating-refresh-check-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 171,
+      "slug": "phase6ak-health-inspection-first-screen-for-medicaid-pending-searches",
+      "source_path": "content/posts/171-phase6ak-health-inspection-first-screen-for-medicaid-pending-searches.json",
+      "category": "ratings",
+      "main_keyword": "health inspection first screen",
+      "expanded_keywords": [
+        "survey findings",
+        "deficiencies",
+        "local nursing home"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-health-inspection-first-screen-for-adult-children-comparing-from-another-city",
+        "phase6ak-health-inspection-first-screen-for-families-choosing-this-week",
+        "phase6ak-health-inspection-first-screen-for-hospital-discharge-pressure",
+        "phase6ak-health-inspection-first-screen-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 172,
+      "slug": "phase6ak-rn-hours-weekday-weekend-for-medicaid-pending-searches",
+      "source_path": "content/posts/172-phase6ak-rn-hours-weekday-weekend-for-medicaid-pending-searches.json",
+      "category": "staffing",
+      "main_keyword": "RN hours weekday weekend comparison",
+      "expanded_keywords": [
+        "registered nurse hours",
+        "PBJ data",
+        "weekend staffing"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-rn-hours-weekday-weekend-for-adult-children-comparing-from-another-city",
+        "phase6ak-rn-hours-weekday-weekend-for-families-choosing-this-week",
+        "phase6ak-rn-hours-weekday-weekend-for-hospital-discharge-pressure",
+        "phase6ak-rn-hours-weekday-weekend-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 173,
+      "slug": "phase6ak-turnover-question-script-for-medicaid-pending-searches",
+      "source_path": "content/posts/173-phase6ak-turnover-question-script-for-medicaid-pending-searches.json",
+      "category": "staffing",
+      "main_keyword": "nurse turnover question script",
+      "expanded_keywords": [
+        "staff stability",
+        "agency staff",
+        "care continuity"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-turnover-question-script-for-adult-children-comparing-from-another-city",
+        "phase6ak-turnover-question-script-for-families-choosing-this-week",
+        "phase6ak-turnover-question-script-for-hospital-discharge-pressure",
+        "phase6ak-turnover-question-script-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 174,
+      "slug": "phase6ak-scope-severity-family-note-for-medicaid-pending-searches",
+      "source_path": "content/posts/174-phase6ak-scope-severity-family-note-for-medicaid-pending-searches.json",
+      "category": "inspections",
+      "main_keyword": "scope severity family note",
+      "expanded_keywords": [
+        "inspection severity",
+        "actual harm",
+        "deficiency pattern"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-scope-severity-family-note-for-adult-children-comparing-from-another-city",
+        "phase6ak-scope-severity-family-note-for-families-choosing-this-week",
+        "phase6ak-scope-severity-family-note-for-hospital-discharge-pressure",
+        "phase6ak-scope-severity-family-note-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 175,
+      "slug": "phase6ak-complaint-survey-reading-order-for-medicaid-pending-searches",
+      "source_path": "content/posts/175-phase6ak-complaint-survey-reading-order-for-medicaid-pending-searches.json",
+      "category": "inspections",
+      "main_keyword": "complaint survey reading order",
+      "expanded_keywords": [
+        "standard survey",
+        "complaint investigation",
+        "nursing home record"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-complaint-survey-reading-order-for-adult-children-comparing-from-another-city",
+        "phase6ak-complaint-survey-reading-order-for-families-choosing-this-week",
+        "phase6ak-complaint-survey-reading-order-for-hospital-discharge-pressure",
+        "phase6ak-complaint-survey-reading-order-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 176,
+      "slug": "phase6ak-fine-date-vs-survey-date-for-medicaid-pending-searches",
+      "source_path": "content/posts/176-phase6ak-fine-date-vs-survey-date-for-medicaid-pending-searches.json",
+      "category": "enforcement",
+      "main_keyword": "fine date vs survey date",
+      "expanded_keywords": [
+        "civil money penalty",
+        "survey timing",
+        "enforcement remedy"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-fine-date-vs-survey-date-for-adult-children-comparing-from-another-city",
+        "phase6ak-fine-date-vs-survey-date-for-families-choosing-this-week",
+        "phase6ak-fine-date-vs-survey-date-for-hospital-discharge-pressure",
+        "phase6ak-fine-date-vs-survey-date-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 177,
+      "slug": "phase6ak-correction-plan-follow-up-for-medicaid-pending-searches",
+      "source_path": "content/posts/177-phase6ak-correction-plan-follow-up-for-medicaid-pending-searches.json",
+      "category": "enforcement",
+      "main_keyword": "correction plan follow up",
+      "expanded_keywords": [
+        "plan of correction",
+        "later survey",
+        "compliance history"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-correction-plan-follow-up-for-adult-children-comparing-from-another-city",
+        "phase6ak-correction-plan-follow-up-for-families-choosing-this-week",
+        "phase6ak-correction-plan-follow-up-for-hospital-discharge-pressure",
+        "phase6ak-correction-plan-follow-up-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 178,
+      "slug": "phase6ak-medicare-snf-days-question-for-medicaid-pending-searches",
+      "source_path": "content/posts/178-phase6ak-medicare-snf-days-question-for-medicaid-pending-searches.json",
+      "category": "payment",
+      "main_keyword": "Medicare SNF days question",
+      "expanded_keywords": [
+        "skilled nursing facility",
+        "rehab stay",
+        "coverage limit"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medicare-snf-days-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-medicare-snf-days-question-for-families-choosing-this-week",
+        "phase6ak-medicare-snf-days-question-for-hospital-discharge-pressure",
+        "phase6ak-medicare-snf-days-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 179,
+      "slug": "phase6ak-medicaid-application-timeline-for-medicaid-pending-searches",
+      "source_path": "content/posts/179-phase6ak-medicaid-application-timeline-for-medicaid-pending-searches.json",
+      "category": "payment",
+      "main_keyword": "Medicaid application timeline nursing home",
+      "expanded_keywords": [
+        "Medicaid pending",
+        "eligibility",
+        "long-term care"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-dependency-map",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medicaid-application-timeline-for-adult-children-comparing-from-another-city",
+        "phase6ak-medicaid-application-timeline-for-families-choosing-this-week",
+        "phase6ak-medicaid-application-timeline-for-hospital-discharge-pressure",
+        "phase6ak-medicaid-application-timeline-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 180,
+      "slug": "phase6ak-private-pay-rate-change-for-medicaid-pending-searches",
+      "source_path": "content/posts/180-phase6ak-private-pay-rate-change-for-medicaid-pending-searches.json",
+      "category": "payment",
+      "main_keyword": "private pay rate change nursing home",
+      "expanded_keywords": [
+        "daily rate",
+        "admission agreement",
+        "billing office"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-private-pay-rate-change-for-adult-children-comparing-from-another-city",
+        "phase6ak-private-pay-rate-change-for-families-choosing-this-week",
+        "phase6ak-private-pay-rate-change-for-hospital-discharge-pressure",
+        "phase6ak-private-pay-rate-change-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 181,
+      "slug": "phase6ak-two-facility-shortlist-review-for-medicaid-pending-searches",
+      "source_path": "content/posts/181-phase6ak-two-facility-shortlist-review-for-medicaid-pending-searches.json",
+      "category": "comparison",
+      "main_keyword": "two facility shortlist review",
+      "expanded_keywords": [
+        "local comparison",
+        "resident fit",
+        "caregiver distance"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-two-facility-shortlist-review-for-adult-children-comparing-from-another-city",
+        "phase6ak-two-facility-shortlist-review-for-families-choosing-this-week",
+        "phase6ak-two-facility-shortlist-review-for-hospital-discharge-pressure",
+        "phase6ak-two-facility-shortlist-review-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 182,
+      "slug": "phase6ak-facility-distance-tradeoff-for-medicaid-pending-searches",
+      "source_path": "content/posts/182-phase6ak-facility-distance-tradeoff-for-medicaid-pending-searches.json",
+      "category": "comparison",
+      "main_keyword": "facility distance tradeoff",
+      "expanded_keywords": [
+        "family visits",
+        "quality rating",
+        "local nursing home"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-facility-distance-tradeoff-for-adult-children-comparing-from-another-city",
+        "phase6ak-facility-distance-tradeoff-for-families-choosing-this-week",
+        "phase6ak-facility-distance-tradeoff-for-hospital-discharge-pressure",
+        "phase6ak-facility-distance-tradeoff-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 183,
+      "slug": "phase6ak-provider-number-record-match-for-medicaid-pending-searches",
+      "source_path": "content/posts/183-phase6ak-provider-number-record-match-for-medicaid-pending-searches.json",
+      "category": "data",
+      "main_keyword": "provider number record match",
+      "expanded_keywords": [
+        "CMS Certification Number",
+        "facility name",
+        "provider data"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-provider-number-record-match-for-adult-children-comparing-from-another-city",
+        "phase6ak-provider-number-record-match-for-families-choosing-this-week",
+        "phase6ak-provider-number-record-match-for-hospital-discharge-pressure",
+        "phase6ak-provider-number-record-match-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 184,
+      "slug": "phase6ak-source-date-decision-rule-for-medicaid-pending-searches",
+      "source_path": "content/posts/184-phase6ak-source-date-decision-rule-for-medicaid-pending-searches.json",
+      "category": "data",
+      "main_keyword": "source date decision rule",
+      "expanded_keywords": [
+        "CMS data date",
+        "page update",
+        "public reporting lag"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-source-date-decision-rule-for-adult-children-comparing-from-another-city",
+        "phase6ak-source-date-decision-rule-for-families-choosing-this-week",
+        "phase6ak-source-date-decision-rule-for-hospital-discharge-pressure",
+        "phase6ak-source-date-decision-rule-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 185,
+      "slug": "phase6ak-dataset-to-tour-question-for-medicaid-pending-searches",
+      "source_path": "content/posts/185-phase6ak-dataset-to-tour-question-for-medicaid-pending-searches.json",
+      "category": "data",
+      "main_keyword": "dataset to tour question",
+      "expanded_keywords": [
+        "provider data",
+        "inspection record",
+        "facility tour"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-dataset-to-tour-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-dataset-to-tour-question-for-families-choosing-this-week",
+        "phase6ak-dataset-to-tour-question-for-hospital-discharge-pressure",
+        "phase6ak-dataset-to-tour-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 186,
+      "slug": "phase6ak-resident-day-plain-english-for-medicaid-pending-searches",
+      "source_path": "content/posts/186-phase6ak-resident-day-plain-english-for-medicaid-pending-searches.json",
+      "category": "glossary",
+      "main_keyword": "resident day plain English",
+      "expanded_keywords": [
+        "hours per resident day",
+        "staffing metric",
+        "PBJ"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-resident-day-plain-english-for-adult-children-comparing-from-another-city",
+        "phase6ak-resident-day-plain-english-for-families-choosing-this-week",
+        "phase6ak-resident-day-plain-english-for-hospital-discharge-pressure",
+        "phase6ak-resident-day-plain-english-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 187,
+      "slug": "phase6ak-deficiency-pattern-definition-for-medicaid-pending-searches",
+      "source_path": "content/posts/187-phase6ak-deficiency-pattern-definition-for-medicaid-pending-searches.json",
+      "category": "glossary",
+      "main_keyword": "deficiency pattern definition",
+      "expanded_keywords": [
+        "repeat citation",
+        "F-tag",
+        "scope severity"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-deficiency-pattern-definition-for-adult-children-comparing-from-another-city",
+        "phase6ak-deficiency-pattern-definition-for-families-choosing-this-week",
+        "phase6ak-deficiency-pattern-definition-for-hospital-discharge-pressure",
+        "phase6ak-deficiency-pattern-definition-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 188,
+      "slug": "phase6ak-night-shift-call-plan-for-medicaid-pending-searches",
+      "source_path": "content/posts/188-phase6ak-night-shift-call-plan-for-medicaid-pending-searches.json",
+      "category": "tour",
+      "main_keyword": "night shift call plan",
+      "expanded_keywords": [
+        "after hours contact",
+        "family notification",
+        "nurse coverage"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-night-shift-call-plan-for-adult-children-comparing-from-another-city",
+        "phase6ak-night-shift-call-plan-for-families-choosing-this-week",
+        "phase6ak-night-shift-call-plan-for-hospital-discharge-pressure",
+        "phase6ak-night-shift-call-plan-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 189,
+      "slug": "phase6ak-meal-support-observation-for-medicaid-pending-searches",
+      "source_path": "content/posts/189-phase6ak-meal-support-observation-for-medicaid-pending-searches.json",
+      "category": "tour",
+      "main_keyword": "meal support observation",
+      "expanded_keywords": [
+        "dining room",
+        "resident dignity",
+        "staffing observation"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-meal-support-observation-for-adult-children-comparing-from-another-city",
+        "phase6ak-meal-support-observation-for-families-choosing-this-week",
+        "phase6ak-meal-support-observation-for-hospital-discharge-pressure",
+        "phase6ak-meal-support-observation-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 190,
+      "slug": "phase6ak-therapy-discharge-question-for-medicaid-pending-searches",
+      "source_path": "content/posts/190-phase6ak-therapy-discharge-question-for-medicaid-pending-searches.json",
+      "category": "tour",
+      "main_keyword": "therapy discharge question",
+      "expanded_keywords": [
+        "short-term rehab",
+        "discharge plan",
+        "therapy schedule"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-therapy-discharge-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-therapy-discharge-question-for-families-choosing-this-week",
+        "phase6ak-therapy-discharge-question-for-hospital-discharge-pressure",
+        "phase6ak-therapy-discharge-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 191,
+      "slug": "phase6ak-medication-review-question-for-medicaid-pending-searches",
+      "source_path": "content/posts/191-phase6ak-medication-review-question-for-medicaid-pending-searches.json",
+      "category": "tour",
+      "main_keyword": "medication review question",
+      "expanded_keywords": [
+        "pharmacy review",
+        "high risk medication",
+        "family update"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medication-review-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-medication-review-question-for-families-choosing-this-week",
+        "phase6ak-medication-review-question-for-hospital-discharge-pressure",
+        "phase6ak-medication-review-question-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 192,
+      "slug": "phase6ak-resident-fit-over-ranking-for-medicaid-pending-searches",
+      "source_path": "content/posts/192-phase6ak-resident-fit-over-ranking-for-medicaid-pending-searches.json",
+      "category": "decision",
+      "main_keyword": "resident fit over ranking",
+      "expanded_keywords": [
+        "care needs",
+        "payer fit",
+        "facility comparison"
+      ],
+      "reader_situation": "medicaid-pending-searches",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-resident-fit-over-ranking-for-adult-children-comparing-from-another-city",
+        "phase6ak-resident-fit-over-ranking-for-families-choosing-this-week",
+        "phase6ak-resident-fit-over-ranking-for-hospital-discharge-pressure",
+        "phase6ak-resident-fit-over-ranking-for-second-opinion-tours"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 193,
+      "slug": "phase6ak-star-rating-refresh-check-for-second-opinion-tours",
+      "source_path": "content/posts/193-phase6ak-star-rating-refresh-check-for-second-opinion-tours.json",
+      "category": "ratings",
+      "main_keyword": "star rating refresh check",
+      "expanded_keywords": [
+        "CMS star rating",
+        "data refresh",
+        "nursing home comparison"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-star-rating-refresh-check-for-adult-children-comparing-from-another-city",
+        "phase6ak-star-rating-refresh-check-for-families-choosing-this-week",
+        "phase6ak-star-rating-refresh-check-for-hospital-discharge-pressure",
+        "phase6ak-star-rating-refresh-check-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 194,
+      "slug": "phase6ak-health-inspection-first-screen-for-second-opinion-tours",
+      "source_path": "content/posts/194-phase6ak-health-inspection-first-screen-for-second-opinion-tours.json",
+      "category": "ratings",
+      "main_keyword": "health inspection first screen",
+      "expanded_keywords": [
+        "survey findings",
+        "deficiencies",
+        "local nursing home"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-health-inspection-first-screen-for-adult-children-comparing-from-another-city",
+        "phase6ak-health-inspection-first-screen-for-families-choosing-this-week",
+        "phase6ak-health-inspection-first-screen-for-hospital-discharge-pressure",
+        "phase6ak-health-inspection-first-screen-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 195,
+      "slug": "phase6ak-rn-hours-weekday-weekend-for-second-opinion-tours",
+      "source_path": "content/posts/195-phase6ak-rn-hours-weekday-weekend-for-second-opinion-tours.json",
+      "category": "staffing",
+      "main_keyword": "RN hours weekday weekend comparison",
+      "expanded_keywords": [
+        "registered nurse hours",
+        "PBJ data",
+        "weekend staffing"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-rn-hours-weekday-weekend-for-adult-children-comparing-from-another-city",
+        "phase6ak-rn-hours-weekday-weekend-for-families-choosing-this-week",
+        "phase6ak-rn-hours-weekday-weekend-for-hospital-discharge-pressure",
+        "phase6ak-rn-hours-weekday-weekend-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 196,
+      "slug": "phase6ak-turnover-question-script-for-second-opinion-tours",
+      "source_path": "content/posts/196-phase6ak-turnover-question-script-for-second-opinion-tours.json",
+      "category": "staffing",
+      "main_keyword": "nurse turnover question script",
+      "expanded_keywords": [
+        "staff stability",
+        "agency staff",
+        "care continuity"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-turnover-question-script-for-adult-children-comparing-from-another-city",
+        "phase6ak-turnover-question-script-for-families-choosing-this-week",
+        "phase6ak-turnover-question-script-for-hospital-discharge-pressure",
+        "phase6ak-turnover-question-script-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 197,
+      "slug": "phase6ak-scope-severity-family-note-for-second-opinion-tours",
+      "source_path": "content/posts/197-phase6ak-scope-severity-family-note-for-second-opinion-tours.json",
+      "category": "inspections",
+      "main_keyword": "scope severity family note",
+      "expanded_keywords": [
+        "inspection severity",
+        "actual harm",
+        "deficiency pattern"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-scope-severity-family-note-for-adult-children-comparing-from-another-city",
+        "phase6ak-scope-severity-family-note-for-families-choosing-this-week",
+        "phase6ak-scope-severity-family-note-for-hospital-discharge-pressure",
+        "phase6ak-scope-severity-family-note-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 198,
+      "slug": "phase6ak-complaint-survey-reading-order-for-second-opinion-tours",
+      "source_path": "content/posts/198-phase6ak-complaint-survey-reading-order-for-second-opinion-tours.json",
+      "category": "inspections",
+      "main_keyword": "complaint survey reading order",
+      "expanded_keywords": [
+        "standard survey",
+        "complaint investigation",
+        "nursing home record"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-complaint-survey-reading-order-for-adult-children-comparing-from-another-city",
+        "phase6ak-complaint-survey-reading-order-for-families-choosing-this-week",
+        "phase6ak-complaint-survey-reading-order-for-hospital-discharge-pressure",
+        "phase6ak-complaint-survey-reading-order-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 199,
+      "slug": "phase6ak-fine-date-vs-survey-date-for-second-opinion-tours",
+      "source_path": "content/posts/199-phase6ak-fine-date-vs-survey-date-for-second-opinion-tours.json",
+      "category": "enforcement",
+      "main_keyword": "fine date vs survey date",
+      "expanded_keywords": [
+        "civil money penalty",
+        "survey timing",
+        "enforcement remedy"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-fine-date-vs-survey-date-for-adult-children-comparing-from-another-city",
+        "phase6ak-fine-date-vs-survey-date-for-families-choosing-this-week",
+        "phase6ak-fine-date-vs-survey-date-for-hospital-discharge-pressure",
+        "phase6ak-fine-date-vs-survey-date-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 200,
+      "slug": "phase6ak-correction-plan-follow-up-for-second-opinion-tours",
+      "source_path": "content/posts/200-phase6ak-correction-plan-follow-up-for-second-opinion-tours.json",
+      "category": "enforcement",
+      "main_keyword": "correction plan follow up",
+      "expanded_keywords": [
+        "plan of correction",
+        "later survey",
+        "compliance history"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-correction-plan-follow-up-for-adult-children-comparing-from-another-city",
+        "phase6ak-correction-plan-follow-up-for-families-choosing-this-week",
+        "phase6ak-correction-plan-follow-up-for-hospital-discharge-pressure",
+        "phase6ak-correction-plan-follow-up-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 201,
+      "slug": "phase6ak-medicare-snf-days-question-for-second-opinion-tours",
+      "source_path": "content/posts/201-phase6ak-medicare-snf-days-question-for-second-opinion-tours.json",
+      "category": "payment",
+      "main_keyword": "Medicare SNF days question",
+      "expanded_keywords": [
+        "skilled nursing facility",
+        "rehab stay",
+        "coverage limit"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medicare-snf-days-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-medicare-snf-days-question-for-families-choosing-this-week",
+        "phase6ak-medicare-snf-days-question-for-hospital-discharge-pressure",
+        "phase6ak-medicare-snf-days-question-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 202,
+      "slug": "phase6ak-medicaid-application-timeline-for-second-opinion-tours",
+      "source_path": "content/posts/202-phase6ak-medicaid-application-timeline-for-second-opinion-tours.json",
+      "category": "payment",
+      "main_keyword": "Medicaid application timeline nursing home",
+      "expanded_keywords": [
+        "Medicaid pending",
+        "eligibility",
+        "long-term care"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medicaid-application-timeline-for-adult-children-comparing-from-another-city",
+        "phase6ak-medicaid-application-timeline-for-families-choosing-this-week",
+        "phase6ak-medicaid-application-timeline-for-hospital-discharge-pressure",
+        "phase6ak-medicaid-application-timeline-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 203,
+      "slug": "phase6ak-private-pay-rate-change-for-second-opinion-tours",
+      "source_path": "content/posts/203-phase6ak-private-pay-rate-change-for-second-opinion-tours.json",
+      "category": "payment",
+      "main_keyword": "private pay rate change nursing home",
+      "expanded_keywords": [
+        "daily rate",
+        "admission agreement",
+        "billing office"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-private-pay-rate-change-for-adult-children-comparing-from-another-city",
+        "phase6ak-private-pay-rate-change-for-families-choosing-this-week",
+        "phase6ak-private-pay-rate-change-for-hospital-discharge-pressure",
+        "phase6ak-private-pay-rate-change-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 204,
+      "slug": "phase6ak-two-facility-shortlist-review-for-second-opinion-tours",
+      "source_path": "content/posts/204-phase6ak-two-facility-shortlist-review-for-second-opinion-tours.json",
+      "category": "comparison",
+      "main_keyword": "two facility shortlist review",
+      "expanded_keywords": [
+        "nursing home comparison",
+        "second opinion tour",
+        "resident fit"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-decision-ledger",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-two-facility-shortlist-review-for-adult-children-comparing-from-another-city",
+        "phase6ak-two-facility-shortlist-review-for-families-choosing-this-week",
+        "phase6ak-two-facility-shortlist-review-for-hospital-discharge-pressure",
+        "phase6ak-two-facility-shortlist-review-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 205,
+      "slug": "phase6ak-facility-distance-tradeoff-for-second-opinion-tours",
+      "source_path": "content/posts/205-phase6ak-facility-distance-tradeoff-for-second-opinion-tours.json",
+      "category": "comparison",
+      "main_keyword": "facility distance tradeoff",
+      "expanded_keywords": [
+        "family visits",
+        "quality rating",
+        "local nursing home"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-facility-distance-tradeoff-for-adult-children-comparing-from-another-city",
+        "phase6ak-facility-distance-tradeoff-for-families-choosing-this-week",
+        "phase6ak-facility-distance-tradeoff-for-hospital-discharge-pressure",
+        "phase6ak-facility-distance-tradeoff-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 206,
+      "slug": "phase6ak-provider-number-record-match-for-second-opinion-tours",
+      "source_path": "content/posts/206-phase6ak-provider-number-record-match-for-second-opinion-tours.json",
+      "category": "data",
+      "main_keyword": "provider number record match",
+      "expanded_keywords": [
+        "CMS Certification Number",
+        "facility name",
+        "provider data"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-provider-number-record-match-for-adult-children-comparing-from-another-city",
+        "phase6ak-provider-number-record-match-for-families-choosing-this-week",
+        "phase6ak-provider-number-record-match-for-hospital-discharge-pressure",
+        "phase6ak-provider-number-record-match-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 207,
+      "slug": "phase6ak-source-date-decision-rule-for-second-opinion-tours",
+      "source_path": "content/posts/207-phase6ak-source-date-decision-rule-for-second-opinion-tours.json",
+      "category": "data",
+      "main_keyword": "source date decision rule",
+      "expanded_keywords": [
+        "CMS data date",
+        "page update",
+        "public reporting lag"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-source-date-decision-rule-for-adult-children-comparing-from-another-city",
+        "phase6ak-source-date-decision-rule-for-families-choosing-this-week",
+        "phase6ak-source-date-decision-rule-for-hospital-discharge-pressure",
+        "phase6ak-source-date-decision-rule-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 208,
+      "slug": "phase6ak-dataset-to-tour-question-for-second-opinion-tours",
+      "source_path": "content/posts/208-phase6ak-dataset-to-tour-question-for-second-opinion-tours.json",
+      "category": "data",
+      "main_keyword": "dataset to tour question",
+      "expanded_keywords": [
+        "provider data",
+        "inspection record",
+        "facility tour"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-dataset-to-tour-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-dataset-to-tour-question-for-families-choosing-this-week",
+        "phase6ak-dataset-to-tour-question-for-hospital-discharge-pressure",
+        "phase6ak-dataset-to-tour-question-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 209,
+      "slug": "phase6ak-resident-day-plain-english-for-second-opinion-tours",
+      "source_path": "content/posts/209-phase6ak-resident-day-plain-english-for-second-opinion-tours.json",
+      "category": "glossary",
+      "main_keyword": "resident day plain English",
+      "expanded_keywords": [
+        "hours per resident day",
+        "staffing metric",
+        "PBJ"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-resident-day-plain-english-for-adult-children-comparing-from-another-city",
+        "phase6ak-resident-day-plain-english-for-families-choosing-this-week",
+        "phase6ak-resident-day-plain-english-for-hospital-discharge-pressure",
+        "phase6ak-resident-day-plain-english-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 210,
+      "slug": "phase6ak-deficiency-pattern-definition-for-second-opinion-tours",
+      "source_path": "content/posts/210-phase6ak-deficiency-pattern-definition-for-second-opinion-tours.json",
+      "category": "glossary",
+      "main_keyword": "deficiency pattern definition",
+      "expanded_keywords": [
+        "repeat citation",
+        "F-tag",
+        "scope severity"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-deficiency-pattern-definition-for-adult-children-comparing-from-another-city",
+        "phase6ak-deficiency-pattern-definition-for-families-choosing-this-week",
+        "phase6ak-deficiency-pattern-definition-for-hospital-discharge-pressure",
+        "phase6ak-deficiency-pattern-definition-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 211,
+      "slug": "phase6ak-night-shift-call-plan-for-second-opinion-tours",
+      "source_path": "content/posts/211-phase6ak-night-shift-call-plan-for-second-opinion-tours.json",
+      "category": "tour",
+      "main_keyword": "night shift call plan",
+      "expanded_keywords": [
+        "after hours contact",
+        "family notification",
+        "nurse coverage"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-night-shift-call-plan-for-adult-children-comparing-from-another-city",
+        "phase6ak-night-shift-call-plan-for-families-choosing-this-week",
+        "phase6ak-night-shift-call-plan-for-hospital-discharge-pressure",
+        "phase6ak-night-shift-call-plan-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 212,
+      "slug": "phase6ak-meal-support-observation-for-second-opinion-tours",
+      "source_path": "content/posts/212-phase6ak-meal-support-observation-for-second-opinion-tours.json",
+      "category": "tour",
+      "main_keyword": "meal support observation",
+      "expanded_keywords": [
+        "second opinion tour",
+        "resident dignity",
+        "nursing home checklist"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_human_review",
+      "current_template_variation": "phase6ak-editorial-observation-protocol",
+      "rewritten_before_contract_audit": true,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-meal-support-observation-for-adult-children-comparing-from-another-city",
+        "phase6ak-meal-support-observation-for-families-choosing-this-week",
+        "phase6ak-meal-support-observation-for-hospital-discharge-pressure",
+        "phase6ak-meal-support-observation-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_human_review",
+      "required_before_rewrite": [],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 213,
+      "slug": "phase6ak-therapy-discharge-question-for-second-opinion-tours",
+      "source_path": "content/posts/213-phase6ak-therapy-discharge-question-for-second-opinion-tours.json",
+      "category": "tour",
+      "main_keyword": "therapy discharge question",
+      "expanded_keywords": [
+        "short-term rehab",
+        "discharge plan",
+        "therapy schedule"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-therapy-discharge-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-therapy-discharge-question-for-families-choosing-this-week",
+        "phase6ak-therapy-discharge-question-for-hospital-discharge-pressure",
+        "phase6ak-therapy-discharge-question-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 214,
+      "slug": "phase6ak-medication-review-question-for-second-opinion-tours",
+      "source_path": "content/posts/214-phase6ak-medication-review-question-for-second-opinion-tours.json",
+      "category": "tour",
+      "main_keyword": "medication review question",
+      "expanded_keywords": [
+        "pharmacy review",
+        "high risk medication",
+        "family update"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-medication-review-question-for-adult-children-comparing-from-another-city",
+        "phase6ak-medication-review-question-for-families-choosing-this-week",
+        "phase6ak-medication-review-question-for-hospital-discharge-pressure",
+        "phase6ak-medication-review-question-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    },
+    {
+      "id": 215,
+      "slug": "phase6ak-resident-fit-over-ranking-for-second-opinion-tours",
+      "source_path": "content/posts/215-phase6ak-resident-fit-over-ranking-for-second-opinion-tours.json",
+      "category": "decision",
+      "main_keyword": "resident fit over ranking",
+      "expanded_keywords": [
+        "care needs",
+        "payer fit",
+        "facility comparison"
+      ],
+      "reader_situation": "second-opinion-tours",
+      "current_review_status": "needs_editorial_contract",
+      "current_template_variation": "phase6ak-official-source",
+      "rewritten_before_contract_audit": false,
+      "sibling_slugs_same_main_keyword": [
+        "phase6ak-resident-fit-over-ranking-for-adult-children-comparing-from-another-city",
+        "phase6ak-resident-fit-over-ranking-for-families-choosing-this-week",
+        "phase6ak-resident-fit-over-ranking-for-hospital-discharge-pressure",
+        "phase6ak-resident-fit-over-ranking-for-medicaid-pending-searches"
+      ],
+      "editorial_status": "needs_contract",
+      "required_before_rewrite": [
+        "reader_job",
+        "decision_moment",
+        "answer_claim",
+        "evidence_plan",
+        "non_overlap_claim",
+        "structure_reason",
+        "five_to_eight_source_research_packet"
+      ],
+      "release_eligibility": "held",
+      "reason": "This keyword has repeated audience variants. It cannot be rewritten or approved from a shared prose skeleton; an editor must prove its separate decision and evidence path."
+    }
+  ]
+}

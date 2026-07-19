@@ -1,0 +1,74 @@
+{
+  "id": 113,
+  "status": "scheduled",
+  "category": "comparison",
+  "title": "Facility Distance Tradeoff: family visits and care coordination guide",
+  "subtitle": "Facility distance tradeoff for family visits, care coordination, nursing home choice, and a realistic weekly travel plan.",
+  "slug": "phase6ak-facility-distance-tradeoff-for-families-choosing-this-week",
+  "main_keyword": "facility distance tradeoff",
+  "expanded_keywords": [
+    "family visits",
+    "quality rating",
+    "local nursing home"
+  ],
+  "intent": "Use the article to turn public data into one call, one tour question, and one comparison note.",
+  "publish_at": "2026-07-11T09:00:00+09:00",
+  "timezone": "Asia/Seoul",
+  "author": "Dana Koenig",
+  "read_minutes": 6,
+  "meta_title": "Facility Distance Tradeoff: family visits and care coordin",
+  "meta_description": "Compare travel burden with visit reliability and care coordination without mistaking a nearby address for resident fit.",
+  "canonical": "https://caregos.com/blog/phase6ak-facility-distance-tradeoff-for-families-choosing-this-week/",
+  "excerpt": "Compare travel burden with visit reliability and care coordination without mistaking a nearby address for resident fit.",
+  "body_html": "<div style=\"color:var(--ink-soft)\">A closer address matters only if it creates visits and coordination the family can actually sustain.</div>\n<section class=\"direct-answer\"><h2>Measure distance as repeatable family access, not as a map pin</h2><p>When two nursing homes look possible, the shorter route can feel like an automatic winner. Distance can be deeply important: it may determine whether a relative can visit after work, join a care conversation, notice a change in routine, or arrive when a resident needs familiar support. But a nearby address is not the same thing as a workable placement. Travel time changes by hour, transportation, weather, parking, mobility, and the family member who will actually make the trips.</p><p>Instead of asking only which home is closer, ask what visit pattern is realistic for the next month. Who can go on weekday evenings, who can go on weekends, and who can answer when the primary visitor cannot? Then keep those answers beside other non-distance questions: whether the facility can discuss the person’s care needs, whether the family can communicate with the relevant team, and whether the environment feels appropriate after a visit. This turns distance into one transparent criterion rather than an invisible tie-breaker.</p></section>\n<section class=\"type-element\"><h2>Create a weekly visit-capacity map before choosing the nearer home</h2><table class=\"data\"><thead><tr><th>Question</th><th>Home A</th><th>Home B</th></tr></thead><tbody><tr><td>Realistic door-to-door time at likely visit hours</td><td>Write a tested estimate</td><td>Write a tested estimate</td></tr><tr><td>Named backup visitor or remote check-in plan</td><td>List role, not a promise</td><td>List role, not a promise</td></tr><tr><td>Ability to attend a care discussion when needed</td><td>Note obstacles and contact path</td><td>Note obstacles and contact path</td></tr><tr><td>Resident-specific reason this travel burden matters</td><td>Keep it tied to the person</td><td>Keep it tied to the person</td></tr></tbody></table><p>The point of the map is not to award points for mileage. It makes an assumption visible. A family that expects three short visits each week may discover that the route permits one. Another family may find that a farther home is still reachable because multiple relatives share trips. Either result is better than choosing a facility on a distance estimate that no one has tested.</p></section>\n<section class=\"scenario-block\"><h2>Scenario: the closer home leaves no workable evening visit window</h2><p>A daughter can visit after work twice a week, while a sibling can help only on Saturday. Home A is nearer on a map, but the door-to-door route during the available evening window takes longer than assumed and the visiting plan depends on a parking arrangement that is unreliable. Home B is farther, yet the siblings can coordinate one longer weekday visit and a regular weekend visit without losing the ability to contact the care team.</p><p>The family does not conclude that Home B is better because it is farther or that Home A is worse because the route is inconvenient. It writes the actual pattern: expected visits, backup contact, travel constraints, and the resident’s own preferences. It then asks both homes how families schedule conversations with the appropriate staff and whether a visitor can understand how to raise a routine question. The resulting choice may favor either home, but the reason is a usable support plan rather than an abstract distance preference.</p></section>\n<section class=\"trust-panel\"><h2>What a distance calculation cannot answer about resident fit</h2><p>Distance cannot tell a family whether a home can meet a person’s care needs, whether a bed is available, whether the setting feels respectful, or whether a care plan will be appropriate. It also cannot establish that frequent family visits will substitute for the facility’s responsibility to provide care. Medicare advises people to use comparison information and visit facilities they are considering; a visit lets a family understand care and life at the facility and ask questions of residents, families, and staff.</p><p>A travel plan should not pressure a resident to select a home solely for another person’s convenience. Include the resident’s stated preferences when they can be expressed, and keep care, safety, payment, and availability questions separate. The map is a coordination tool, not a moral scorecard for relatives.</p></section>\n<section><h2>Official source notes for a distance-and-visits comparison</h2><p>Medicare’s <a href=\"https://www.medicare.gov/providers-services/original-medicare/nursing-homes/choosing\">choosing-a-nursing-home guidance</a> recommends comparing information and visiting homes under consideration. <a href=\"https://www.medicare.gov/care-compare/?providerType=NursingHome&redirect=true\">Care Compare</a> provides location-based access to Medicare-certified provider comparisons. CMS’s <a href=\"https://www.cms.gov/about-cms/what-we-do/nursing-homes/patients-caregivers/rights-quality-care\">resident rights and quality-of-care material</a> provides broader context for the resident-centered boundary. None of these sources can select a home for a specific family.</p></section>\n<section><h2>Correction path when the family travel plan breaks down</h2><p>Do not hide the change. Update the map with the actual travel time, identify which visit or care-discussion commitment is no longer realistic, and ask whether another relative or communication route can reliably cover it. If the original choice depended on a visit pattern that is not sustainable, reconsider it alongside the resident’s needs and other placement facts. A revised plan is not a failure; it is better evidence than continuing a schedule that exists only on paper.</p><a class=\"btn btn-primary\" href=\"/facility.html\">Compare facility notes with a visit-capacity column</a></section>",
+  "internal_links": [
+    "/facility.html",
+    "/compare.html",
+    "/methodology.html"
+  ],
+  "external_source": {
+    "label": "Official nursing home source context",
+    "url": "https://www.medicare.gov/providers-services/original-medicare/nursing-homes/choosing"
+  },
+  "cta": "Open Caregos comparison tools",
+  "quality_score": 95,
+  "codex_only_generation_confirmation": "codex-only",
+  "schema_type": "Article",
+  "featured_image_alt": "Caregiver reviewing facility distance tradeoff in a Caregos nursing home comparison worksheet",
+  "template_variation": "phase6ak-editorial-distance-visit-capacity-map",
+  "review_status": "needs_human_review",
+  "editorial_contract": {
+    "reader_job": "weigh realistic visit capacity against other placement factors",
+    "decision_moment": "two viable homes differ materially in travel time",
+    "answer_claim": "distance should be assessed as a repeatable visit-and-coordination capacity, not a mileage preference",
+    "evidence_plan": "Medicare choosing guidance, Care Compare context, resident-rights quality-of-care context",
+    "non_overlap_claim": "family travel capacity rather than rating, inspection, or payment comparison",
+    "structure_reason": "weekly visit-capacity map with an exception-focused decision ledger"
+  },
+  "research_evidence": {
+    "fact_traceability_pass": true,
+    "sources": [
+      {
+        "url": "https://www.medicare.gov/providers-services/original-medicare/nursing-homes/choosing",
+        "source_role": "official",
+        "used_for": "facility visits and comparison guidance"
+      },
+      {
+        "url": "https://www.medicare.gov/care-compare/?providerType=NursingHome&redirect=true",
+        "source_role": "official",
+        "used_for": "location-based provider comparison context"
+      },
+      {
+        "url": "https://www.cms.gov/about-cms/what-we-do/nursing-homes/patients-caregivers/rights-quality-care",
+        "source_role": "official",
+        "used_for": "resident and family quality-of-care context"
+      }
+    ],
+    "source_interpretation": "family travel capacity rather than rating, inspection, or payment comparison"
+  },
+  "rewrite_evidence": {
+    "rewritten_by": "codex-caregos-batch-a",
+    "rewritten_at": "2026-07-19T08:22:10.265427+00:00",
+    "method": "independent official-source editorial rewrite; held pending human review"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": 122,
+  "status": "scheduled",
+  "category": "tour",
+  "title": "Medication Review Question: pharmacy review and SNF transition guide",
+  "subtitle": "Medication review question for SNF transition, medication list, follow-up care, and a family update conversation.",
+  "slug": "phase6ak-medication-review-question-for-families-choosing-this-week",
+  "main_keyword": "medication review question",
+  "expanded_keywords": [
+    "pharmacy review",
+    "high risk medication",
+    "family update"
+  ],
+  "intent": "Use the article to turn public data into one call, one tour question, and one comparison note.",
+  "publish_at": "2026-07-20T09:00:00+09:00",
+  "timezone": "Asia/Seoul",
+  "author": "Dana Koenig",
+  "read_minutes": 7,
+  "meta_title": "Medication Review Question: pharmacy review and SNF transi",
+  "meta_description": "Prepare a medication-review conversation for a transition without asking a public measure to replace the resident’s clinical plan.",
+  "canonical": "https://caregos.com/blog/phase6ak-medication-review-question-for-families-choosing-this-week/",
+  "excerpt": "Prepare a medication-review conversation for a transition without asking a public measure to replace the resident’s clinical plan.",
+  "body_html": "<div style=\"color:var(--clay)\">A medication-review measure can prompt a safer handoff question, but it cannot prescribe for one resident.</div>\n<section class=\"direct-answer\"><h2>Ask who reconciles the medication list, who follows up, and how the family is informed</h2><p>Medication questions become urgent when someone moves from a hospital, home, rehabilitation stay, or another facility into a skilled-nursing setting. A family may see a public quality measure about medication review and assume it answers whether every medicine will be correct on arrival. It does not. CMS describes a measure about SNF stays in which medications were reviewed at admission and during the stay and received follow-up when issues were identified. That is useful context for a process conversation, not an individual clinical determination.</p><p>The practical question is role-based: who receives the current list, who performs or coordinates the review under the facility’s process, how are questions routed to the appropriate clinician, and how will a family learn what information is still missing? No article can tell a family to start, stop, substitute, or change a medication. It can help the family preserve the source of the list, the person responsible for each next question, and the point at which a clinician must be contacted.</p></section>\n<section class=\"type-element\"><h2>Use a handoff dialogue card rather than a medication checklist</h2><table class=\"data\"><thead><tr><th>Ask</th><th>Why it is a process question</th><th>Keep in the family note</th></tr></thead><tbody><tr><td>What current medication list did the receiving team receive?</td><td>It identifies the document without declaring it complete.</td><td>Source, date, and any missing fields named by staff.</td></tr><tr><td>Which role coordinates review and follow-up when an issue is found?</td><td>It identifies an escalation path, not a treatment choice.</td><td>Role, callback route, and expected next contact.</td></tr><tr><td>How should the family raise a discrepancy or concern?</td><td>It separates routine communication from urgent clinical advice.</td><td>Who to contact and what information to have ready.</td></tr></tbody></table><p>A dialogue card should contain only information the family can accurately provide: medication list source, dates, recent setting, named questions, and contact routes. It should not be used to record unnecessary private details about other residents or to pressure a staff member into making a clinical decision outside the appropriate review process. If the resident has an urgent symptom or immediate safety concern, use the facility’s urgent clinical route or emergency help rather than waiting for a comparison worksheet.</p></section>\n<section class=\"scenario-block\"><h2>Scenario: a discharge list and a facility intake list do not match</h2><p>A son brings a discharge packet to an SNF admission and notices that a medication name on the family’s copy does not appear in the intake conversation. He does not decide that the medication was omitted or instruct anyone to add it. He asks which list the receiving team is using, whether the discrepancy has been routed to the appropriate clinical reviewer, and how the family will receive a follow-up answer. He records the time, the role of the person receiving the question, and the next contact point.</p><p>That response is more useful than arguing from a public percentage. The quality measure can explain why medication review and follow-up are important around transitions, but it cannot settle the discrepancy. If the team identifies that a clinician must review the record, the family’s job is to preserve the question and use the stated escalation route. If an answer remains unclear, the next step is to ask the responsible clinical or facility contact for the current status, not to rely on an internet summary.</p></section>\n<section class=\"trust-panel\"><h2>What this medication-review question cannot decide for one person</h2><p>It cannot tell a family whether a medication is appropriate, whether a dose should change, whether an interaction exists, or whether a resident should be admitted. It cannot replace the prescriber, pharmacist, nurse, or other clinician responsible for the resident’s care. CMS’s public measure reports a process across SNF stays, not a guarantee about a particular handoff. A high or low public figure should therefore be read as a reason to ask about process and follow-up, not as a medication instruction.</p><p>The same boundary protects the resident. Families can be active participants in communication without being asked to make a clinical judgment from incomplete records. Keep questions specific and time-stamped, and ask which person or team owns the next clinically appropriate answer.</p></section>\n<section><h2>Official source notes for medication review and follow-up</h2><p>The <a href=\"https://data.cms.gov/provider-data/topics/nursing-homes/quality-measures\">CMS Provider Data Catalog quality-measures page</a> describes the SNF medication-review and follow-up measure. CMS’s <a href=\"https://www.cms.gov/medicare/quality/nursing-home-improvement/quality-measures\">quality-measures resource</a> provides reporting context and technical materials. Medicare’s <a href=\"https://www.medicare.gov/providers-services/original-medicare/nursing-homes/choosing\">nursing-home selection guidance</a> frames the wider facility-comparison boundary. These official sources do not replace resident-specific clinical advice.</p></section>\n<section><h2>Correction path when medication information is missing or inconsistent</h2><p>Do not repair the list yourself. Preserve the source documents, write what appears inconsistent, and ask the receiving team which role will review it and when the family should expect an answer. If someone advises a change, request that the appropriate clinical owner confirm it through the facility’s process. If the concern is urgent, follow the facility’s urgent instructions or seek emergency help. A documented escalation is safer than a confident guess.</p><a class=\"btn btn-primary\" href=\"/facility.html\">Keep a transition conversation note with the facility comparison</a></section>",
+  "internal_links": [
+    "/facility.html",
+    "/compare.html",
+    "/methodology.html"
+  ],
+  "external_source": {
+    "label": "Official nursing home source context",
+    "url": "https://data.cms.gov/provider-data/topics/nursing-homes/quality-measures"
+  },
+  "cta": "Open Caregos comparison tools",
+  "quality_score": 95,
+  "codex_only_generation_confirmation": "codex-only",
+  "schema_type": "Article",
+  "featured_image_alt": "Caregiver reviewing medication review question in a Caregos nursing home comparison worksheet",
+  "template_variation": "phase6ak-editorial-medication-handoff-dialogue",
+  "review_status": "needs_human_review",
+  "editorial_contract": {
+    "reader_job": "prepare a safe medication-handoff conversation during a facility transition",
+    "decision_moment": "a family is choosing or entering an SNF after another care setting",
+    "answer_claim": "a public medication-review measure should lead to questions about reconciliation, responsible roles, and escalation—not a medication decision",
+    "evidence_plan": "CMS quality-measure definition, CMS quality-measure context, Medicare nursing-home selection guidance",
+    "non_overlap_claim": "transition medication dialogue rather than inspection, rating, or coverage article",
+    "structure_reason": "role-based handoff dialogue and missing-information escalation card"
+  },
+  "research_evidence": {
+    "fact_traceability_pass": true,
+    "sources": [
+      {
+        "url": "https://data.cms.gov/provider-data/topics/nursing-homes/quality-measures",
+        "source_role": "official",
+        "used_for": "medication review and follow-up measure meaning"
+      },
+      {
+        "url": "https://www.cms.gov/medicare/quality/nursing-home-improvement/quality-measures",
+        "source_role": "official",
+        "used_for": "quality-measure reporting context"
+      },
+      {
+        "url": "https://www.medicare.gov/providers-services/original-medicare/nursing-homes/choosing",
+        "source_role": "official",
+        "used_for": "facility-choice and visit boundary"
+      }
+    ],
+    "source_interpretation": "transition medication dialogue rather than inspection, rating, or coverage article"
+  },
+  "rewrite_evidence": {
+    "rewritten_by": "codex-caregos-batch-a",
+    "rewritten_at": "2026-07-19T08:22:10.265427+00:00",
+    "method": "independent official-source editorial rewrite; held pending human review"
+  }
+}

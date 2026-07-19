@@ -1,9 +1,4 @@
 User-agent: *
-Allow: /
+Disallow: /
 
-# Design-system documentation is for implementation review, not search results.
-Disallow: /design-system.html
-
-Sitemap: https://caregos.com/sitemap.xml
-LLM-Policy: https://caregos.com/llms.txt
-
+# AdSense review hold: publish only after editorial approval.

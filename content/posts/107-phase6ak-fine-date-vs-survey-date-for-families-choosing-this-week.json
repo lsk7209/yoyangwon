@@ -1,0 +1,74 @@
+{
+  "id": 107,
+  "status": "scheduled",
+  "category": "enforcement",
+  "title": "Fine Date Vs Survey Date: civil money penalty timeline guide",
+  "subtitle": "Fine date vs survey date for enforcement remedy, survey findings, and a nursing home timeline families can verify.",
+  "slug": "phase6ak-fine-date-vs-survey-date-for-families-choosing-this-week",
+  "main_keyword": "fine date vs survey date",
+  "expanded_keywords": [
+    "civil money penalty",
+    "survey timing",
+    "enforcement remedy"
+  ],
+  "intent": "Use the article to turn public data into one call, one tour question, and one comparison note.",
+  "publish_at": "2026-07-05T09:00:00+09:00",
+  "timezone": "Asia/Seoul",
+  "author": "Dana Koenig",
+  "read_minutes": 8,
+  "meta_title": "Fine Date Vs Survey Date: civil money penalty timeline gui",
+  "meta_description": "Separate the date of a cited survey finding from the date of an enforcement remedy before comparing facilities.",
+  "canonical": "https://caregos.com/blog/phase6ak-fine-date-vs-survey-date-for-families-choosing-this-week/",
+  "excerpt": "Separate the date of a cited survey finding from the date of an enforcement remedy before comparing facilities.",
+  "body_html": "<div style=\"color:var(--teal)\">A fine date is an enforcement event; a survey date is an inspection event. Put them on separate lines.</div>\n<section class=\"direct-answer\"><h2>Keep the survey finding and enforcement remedy in different date lanes</h2><p>A public record may show a civil money penalty or another enforcement action near information about a nursing-home survey. It is tempting to read the most recent date as the date of the care event, or to treat the dollar amount as a direct measure of what a future resident will experience. CMS describes enforcement actions as remedies that may be imposed when a nursing home does not meet federal requirements, while state survey agencies conduct surveys that determine compliance. Those related steps do not necessarily occur on the same day or answer the same question.</p><p>Start a two-lane timeline. In the first lane, record the survey or inspection date, the cited topic, and any scope or severity wording shown. In the second, record the enforcement date, remedy type, and source page. A later remedy can reflect a process following a survey; it is not automatically a newer observation of the facility. A family can then ask a better current question: what process applies now to the historical topic, who owns it, and what later public context exists?</p></section>\n<section class=\"type-element\"><h2>Use the event-remedy timeline instead of a single alarming date</h2><ol class=\"data\"><li><strong>Survey lane:</strong> copy the survey date and the specific cited subject without replacing it with a general accusation.</li><li><strong>Remedy lane:</strong> identify the remedy, such as a civil money penalty, and its listed date or action reference.</li><li><strong>Link lane:</strong> note only the connection shown by the official record; do not assume every action and survey entry are one event.</li><li><strong>Current lane:</strong> ask the facility for the present process and the appropriate follow-up source, keeping the answer separate from the historical record.</li></ol><p>This layout helps prevent two opposite errors. One is to dismiss a survey finding because a remedy appears later. The other is to describe a later enforcement date as proof that the same condition happened later. Both blur a record that should remain chronological. A family needs a dated explanation, not a simplified headline.</p></section>\n<section class=\"scenario-block\"><h2>Scenario: a recent fine date is mistaken for a recent survey</h2><p>During a rapid placement search, a relative finds a penalty date that looks recent and concludes that it describes a current inspection. Another relative finds an earlier survey record. They make two lanes before calling the facility. The call begins with a factual question: “We saw this dated survey record and this dated enforcement record. Can you identify the current process for the survey topic and the right source for any later public context?”</p><p>The admissions contact may be able to identify the role that owns the current process, but may not be the final authority on a federal enforcement timeline. The family records the answer and seeks the cited public material rather than demanding an immediate legal interpretation. The comparison note can honestly say whether the dates were reconciled, whether a current process was identified, and whether an official follow-up is still needed. It should not say that a penalty proves current harm or that a facility explanation erases the public record.</p></section>\n<section class=\"trust-panel\"><h2>What a civil money penalty date cannot establish today</h2><p>A remedy date cannot establish the present condition of a unit, the safety of a prospective resident, the availability of a bed, or the clinical appropriateness of a placement. Medicare notes that penalties may be imposed for serious citations or citations not corrected for a long time, and that public inspection information includes several kinds of inspection. Those facts show why the date needs process context. They do not let a general reader resolve compliance, dispute status, or a resident-specific risk.</p><p>If a family believes there is an immediate care or safety concern, a historical-record worksheet is not the right response. Use the appropriate emergency or state channels. This article’s narrow purpose is to prevent date confusion during a comparison, not to provide legal advice or complaint handling.</p></section>\n<section><h2>Official source notes for fine dates and survey dates</h2><p>CMS explains remedies and the <a href=\"https://www.cms.gov/medicare/health-safety-standards/enforcement/nursing-home-enforcement\">nursing-home enforcement process</a>. Medicare’s <a href=\"https://www.medicare.gov/care-compare/resources/nursing-home/health-inspections/\">health-inspection resource</a> explains citations, complaints, and penalties in public comparison context. The <a href=\"https://data.cms.gov/provider-data/topics/nursing-homes\">CMS Provider Data Catalog</a> is a reference point for public nursing-home data. Use these records to preserve chronology, not to make a present-tense judgment.</p></section>\n<section><h2>Correction path when the dates appear to conflict</h2><p>Save both URLs and write the date labels exactly as the sources display them. Ask whether the sources identify a survey, remedy, revisit, dispute, or another event, and avoid merging them until the record itself connects them. If a facility answer is broad, ask for the role responsible for the current process and the next public or official source. Keep an unresolved row as unresolved. The correct response to a timeline gap is a follow-up request, not a more confident inference.</p><a class=\"btn btn-primary\" href=\"/compare.html\">Add separate survey and remedy lanes to a comparison note</a></section>",
+  "internal_links": [
+    "/facility.html",
+    "/compare.html",
+    "/methodology.html"
+  ],
+  "external_source": {
+    "label": "Official nursing home source context",
+    "url": "https://www.cms.gov/medicare/health-safety-standards/enforcement/nursing-home-enforcement"
+  },
+  "cta": "Open Caregos comparison tools",
+  "quality_score": 95,
+  "codex_only_generation_confirmation": "codex-only",
+  "schema_type": "Article",
+  "featured_image_alt": "Caregiver reviewing fine date vs survey date in a Caregos nursing home comparison worksheet",
+  "template_variation": "phase6ak-editorial-enforcement-date-lane",
+  "review_status": "needs_human_review",
+  "editorial_contract": {
+    "reader_job": "separate a survey event from an enforcement action in public records",
+    "decision_moment": "a civil money penalty date appears next to a facility’s survey information",
+    "answer_claim": "a fine date and survey date can have different procedural meanings and must not be used interchangeably",
+    "evidence_plan": "CMS enforcement process, Medicare inspection and citation context, CMS Provider Data Catalog",
+    "non_overlap_claim": "enforcement date reconciliation rather than correction-plan follow-up or deficiency definitions",
+    "structure_reason": "two-lane event/remedy timeline with a dated comparison scenario"
+  },
+  "research_evidence": {
+    "fact_traceability_pass": true,
+    "sources": [
+      {
+        "url": "https://www.cms.gov/medicare/health-safety-standards/enforcement/nursing-home-enforcement",
+        "source_role": "official",
+        "used_for": "remedies and survey-enforcement process"
+      },
+      {
+        "url": "https://www.medicare.gov/care-compare/resources/nursing-home/health-inspections/",
+        "source_role": "official",
+        "used_for": "citations, penalties, and public inspection context"
+      },
+      {
+        "url": "https://data.cms.gov/provider-data/topics/nursing-homes",
+        "source_role": "official",
+        "used_for": "provider-data reference boundary"
+      }
+    ],
+    "source_interpretation": "enforcement date reconciliation rather than correction-plan follow-up or deficiency definitions"
+  },
+  "rewrite_evidence": {
+    "rewritten_by": "codex-caregos-batch-a",
+    "rewritten_at": "2026-07-19T08:22:10.265427+00:00",
+    "method": "independent official-source editorial rewrite; held pending human review"
+  }
+}
