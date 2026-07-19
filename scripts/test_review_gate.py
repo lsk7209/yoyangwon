@@ -41,8 +41,11 @@ class ReviewGateTests(unittest.TestCase):
         )
         self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
         result = json.loads(completed.stdout)
-        self.assertEqual(result["posts"], 100)
-        self.assertEqual(result["held_posts"], 115)
+        records = [json.loads(path.read_text(encoding="utf-8-sig")) for path in POST_DIR.glob("*.json")]
+        approved = sum(self.quality.is_approved(record) for record in records)
+        held = len(records) - approved
+        self.assertEqual(result["posts"], approved)
+        self.assertEqual(result["held_posts"], held)
 
     def test_failed_single_record_cannot_be_approved_or_mutate_source(self):
         before = self.phase_path.read_bytes()

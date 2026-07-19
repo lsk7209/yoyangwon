@@ -53,6 +53,11 @@
   .related-rail li { margin:8px 0;font-size:.88rem;line-height:1.35; }
   .related-rail a { color:var(--ink);text-decoration:none; }
   .related-rail a:hover { text-decoration:underline;text-decoration-color:var(--clay); }
+  .source-rail ul { margin:0;padding-left:18px; }
+  .source-rail li { margin:9px 0;font-size:.88rem;line-height:1.35; }
+  .source-rail li span { display:block;color:var(--text-2);font-size:.78rem;margin-top:3px; }
+  .source-rail a { color:var(--ink);text-decoration:none;font-weight:700; }
+  .source-rail a:hover { text-decoration:underline;text-decoration-color:var(--clay); }
   @media (max-width:760px){ .related-grid { grid-template-columns:1fr; } }
 </style>
 </head>
@@ -133,6 +138,14 @@
         <h2 style="font-size:1.05rem;margin-bottom:8px;">Source note</h2>
         <p class="caption" style="margin-bottom:10px;">This guide cites an official source and should be read with the source date on any facility record.</p>
         <a class="caption" href="https://www.medicaid.gov/medicaid/long-term-services-supports/index.html" rel="noopener">Medicaid.gov Long Term Services &amp; Supports</a>
+      </div>
+      <div class="card source-rail">
+        <h2 style="font-size:1.05rem;margin-bottom:8px;">Official references</h2>
+        <p class="caption" style="margin-bottom:10px;">Check the article source beside these public CMS and Medicare references before making a care decision.</p>
+        <ul><li><a href="https://www.medicare.gov/care-compare/" rel="noopener">Medicare Care Compare</a>
+          <span>Use this to verify a facility profile, star ratings, and source dates before a visit.</span></li><li><a href="https://www.cms.gov/medicare/health-safety-standards/certification-compliance/nursing-homes" rel="noopener">CMS Nursing Homes certification and compliance</a>
+          <span>Use this for federal nursing home oversight context, not as a substitute for facility-specific advice.</span></li><li><a href="https://www.cms.gov/medicare/health-safety-standards/certification-compliance/five-star-quality-rating-system" rel="noopener">CMS Five-Star Quality Rating System</a>
+          <span>Use this to understand rating methodology, especially when comparing scores across facilities.</span></li></ul>
       </div>
       <div class="card">
         <h2 style="font-size:1.05rem;margin-bottom:8px;">Next step</h2>
