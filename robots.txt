@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /
+Sitemap: https://caregos.com/sitemap.xml
 
 # AdSense review hold: publish only after editorial approval.

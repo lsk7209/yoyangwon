@@ -61,7 +61,7 @@ def apply_hold(root: Path) -> int:
 
     robots = root / "robots.txt"
     robots.write_text(
-        "User-agent: *\nDisallow: /\n\n# AdSense review hold: publish only after editorial approval.\n",
+        "User-agent: *\nDisallow: /\nSitemap: https://caregos.com/sitemap.xml\n\n# AdSense review hold: publish only after editorial approval.\n",
         encoding="utf-8",
     )
     (root / "sitemap.xml").write_text(

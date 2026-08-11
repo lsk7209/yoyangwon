@@ -35,5 +35,6 @@ class AdsenseReviewHoldTests(unittest.TestCase):
             self.assertNotIn('content="index, follow"', homepage)
             self.assertIn('name="robots" content="noindex, nofollow, noarchive"', nested)
             self.assertEqual((root / "robots.txt").read_text(encoding="utf-8").splitlines()[1], "Disallow: /")
+            self.assertIn("Sitemap: https://caregos.com/sitemap.xml", (root / "robots.txt").read_text(encoding="utf-8"))
             self.assertNotIn("<url>", (root / "sitemap.xml").read_text(encoding="utf-8"))
             self.assertNotIn("<item>", (root / "rss.xml").read_text(encoding="utf-8"))
