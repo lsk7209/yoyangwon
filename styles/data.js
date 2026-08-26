@@ -8,7 +8,7 @@ window.DATA_SOURCE = {
   "county": "Sangamon",
   "facilityCount": 8,
   "processingDates": [
-    "2026-07-01"
+    "2026-08-01"
   ]
 };
 window.FACILITIES = [
@@ -52,15 +52,15 @@ window.FACILITIES = [
     "occupancy": 86,
     "overall": 1,
     "health": 2,
-    "staffing": 2,
+    "staffing": 1,
     "qm": 1,
     "pctile": 62,
     "trend": [
       1
     ],
     "trendNote": "CMS current release",
-    "rnHrs": 0.56,
-    "totalHrs": 3.84,
+    "rnHrs": 0.0,
+    "totalHrs": 0.0,
     "turnover": 64,
     "deficiencies": 10,
     "sevHigh": 4,
@@ -93,7 +93,7 @@ window.FACILITIES = [
     "turnover": 73,
     "deficiencies": 10,
     "sevHigh": 1,
-    "fines": 583051,
+    "fines": 597556,
     "sff": false,
     "sffStatus": "",
     "abuse": false,
@@ -122,7 +122,7 @@ window.FACILITIES = [
     "turnover": 29,
     "deficiencies": 10,
     "sevHigh": 4,
-    "fines": 57030,
+    "fines": 229143,
     "sff": false,
     "sffStatus": "",
     "abuse": false,
@@ -179,7 +179,7 @@ window.FACILITIES = [
     "totalHrs": 4.9,
     "turnover": 45,
     "deficiencies": 10,
-    "sevHigh": 2,
+    "sevHigh": 0,
     "fines": 8678,
     "sff": false,
     "sffStatus": "",
@@ -709,6 +709,15 @@ window.DEFS = {
   "concordia-village-care-center-146154": [
     {
       "date": "2026-01-08",
+      "ftag": "F-880",
+      "scope": "Pattern",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide and implement an infection prevention and control program.",
+      "survey": "Health"
+    },
+    {
+      "date": "2026-01-08",
       "ftag": "F-600",
       "scope": "Isolated",
       "sev": "mid",
@@ -727,11 +736,38 @@ window.DEFS = {
     },
     {
       "date": "2026-01-08",
+      "ftag": "F-690",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Provide appropriate care for residents who are continent or incontinent of bowel/bladder, appropriate catheter care,  and appropriate care  to prevent urinary tract infections.",
+      "survey": "Health"
+    },
+    {
+      "date": "2026-01-08",
       "ftag": "F-760",
       "scope": "Isolated",
       "sev": "mid",
       "harm": "Potential for harm",
       "text": "Ensure that residents are free from significant medication errors.",
+      "survey": "Health"
+    },
+    {
+      "date": "2026-01-08",
+      "ftag": "F-804",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Ensure food and drink is palatable, attractive, and at a safe and appetizing temperature.",
+      "survey": "Health"
+    },
+    {
+      "date": "2026-01-08",
+      "ftag": "F-812",
+      "scope": "Isolated",
+      "sev": "mid",
+      "harm": "Potential for harm",
+      "text": "Procure food from sources approved or considered satisfactory and store, prepare, distribute and serve food in accordance with professional standards.",
       "survey": "Health"
     },
     {
@@ -759,42 +795,6 @@ window.DEFS = {
       "sev": "mid",
       "harm": "Potential for harm",
       "text": "Provide and implement an infection prevention and control program.",
-      "survey": "Health"
-    },
-    {
-      "date": "2024-06-26",
-      "ftag": "F-684",
-      "scope": "Isolated",
-      "sev": "high",
-      "harm": "Actual harm",
-      "text": "Provide appropriate treatment and care according to orders, resident\u2019s preferences and goals.",
-      "survey": "Health"
-    },
-    {
-      "date": "2023-09-21",
-      "ftag": "F-760",
-      "scope": "Isolated",
-      "sev": "high",
-      "harm": "Actual harm",
-      "text": "Ensure that residents are free from significant medication errors.",
-      "survey": "Health"
-    },
-    {
-      "date": "2023-09-21",
-      "ftag": "F-761",
-      "scope": "Widespread",
-      "sev": "mid",
-      "harm": "Potential for harm",
-      "text": "Ensure drugs and biologicals used in the facility are labeled in accordance with currently accepted professional principles; and all drugs and biologicals must be stored in locked compartments, separately locked, compartments for controlled drugs.",
-      "survey": "Health"
-    },
-    {
-      "date": "2023-09-21",
-      "ftag": "F-690",
-      "scope": "Pattern",
-      "sev": "mid",
-      "harm": "Potential for harm",
-      "text": "Provide appropriate care for residents who are continent or incontinent of bowel/bladder, appropriate catheter care,  and appropriate care  to prevent urinary tract infections.",
       "survey": "Health"
     }
   ],
